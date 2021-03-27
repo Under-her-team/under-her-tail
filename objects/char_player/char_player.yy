@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_char_frisk_down",
-    "path": "sprites/spr_char_frisk_down/spr_char_frisk_down.yy",
+    "name": "spr_char_human_down",
+    "path": "sprites/spr_char_human_down/spr_char_human_down.yy",
   },
   "solid": false,
   "visible": true,

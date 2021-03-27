@@ -1,0 +1,1 @@
+text="* Four lines of text fills&  you with determination,{sleep 24}&  making you stronger than&  ever."
