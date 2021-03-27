@@ -5,10 +5,7 @@
   },
   "solid": false,
   "visible": true,
-  "spriteMaskId": {
-    "name": "spr_char_mask",
-    "path": "sprites/spr_char_mask/spr_char_mask.yy",
-  },
+  "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
     "name": "char",
@@ -29,7 +26,6 @@
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"char_sign","path":"objects/char_sign/char_sign.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":10,"eventType":7,"collisionObjectId":null,"parent":{"name":"char_sign","path":"objects/char_sign/char_sign.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":2,"eventType":3,"collisionObjectId":null,"parent":{"name":"char_sign","path":"objects/char_sign/char_sign.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],

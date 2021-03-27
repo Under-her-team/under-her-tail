@@ -3,5 +3,4 @@ function Dialog_Clear() {
 	return true;
 
 
-
 }

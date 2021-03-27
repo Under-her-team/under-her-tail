@@ -23,9 +23,6 @@ function Flag_Custom() {
 	Flag_Set(FLAG_TYPE.TEMP,FLAG_TEMP.TRIGGER_WARP_LANDMARK,noone);
 	Flag_Set(FLAG_TYPE.TEMP,FLAG_TEMP.TRIGGER_WARP_DIR,-1);
 
-	Flag_Set(FLAG_TYPE.TEMP,FLAG_TEMP.TEXT_TYPER_CHOICE,-1);
-	//This code ensures that choices work in-game.
-
 	Item_SetWeapon(item_stick);
 	Item_SetArmor(item_bandage);
 	Item_Add(item_tml);

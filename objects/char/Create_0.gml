@@ -6,9 +6,6 @@ dir_locked=false;
 
 talking=false;
 
-_state=-1;
-_choice=0;
-
 move_speed[DIR.UP]=2;
 move_speed[DIR.DOWN]=2;
 move_speed[DIR.LEFT]=2;
@@ -17,6 +14,7 @@ move[DIR.UP]=0;
 move[DIR.DOWN]=0;
 move[DIR.LEFT]=0;
 move[DIR.RIGHT]=0;
+
 collision=true;
 
 _collision_list=ds_list_create();
@@ -45,6 +43,3 @@ res_override=false;
 _talking_previous=!talking;
 _dir_previous=-1;
 _move_previous=-1;
-
-_state=-1;
-_choice=0;

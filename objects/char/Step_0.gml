@@ -64,4 +64,3 @@ if(refresh){
 _talking_previous=talking;
 _dir_previous=dir;
 _move_previous=move[dir];
-

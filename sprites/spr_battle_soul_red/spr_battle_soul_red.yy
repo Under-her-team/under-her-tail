@@ -27,9 +27,9 @@
     {"compositeImage":{"FrameId":{"name":"bb2d0d92-949a-43fe-8a46-afd41e83545c","path":"sprites/spr_battle_soul_red/spr_battle_soul_red.yy",},"LayerId":null,"resourceVersion":"1.0","name":"imported","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"bb2d0d92-949a-43fe-8a46-afd41e83545c","path":"sprites/spr_battle_soul_red/spr_battle_soul_red.yy",},"LayerId":{"name":"1a79ce61-fd1f-4a0b-aac0-e23d8139531d","path":"sprites/spr_battle_soul_red/spr_battle_soul_red.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"spr_battle_soul_red","path":"sprites/spr_battle_soul_red/spr_battle_soul_red.yy",},"resourceVersion":"1.0","name":"bb2d0d92-949a-43fe-8a46-afd41e83545c","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"8f926354-01ba-4331-866c-c163c0d048ce","path":"sprites/spr_battle_soul_red/spr_battle_soul_red.yy",},"LayerId":null,"resourceVersion":"1.0","name":"imported","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"8f926354-01ba-4331-866c-c163c0d048ce","path":"sprites/spr_battle_soul_red/spr_battle_soul_red.yy",},"LayerId":{"name":"1a79ce61-fd1f-4a0b-aac0-e23d8139531d","path":"sprites/spr_battle_soul_red/spr_battle_soul_red.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_battle_soul_red","path":"sprites/spr_battle_soul_red/spr_battle_soul_red.yy",},"resourceVersion":"1.0","name":"8f926354-01ba-4331-866c-c163c0d048ce","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"d3412df6-4185-4b3d-9087-26c8a3165d46","path":"sprites/spr_battle_soul_red/spr_battle_soul_red.yy",},"LayerId":null,"resourceVersion":"1.0","name":"imported","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"d3412df6-4185-4b3d-9087-26c8a3165d46","path":"sprites/spr_battle_soul_red/spr_battle_soul_red.yy",},"LayerId":{"name":"1a79ce61-fd1f-4a0b-aac0-e23d8139531d","path":"sprites/spr_battle_soul_red/spr_battle_soul_red.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_battle_soul_red","path":"sprites/spr_battle_soul_red/spr_battle_soul_red.yy",},"resourceVersion":"1.0","name":"d3412df6-4185-4b3d-9087-26c8a3165d46","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"spr_battle_soul_red","path":"sprites/spr_battle_soul_red/spr_battle_soul_red.yy",},
@@ -44,8 +44,8 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"c40b5db1-3c31-4b30-923a-b94af52b8521","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"bb2d0d92-949a-43fe-8a46-afd41e83545c","path":"sprites/spr_battle_soul_red/spr_battle_soul_red.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"5b4faef9-c814-47ab-a6fb-ec7032666a11","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"8f926354-01ba-4331-866c-c163c0d048ce","path":"sprites/spr_battle_soul_red/spr_battle_soul_red.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"20d1c631-60d7-4636-adad-19b6c590add2","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"bb2d0d92-949a-43fe-8a46-afd41e83545c","path":"sprites/spr_battle_soul_red/spr_battle_soul_red.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"b126b6cc-26b5-47bf-a7f2-0e5803a7e17b","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d3412df6-4185-4b3d-9087-26c8a3165d46","path":"sprites/spr_battle_soul_red/spr_battle_soul_red.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": {"x":0.0,"y":0.0,},

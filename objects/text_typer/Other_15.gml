@@ -48,14 +48,4 @@ _group_font_space_y[2]=real(Lang_GetString("font.battle.space.y"));
 _group_voice[0,0]=snd_text_voice_default;
 _group_voice[1,0]=snd_text_voice_typer;
 
-_group_voice[2,0]=snd_text_voice_mopsy;
-_group_voice[3,0]=snd_text_voice_whimsie;
-
 _group_face[0]=face;
-
-_group_face[1]=face_mopsy_normal;
-_group_face[2]=face_mopsy_happy;
-
-_group_face[10]=face_whimsie_normal;
-_group_face[11]=face_whimsie_focus;
-_group_face[12]=face_whimsie_shock;

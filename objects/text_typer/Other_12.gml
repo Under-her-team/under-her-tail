@@ -1,5 +1,4 @@
 ///@desc Command
-//_list_cmd=ds_list_create();
 var cmd=_list_cmd;
 
 switch(cmd[|0]){

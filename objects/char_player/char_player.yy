@@ -1,13 +1,13 @@
 {
   "spriteId": {
-    "name": "spr_char_whimsie_d",
-    "path": "sprites/spr_char_whimsie_d/spr_char_whimsie_d.yy",
+    "name": "spr_char_frisk_down",
+    "path": "sprites/spr_char_frisk_down/spr_char_frisk_down.yy",
   },
   "solid": false,
   "visible": true,
   "spriteMaskId": {
-    "name": "spr_char_mask",
-    "path": "sprites/spr_char_mask/spr_char_mask.yy",
+    "name": "spr_char_frisk_mask",
+    "path": "sprites/spr_char_frisk_mask/spr_char_frisk_mask.yy",
   },
   "persistent": false,
   "parentObjectId": {
@@ -32,7 +32,6 @@
     {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"parent":{"name":"char_player","path":"objects/char_player/char_player.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":4,"eventType":7,"collisionObjectId":null,"parent":{"name":"char_player","path":"objects/char_player/char_player.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":2,"collisionObjectId":null,"parent":{"name":"char_player","path":"objects/char_player/char_player.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":2,"eventType":3,"collisionObjectId":null,"parent":{"name":"char_player","path":"objects/char_player/char_player.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],

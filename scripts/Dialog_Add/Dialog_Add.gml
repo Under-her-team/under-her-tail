@@ -4,5 +4,4 @@ function Dialog_Add() {
 	return true;
 
 
-
 }

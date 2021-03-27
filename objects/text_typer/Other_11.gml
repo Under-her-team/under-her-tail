@@ -7,5 +7,3 @@ _char_y+=(string_height(" ")+_group_font_space_y[_font]+_space_y)*_group_font_sc
 if(height<_char_y){
 	height=_char_y;
 }
-
-

@@ -4,5 +4,4 @@ function Dialog_Get() {
 	return (is_string(TEXT) ? TEXT : "");
 
 
-
 }
