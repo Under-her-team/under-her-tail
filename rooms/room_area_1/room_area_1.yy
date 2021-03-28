@@ -31,6 +31,7 @@
         {"properties":[],"isDnd":false,"objectId":{"name":"trigger_warp","path":"objects/trigger_warp/trigger_warp.yy",},"inheritCode":false,"hasCreationCode":true,"colour":4294967295,"rotation":0.0,"scaleX":0.5,"scaleY":2.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":60.0,"y":140.0,"resourceVersion":"1.0","name":"inst_349439B4","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"block","path":"objects/block/block.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":60.0,"y":180.0,"resourceVersion":"1.0","name":"inst_32A86607","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"hint_landmark","path":"objects/hint_landmark/hint_landmark.yy",},"inheritCode":false,"hasCreationCode":true,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":210.0,"y":170.0,"resourceVersion":"1.0","name":"inst_1C2ED637","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"hint_bgm","path":"objects/hint_bgm/hint_bgm.yy",},"inheritCode":false,"hasCreationCode":true,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":20.0,"y":0.0,"resourceVersion":"1.0","name":"inst_16F929F4","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":10,"gridY":10,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Instances","tags":[],"resourceType":"GMRInstanceLayer",},
     {"tilesetId":{"name":"tile_snowdin","path":"tilesets/tile_snowdin/tile_snowdin.yy",},"x":0,"y":0,"tiles":{"SerialiseWidth":16,"SerialiseHeight":12,"TileSerialiseData":[
 2147483648,2147483648,0,0,0,0,0,0,0,0,0,0,0,2147483648,2147483648,2147483648,
@@ -84,6 +85,7 @@
     {"name":"inst_349439B4","path":"rooms/room_area_1/room_area_1.yy",},
     {"name":"inst_32A86607","path":"rooms/room_area_1/room_area_1.yy",},
     {"name":"inst_1C2ED637","path":"rooms/room_area_1/room_area_1.yy",},
+    {"name":"inst_16F929F4","path":"rooms/room_area_1/room_area_1.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
