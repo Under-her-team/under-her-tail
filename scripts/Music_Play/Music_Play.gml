@@ -18,12 +18,11 @@ function Music_Play() {
 	if(argument_count>=5){
 		LOOP_END=argument[4];
 	}
-
-	var AUDIO_FINAL=audio_create_stream("data/mus/"+AUDIO+".ogg");
-	if(Music_IsSlotValid(SLOT)&&audio_exists(AUDIO_FINAL)){
+if(Music_IsSlotValid(SLOT)&&audio_exists(AUDIO)){
 		Music_Stop(SLOT);
-		global._bgm_audio[SLOT]=AUDIO_FINAL;
-		global._bgm_id[SLOT]=audio_play_sound(AUDIO_FINAL,1,LOOP);
+		global._bgm_audio[SLOT]=AUDIO;
+		global._bgm_id[SLOT]=audio_play_sound(AUDIO,1,LOOP);
+
 		global._bgm_loop_start[SLOT]=LOOP_START;
 		global._bgm_loop_end[SLOT]=LOOP_END;
 		return true;

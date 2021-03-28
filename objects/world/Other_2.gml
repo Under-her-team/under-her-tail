@@ -1,3 +1,4 @@
+// The following is loaded when the game starts.
 Anim_Init();
 
 Console_Init();
@@ -5,7 +6,7 @@ Console_SetStatusNumber(3);
 Console_SetStatusRatio(0,2/11);
 Console_SetStatusRatio(1,8/11);
 Console_SetStatusRatio(2,11/11);
-
+// Player controls
 Input_Init();
 Input_Bind(INPUT.CONFIRM,INPUT_TYPE.KEYBOARD,0,vk_enter);
 Input_Bind(INPUT.CONFIRM,INPUT_TYPE.KEYBOARD,0,ord("Z"));
@@ -19,7 +20,9 @@ Input_Bind(INPUT.LEFT,INPUT_TYPE.KEYBOARD,0,vk_left);
 Input_Bind(INPUT.RIGHT,INPUT_TYPE.KEYBOARD,0,vk_right);
 
 Lang_Init();
+//LangScript: Load datafiles/data/localization/list.txt
 Lang_LoadList();
+//
 Lang_LoadString(0);
 Lang_LoadSprite(0);
 Lang_LoadFont(0);

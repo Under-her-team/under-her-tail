@@ -1,5 +1,5 @@
 function Flag_Custom() {
-	Player_SetName("CHARA");
+	Player_SetName("FRISKY");
 	Player_SetLv(1);
 	Player_SetHpMax(20);
 	Player_SetHp(20);
@@ -11,6 +11,6 @@ function Flag_Custom() {
 
 	Item_SetWeapon(item_stick);
 	Item_SetArmor(item_bandage);
-
-
+    
+	Flag_Set(FLAG_TYPE.TEMP,FLAG_TEMP.TEXT_TYPER_CHOICE,-1);
 }
