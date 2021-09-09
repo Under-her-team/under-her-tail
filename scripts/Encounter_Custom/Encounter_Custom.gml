@@ -6,6 +6,9 @@ function Encounter_Custom() {
 
 	//Gaster Blaster
 	Encounter_Set(2,-1,battle_enemy_gb,-1,"* Gaster Blaster example.",-1);
+	
+	//Frogette
+	Encounter_Set(3,-1,battle_enemy_frogette,-1,"* UTH Battle Test.",-1);
 
 
 }

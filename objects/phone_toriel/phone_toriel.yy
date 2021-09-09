@@ -28,7 +28,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Phone",
-    "path": "folders/Objects/Phone.yy",
+    "path": "folders/Objects/Item/Phone.yy",
   },
   "resourceVersion": "1.0",
   "name": "phone_toriel",

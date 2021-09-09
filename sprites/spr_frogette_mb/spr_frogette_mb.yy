@@ -70,7 +70,7 @@
   "nineSlice": null,
   "parent": {
     "name": "Frogette",
-    "path": "folders/Sprites/Character/Enemies/Frogette.yy",
+    "path": "folders/Sprites/Character/Ruins_Monsters/Frogette.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_frogette_mb",
