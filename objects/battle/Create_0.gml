@@ -92,3 +92,6 @@ _player_temp_spd=0;
 _player_temp_inv=0;
 
 _bg_index=0;
+
+_sex_speed=6
+_sex_stage=0

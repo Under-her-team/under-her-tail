@@ -21,6 +21,7 @@
         {"properties":[],"isDnd":false,"objectId":{"name":"trigger_warp","path":"objects/trigger_warp/trigger_warp.yy",},"inheritCode":false,"hasCreationCode":true,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":3.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":360.0,"y":80.0,"resourceVersion":"1.0","name":"inst_17CF54C5","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"char_player","path":"objects/char_player/char_player.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":60.0,"y":300.0,"resourceVersion":"1.0","name":"inst_6351DAE5","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"char_frogette","path":"objects/char_frogette/char_frogette.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":260.0,"y":250.0,"resourceVersion":"1.0","name":"inst_200D5BB3","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"char_sign_battle","path":"objects/char_sign_battle/char_sign_battle.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":90.0,"y":120.0,"resourceVersion":"1.0","name":"inst_35A39BBC","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":10,"gridY":10,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Instances","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"block","path":"objects/block/block.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":5.0,"scaleY":9.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":140.0,"y":160.0,"resourceVersion":"1.0","name":"inst_6AF8EF43","tags":[],"resourceType":"GMRInstance",},
@@ -166,6 +167,7 @@
     {"name":"inst_17CF54C5","path":"rooms/frogette_room/frogette_room.yy",},
     {"name":"inst_6351DAE5","path":"rooms/frogette_room/frogette_room.yy",},
     {"name":"inst_200D5BB3","path":"rooms/frogette_room/frogette_room.yy",},
+    {"name":"inst_35A39BBC","path":"rooms/frogette_room/frogette_room.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

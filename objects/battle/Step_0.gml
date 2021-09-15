@@ -1,5 +1,7 @@
 battle_bg.image_index=_bg_index;
 //菜单
+
+
 if(_state==BATTLE_STATE.MENU){
 	//按钮
 	if(_menu==BATTLE_MENU.BUTTON){
@@ -65,6 +67,7 @@ if(_state==BATTLE_STATE.MENU){
 				Battle_SetMenuChoiceEnemy(enemy);
 			}
 		}
+
 		
 		//灵魂位置
 		battle_soul.x=battle_board.x-battle_board.left-5+40;
@@ -302,4 +305,8 @@ if(_state!=BATTLE_STATE.RESULT && Battle_GetEnemyNumber()==0){
 	}
 	text+="{pause}{end}";
 	Battle_SetDialog(text);
+}
+
+if(_state==BATTLE_STATE.SEX){
+	//var ENEMY=Battle_ConvertMenuChoiceEnemyToEnemySlot(Battle_GetMenuChoiceEnemy());
 }

@@ -10,5 +10,7 @@ function Encounter_Custom() {
 	//Frogette
 	Encounter_Set(3,-1,battle_enemy_frogette,-1,"* UTH Battle Test.",-1);
 
+	//LOTS OF FROGS
+	Encounter_Set(4,battle_enemy_frogette,-1,battle_enemy_frogette,"* Gay(?) Frogs.",-1);
 
 }
