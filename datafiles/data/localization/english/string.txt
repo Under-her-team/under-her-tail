@@ -3,4 +3,3 @@
 ./string/item.txt
 ./string/menu.txt
 ./string/font.txt
-./string/game.txt
