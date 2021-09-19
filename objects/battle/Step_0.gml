@@ -308,5 +308,5 @@ if(_state!=BATTLE_STATE.RESULT && Battle_GetEnemyNumber()==0){
 }
 
 if(_state==BATTLE_STATE.SEX){
-	//var ENEMY=Battle_ConvertMenuChoiceEnemyToEnemySlot(Battle_GetMenuChoiceEnemy());
+	var ENEMY=_enemy[Battle_ConvertMenuChoiceEnemyToEnemySlot(Battle_GetMenuChoiceEnemy())];
 }
