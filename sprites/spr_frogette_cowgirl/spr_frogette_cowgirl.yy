@@ -8,14 +8,14 @@
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
   "bbox_left": 0,
-  "bbox_right": 149,
+  "bbox_right": 111,
   "bbox_top": 0,
-  "bbox_bottom": 242,
+  "bbox_bottom": 182,
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 156,
-  "height": 258,
+  "width": 117,
+  "height": 194,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -24,30 +24,30 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"3f4fd454-c1dd-451f-964b-aeb22256d626","path":"sprites/spr_frogette_cowgirl/spr_frogette_cowgirl.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"3f4fd454-c1dd-451f-964b-aeb22256d626","path":"sprites/spr_frogette_cowgirl/spr_frogette_cowgirl.yy",},"LayerId":{"name":"0a12fc80-057b-4e62-9575-52a8a5048e8b","path":"sprites/spr_frogette_cowgirl/spr_frogette_cowgirl.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_frogette_cowgirl","path":"sprites/spr_frogette_cowgirl/spr_frogette_cowgirl.yy",},"resourceVersion":"1.0","name":"3f4fd454-c1dd-451f-964b-aeb22256d626","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"8909de31-7c65-4403-9057-f059459bc413","path":"sprites/spr_frogette_cowgirl/spr_frogette_cowgirl.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"8909de31-7c65-4403-9057-f059459bc413","path":"sprites/spr_frogette_cowgirl/spr_frogette_cowgirl.yy",},"LayerId":{"name":"0a12fc80-057b-4e62-9575-52a8a5048e8b","path":"sprites/spr_frogette_cowgirl/spr_frogette_cowgirl.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_frogette_cowgirl","path":"sprites/spr_frogette_cowgirl/spr_frogette_cowgirl.yy",},"resourceVersion":"1.0","name":"8909de31-7c65-4403-9057-f059459bc413","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"702196d0-1db6-40a6-a67b-7393ad2bd6dc","path":"sprites/spr_frogette_cowgirl/spr_frogette_cowgirl.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"702196d0-1db6-40a6-a67b-7393ad2bd6dc","path":"sprites/spr_frogette_cowgirl/spr_frogette_cowgirl.yy",},"LayerId":{"name":"0a12fc80-057b-4e62-9575-52a8a5048e8b","path":"sprites/spr_frogette_cowgirl/spr_frogette_cowgirl.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_frogette_cowgirl","path":"sprites/spr_frogette_cowgirl/spr_frogette_cowgirl.yy",},"resourceVersion":"1.0","name":"702196d0-1db6-40a6-a67b-7393ad2bd6dc","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"14173173-0d7f-4884-9b4f-f9b5c391b800","path":"sprites/spr_frogette_cowgirl/spr_frogette_cowgirl.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"14173173-0d7f-4884-9b4f-f9b5c391b800","path":"sprites/spr_frogette_cowgirl/spr_frogette_cowgirl.yy",},"LayerId":{"name":"0a12fc80-057b-4e62-9575-52a8a5048e8b","path":"sprites/spr_frogette_cowgirl/spr_frogette_cowgirl.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_frogette_cowgirl","path":"sprites/spr_frogette_cowgirl/spr_frogette_cowgirl.yy",},"resourceVersion":"1.0","name":"14173173-0d7f-4884-9b4f-f9b5c391b800","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"5245023d-ad1a-4d8c-95ab-23f2cd205cea","path":"sprites/spr_frogette_cowgirl/spr_frogette_cowgirl.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"5245023d-ad1a-4d8c-95ab-23f2cd205cea","path":"sprites/spr_frogette_cowgirl/spr_frogette_cowgirl.yy",},"LayerId":{"name":"0a12fc80-057b-4e62-9575-52a8a5048e8b","path":"sprites/spr_frogette_cowgirl/spr_frogette_cowgirl.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_frogette_cowgirl","path":"sprites/spr_frogette_cowgirl/spr_frogette_cowgirl.yy",},"resourceVersion":"1.0","name":"5245023d-ad1a-4d8c-95ab-23f2cd205cea","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"09c6bcec-f1c8-4fdf-9ab5-70da746971c3","path":"sprites/spr_frogette_cowgirl/spr_frogette_cowgirl.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"09c6bcec-f1c8-4fdf-9ab5-70da746971c3","path":"sprites/spr_frogette_cowgirl/spr_frogette_cowgirl.yy",},"LayerId":{"name":"0a12fc80-057b-4e62-9575-52a8a5048e8b","path":"sprites/spr_frogette_cowgirl/spr_frogette_cowgirl.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_frogette_cowgirl","path":"sprites/spr_frogette_cowgirl/spr_frogette_cowgirl.yy",},"resourceVersion":"1.0","name":"09c6bcec-f1c8-4fdf-9ab5-70da746971c3","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"2a9cd5c5-47be-457c-b20e-66f22df267bf","path":"sprites/spr_frogette_cowgirl/spr_frogette_cowgirl.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"2a9cd5c5-47be-457c-b20e-66f22df267bf","path":"sprites/spr_frogette_cowgirl/spr_frogette_cowgirl.yy",},"LayerId":{"name":"5707453c-87fb-4f33-9261-41a368d4f0df","path":"sprites/spr_frogette_cowgirl/spr_frogette_cowgirl.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_frogette_cowgirl","path":"sprites/spr_frogette_cowgirl/spr_frogette_cowgirl.yy",},"resourceVersion":"1.0","name":"2a9cd5c5-47be-457c-b20e-66f22df267bf","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"f84b1d43-0210-4d46-a960-ee7c32f38e22","path":"sprites/spr_frogette_cowgirl/spr_frogette_cowgirl.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"f84b1d43-0210-4d46-a960-ee7c32f38e22","path":"sprites/spr_frogette_cowgirl/spr_frogette_cowgirl.yy",},"LayerId":{"name":"5707453c-87fb-4f33-9261-41a368d4f0df","path":"sprites/spr_frogette_cowgirl/spr_frogette_cowgirl.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_frogette_cowgirl","path":"sprites/spr_frogette_cowgirl/spr_frogette_cowgirl.yy",},"resourceVersion":"1.0","name":"f84b1d43-0210-4d46-a960-ee7c32f38e22","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"d97fa22e-27a0-49c9-8df5-69d61b3bb2c4","path":"sprites/spr_frogette_cowgirl/spr_frogette_cowgirl.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"d97fa22e-27a0-49c9-8df5-69d61b3bb2c4","path":"sprites/spr_frogette_cowgirl/spr_frogette_cowgirl.yy",},"LayerId":{"name":"5707453c-87fb-4f33-9261-41a368d4f0df","path":"sprites/spr_frogette_cowgirl/spr_frogette_cowgirl.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_frogette_cowgirl","path":"sprites/spr_frogette_cowgirl/spr_frogette_cowgirl.yy",},"resourceVersion":"1.0","name":"d97fa22e-27a0-49c9-8df5-69d61b3bb2c4","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"2c301187-f2d0-438f-a552-747bc15725aa","path":"sprites/spr_frogette_cowgirl/spr_frogette_cowgirl.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"2c301187-f2d0-438f-a552-747bc15725aa","path":"sprites/spr_frogette_cowgirl/spr_frogette_cowgirl.yy",},"LayerId":{"name":"5707453c-87fb-4f33-9261-41a368d4f0df","path":"sprites/spr_frogette_cowgirl/spr_frogette_cowgirl.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_frogette_cowgirl","path":"sprites/spr_frogette_cowgirl/spr_frogette_cowgirl.yy",},"resourceVersion":"1.0","name":"2c301187-f2d0-438f-a552-747bc15725aa","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"057b8ba7-49ec-4c4b-8fb0-c6444478b1f2","path":"sprites/spr_frogette_cowgirl/spr_frogette_cowgirl.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"057b8ba7-49ec-4c4b-8fb0-c6444478b1f2","path":"sprites/spr_frogette_cowgirl/spr_frogette_cowgirl.yy",},"LayerId":{"name":"5707453c-87fb-4f33-9261-41a368d4f0df","path":"sprites/spr_frogette_cowgirl/spr_frogette_cowgirl.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_frogette_cowgirl","path":"sprites/spr_frogette_cowgirl/spr_frogette_cowgirl.yy",},"resourceVersion":"1.0","name":"057b8ba7-49ec-4c4b-8fb0-c6444478b1f2","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"2ba42211-f75c-4d36-9c9c-7990fe308a1b","path":"sprites/spr_frogette_cowgirl/spr_frogette_cowgirl.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"2ba42211-f75c-4d36-9c9c-7990fe308a1b","path":"sprites/spr_frogette_cowgirl/spr_frogette_cowgirl.yy",},"LayerId":{"name":"5707453c-87fb-4f33-9261-41a368d4f0df","path":"sprites/spr_frogette_cowgirl/spr_frogette_cowgirl.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_frogette_cowgirl","path":"sprites/spr_frogette_cowgirl/spr_frogette_cowgirl.yy",},"resourceVersion":"1.0","name":"2ba42211-f75c-4d36-9c9c-7990fe308a1b","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"spr_frogette_cowgirl","path":"sprites/spr_frogette_cowgirl/spr_frogette_cowgirl.yy",},
     "timeUnits": 1,
     "playback": 1,
-    "playbackSpeed": 6.0,
+    "playbackSpeed": 7.0,
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,
@@ -56,12 +56,12 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"7808f0b5-4960-4ace-8051-cf395177e8dd","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"3f4fd454-c1dd-451f-964b-aeb22256d626","path":"sprites/spr_frogette_cowgirl/spr_frogette_cowgirl.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"5c72c0b8-f315-4fdd-bb8e-0c9e0a1b4c87","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"8909de31-7c65-4403-9057-f059459bc413","path":"sprites/spr_frogette_cowgirl/spr_frogette_cowgirl.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"71bf87d1-7f93-4583-bc51-d7db514a0bbf","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"702196d0-1db6-40a6-a67b-7393ad2bd6dc","path":"sprites/spr_frogette_cowgirl/spr_frogette_cowgirl.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"ee2b20a7-2d9e-4149-8bbd-6bc4b2afc763","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"14173173-0d7f-4884-9b4f-f9b5c391b800","path":"sprites/spr_frogette_cowgirl/spr_frogette_cowgirl.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"6976d9e4-c7c2-4ea0-9d32-129525dc3fbe","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"5245023d-ad1a-4d8c-95ab-23f2cd205cea","path":"sprites/spr_frogette_cowgirl/spr_frogette_cowgirl.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"aae9e533-52cc-4a10-938a-c3afbe263b61","Key":5.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"09c6bcec-f1c8-4fdf-9ab5-70da746971c3","path":"sprites/spr_frogette_cowgirl/spr_frogette_cowgirl.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"aa7c5227-5212-42ab-ae7f-e6d7447c6d24","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"2a9cd5c5-47be-457c-b20e-66f22df267bf","path":"sprites/spr_frogette_cowgirl/spr_frogette_cowgirl.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"c3479fc7-bb88-4007-bbe1-7a6bcf616615","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"f84b1d43-0210-4d46-a960-ee7c32f38e22","path":"sprites/spr_frogette_cowgirl/spr_frogette_cowgirl.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"469529cc-2e65-4bc8-a0fa-3f74077f55f3","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d97fa22e-27a0-49c9-8df5-69d61b3bb2c4","path":"sprites/spr_frogette_cowgirl/spr_frogette_cowgirl.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"5fb65e53-268f-486e-b82d-21685e5ff21e","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"2c301187-f2d0-438f-a552-747bc15725aa","path":"sprites/spr_frogette_cowgirl/spr_frogette_cowgirl.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"024a9bf2-a057-41d3-8a30-5b11b833b6a2","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"057b8ba7-49ec-4c4b-8fb0-c6444478b1f2","path":"sprites/spr_frogette_cowgirl/spr_frogette_cowgirl.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"b72ed31b-57a3-4ebf-b7dc-57eadff04050","Key":5.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"2ba42211-f75c-4d36-9c9c-7990fe308a1b","path":"sprites/spr_frogette_cowgirl/spr_frogette_cowgirl.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -74,8 +74,8 @@
     "backdropHeight": 768,
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
-    "xorigin": 75,
-    "yorigin": 238,
+    "xorigin": 48,
+    "yorigin": 178,
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_frogette_cowgirl","path":"sprites/spr_frogette_cowgirl/spr_frogette_cowgirl.yy",},
@@ -85,7 +85,7 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"0a12fc80-057b-4e62-9575-52a8a5048e8b","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"5707453c-87fb-4f33-9261-41a368d4f0df","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {

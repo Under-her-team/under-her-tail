@@ -80,7 +80,7 @@ if(_state==BATTLE_STATE.MENU){
 		//确定
 		if(Input_IsPressed(INPUT.CONFIRM)){
 			audio_play_sound(snd_menu_confirm,0,false);
-			Battle_SetMenu(BATTLE_MENU.FIGHT_AIM);
+			Battle_SetMenu(BATTLE_MENU.FUCK);
 		}
 	}else
 	
@@ -103,6 +103,15 @@ if(_state==BATTLE_STATE.MENU){
 		if(!instance_exists(shaker)){
 			Battle_CallEnemyEvent(BATTLE_ENEMY_EVENT.MONSTER_REAPPEAR);
 		}
+		
+	
+	}else
+	
+	if(_menu==BATTLE_MENU.FUCK){
+		_sex_flag=true;
+		_sex_stage=0;
+		Battle_SetNextState(BATTLE_STATE.SEX);
+		Battle_EndMenu();
 	}else
 	
 	//行动目标
@@ -290,7 +299,7 @@ if(_state==BATTLE_STATE.RESULT){
 	}
 }
 
-//检查战斗结束
+//检查战斗结束game
 if(_state!=BATTLE_STATE.RESULT && Battle_GetEnemyNumber()==0){
 	Battle_SetState(BATTLE_STATE.RESULT);
 	Battle_SetNextState(BATTLE_STATE.RESULT);
@@ -309,4 +318,36 @@ if(_state!=BATTLE_STATE.RESULT && Battle_GetEnemyNumber()==0){
 
 if(_state==BATTLE_STATE.SEX){
 	var ENEMY=_enemy[Battle_ConvertMenuChoiceEnemyToEnemySlot(Battle_GetMenuChoiceEnemy())];
+	if(_sex_stage==0){
+		ENEMY.sprite_index=ENEMY.sex_animations[0,0];
+		sex_speed=6;
+		if(ENEMY.image_index > (ENEMY.image_number-1)) _sex_stage=1;
+	}
+	else if(_sex_stage==1){
+		ENEMY.sprite_index=ENEMY.sex_animations[0,1];
+		sex_speed=6;
+		if(Input_IsPressed(INPUT.RIGHT)) _sex_stage=2;
+	}
+	else if(_sex_stage==2){
+		ENEMY.sprite_index=ENEMY.sex_animations[0,1];
+		sex_speed=10;
+		if(Input_IsPressed(INPUT.RIGHT)) _sex_stage=3;
+		else if(Input_IsPressed(INPUT.LEFT)) _sex_stage=1;
+	}
+	else if(_sex_stage==3){
+		ENEMY.sprite_index=ENEMY.sex_animations[0,1];
+		sex_speed=14;
+		if(Input_IsPressed(INPUT.LEFT)) _sex_stage=2;
+		else if(Input_IsPressed(INPUT.RIGHT)) _sex_stage=4;
+	}
+	else if(_sex_stage==4){
+		ENEMY.sprite_index=ENEMY.sex_animations[0,2];
+		sex_speed=14;
+	}
+	sprite_set_speed(ENEMY.sprite_index, sex_speed, spritespeed_framespersecond);
+	if((ENEMY.image_index > (ENEMY.image_number-1)) && _sex_stage==4) {
+			ENEMY.sprite_index=ENEMY.idle_poses[ENEMY.idle_value];
+			Battle_SetNextState(BATTLE_STATE.MENU);
+			Battle_GotoNextState();
+		}
 }
