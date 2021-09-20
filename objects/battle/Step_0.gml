@@ -79,6 +79,9 @@ if(_state==BATTLE_STATE.MENU){
 		}
 		//确定
 		if(Input_IsPressed(INPUT.CONFIRM)){
+			//The original changed the menu to BATTLE_MENU.FIGHT_AIM.
+			//I figured putting this here before the offical transition to SEX might be good, but
+			//it could maybe just be condensed. with the other lines of code.
 			audio_play_sound(snd_menu_confirm,0,false);
 			Battle_SetMenu(BATTLE_MENU.FUCK);
 		}
@@ -108,6 +111,8 @@ if(_state==BATTLE_STATE.MENU){
 	}else
 	
 	if(_menu==BATTLE_MENU.FUCK){
+		//This sets some of the variables then goes to the next state.
+		//I'm thinking _sex_flag can be used to indicate whether a FUCK is occuring
 		_sex_flag=true;
 		_sex_stage=0;
 		Battle_SetNextState(BATTLE_STATE.SEX);
@@ -317,12 +322,21 @@ if(_state!=BATTLE_STATE.RESULT && Battle_GetEnemyNumber()==0){
 }
 
 if(_state==BATTLE_STATE.SEX){
+	//This is where the sex animations play.
+	
+	//This grabs whatever enemy was targetted by the player. Looking at it this morning,
+	//maybe the batttle number could be stored as a variable back in BATTLE_MENU.FUCK?
 	var ENEMY=_enemy[Battle_ConvertMenuChoiceEnemyToEnemySlot(Battle_GetMenuChoiceEnemy())];
+	
+	//For when it starts.
 	if(_sex_stage==0){
-		ENEMY.sprite_index=ENEMY.sex_animations[0,0];
-		sex_speed=6;
-		if(ENEMY.image_index > (ENEMY.image_number-1)) _sex_stage=1;
+		ENEMY.sprite_index=ENEMY.sex_animations[0,0];//Sets the sprite to the intro
+		sex_speed=6;//Having this for later on
+		if(ENEMY.image_index > (ENEMY.image_number-1)) _sex_stage=1; 
+		//Image index is how far in the animation we are, and image
+		//number is the number of frames. It should work like this, but who knows, maybe it can be cleaned up?
 	}
+	//The player controlled animations. No issues I've noticed here.
 	else if(_sex_stage==1){
 		ENEMY.sprite_index=ENEMY.sex_animations[0,1];
 		sex_speed=6;
@@ -340,11 +354,16 @@ if(_state==BATTLE_STATE.SEX){
 		if(Input_IsPressed(INPUT.LEFT)) _sex_stage=2;
 		else if(Input_IsPressed(INPUT.RIGHT)) _sex_stage=4;
 	}
+	//The sprite for ending the animation. No problems I noticed here.
 	else if(_sex_stage==4){
 		ENEMY.sprite_index=ENEMY.sex_animations[0,2];
 		sex_speed=14;
 	}
+	//This sets the speed. It's probably only important for the loops, but I figured having it
+	//out here wouldn't hurt.
 	sprite_set_speed(ENEMY.sprite_index, sex_speed, spritespeed_framespersecond);
+	//This causes the transition back to MENU. This will probably change later to better fit the design.
+	//It follows similar logic as the intro.
 	if((ENEMY.image_index > (ENEMY.image_number-1)) && _sex_stage==4) {
 			ENEMY.sprite_index=ENEMY.idle_poses[ENEMY.idle_value];
 			Battle_SetNextState(BATTLE_STATE.MENU);
