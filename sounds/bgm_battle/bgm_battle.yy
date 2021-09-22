@@ -11,7 +11,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "bgm_battle.ogg",
-  "duration": 55.0885353,
+  "duration": 55.0835381,
   "parent": {
     "name": "BGM",
     "path": "folders/Sounds/BGM.yy",

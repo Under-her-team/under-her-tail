@@ -366,7 +366,6 @@ if(_state==BATTLE_STATE.SEX){
 	//It follows similar logic as the intro.
 	if((ENEMY.image_index > (ENEMY.image_number-1)) && _sex_stage==4) {
 			ENEMY.sprite_index=ENEMY.idle_poses[ENEMY.idle_value];
-			Battle_SetNextState(BATTLE_STATE.MENU);
 			Battle_GotoNextState();
 		}
 }
