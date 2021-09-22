@@ -1,15 +1,12 @@
 {
-  "spriteId": {
-    "name": "spr_frogette_battle_1",
-    "path": "sprites/spr_frogette_battle_1/spr_frogette_battle_1.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "battle_enemy",
-    "path": "objects/battle_enemy/battle_enemy.yy",
+    "name": "battle_turn",
+    "path": "objects/battle_turn/battle_turn.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
@@ -23,17 +20,15 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-  ],
+  "eventList": [],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Frogette",
-    "path": "folders/Objects/Battle/Enemy/Frogette.yy",
+    "name": "Turns",
+    "path": "folders/Objects/Battle/Enemy/Frogette/Turns.yy",
   },
   "resourceVersion": "1.0",
-  "name": "battle_enemy_frogette",
+  "name": "battle_bullet_fuck_fly_0",
   "tags": [],
   "resourceType": "GMObject",
 }

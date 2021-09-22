@@ -83,7 +83,8 @@ if(_state==BATTLE_STATE.MENU){
 			//I figured putting this here before the offical transition to SEX might be good, but
 			//it could maybe just be condensed. with the other lines of code.
 			audio_play_sound(snd_menu_confirm,0,false);
-			Battle_SetMenu(BATTLE_MENU.FUCK);
+			//Battle_SetMenu(BATTLE_MENU.FUCK);
+			Battle_SetMenu(BATTLE_MENU.FIGHT_AIM);
 		}
 	}else
 	
