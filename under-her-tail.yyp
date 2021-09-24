@@ -414,6 +414,7 @@
     {"id":{"name":"Player_GetSpdItem","path":"scripts/Player_GetSpdItem/Player_GetSpdItem.yy",},"order":41,},
     {"id":{"name":"Player_GetInvItem","path":"scripts/Player_GetInvItem/Player_GetInvItem.yy",},"order":43,},
     {"id":{"name":"char_sign_changebgm","path":"objects/char_sign_changebgm/char_sign_changebgm.yy",},"order":9,},
+    {"id":{"name":"spr_monster_true_soul","path":"sprites/spr_monster_true_soul/spr_monster_true_soul.yy",},"order":10,},
     {"id":{"name":"Player_SetAtkItem","path":"scripts/Player_SetAtkItem/Player_SetAtkItem.yy",},"order":45,},
     {"id":{"name":"Player_SetDefItem","path":"scripts/Player_SetDefItem/Player_SetDefItem.yy",},"order":47,},
     {"id":{"name":"Player_SetSpdItem","path":"scripts/Player_SetSpdItem/Player_SetSpdItem.yy",},"order":49,},
