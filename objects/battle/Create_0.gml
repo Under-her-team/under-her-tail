@@ -36,6 +36,52 @@ _enemy_action_name[2,2]="";
 _enemy_action_name[2,3]="";
 _enemy_action_name[2,4]="";
 _enemy_action_name[2,5]="";
+//Enemy Fun Action
+_enemy_fun_subject_number[0]=0; //The monster's bits
+_enemy_fun_subject_number[1]=0;
+_enemy_fun_subject_number[2]=0;
+_enemy_fun_player_number[0]=0; //The player's bits
+_enemy_fun_player_number[1]=0;
+_enemy_fun_player_number[2]=0;
+
+_enemy_subject_name[0,0]=""; //The monster's bits named
+_enemy_subject_name[0,1]="";
+_enemy_subject_name[0,2]="";
+_enemy_subject_name[0,3]="";
+_enemy_subject_name[0,4]="";
+_enemy_subject_name[0,5]="";
+_enemy_subject_name[1,0]="";
+_enemy_subject_name[1,1]="";
+_enemy_subject_name[1,2]="";
+_enemy_subject_name[1,3]="";
+_enemy_subject_name[1,4]="";
+_enemy_subject_name[1,5]="";
+_enemy_subject_name[2,0]="";
+_enemy_subject_name[2,1]="";
+_enemy_subject_name[2,2]="";
+_enemy_subject_name[2,3]="";
+_enemy_subject_name[2,4]="";
+_enemy_subject_name[2,5]="";
+
+_enemy_player_name[0,0]=""; //The players's bits named
+_enemy_player_name[0,1]="";
+_enemy_player_name[0,2]="";
+_enemy_player_name[0,3]="";
+_enemy_player_name[0,4]="";
+_enemy_player_name[0,5]="";
+_enemy_player_name[1,0]="";
+_enemy_player_name[1,1]="";
+_enemy_player_name[1,2]="";
+_enemy_player_name[1,3]="";
+_enemy_player_name[1,4]="";
+_enemy_player_name[1,5]="";
+_enemy_player_name[2,0]="";
+_enemy_player_name[2,1]="";
+_enemy_player_name[2,2]="";
+_enemy_player_name[2,3]="";
+_enemy_player_name[2,4]="";
+_enemy_player_name[2,5]="";
+
 //敌人中心位置
 _enemy_center_pos_x[0]=0;
 _enemy_center_pos_y[0]=0;

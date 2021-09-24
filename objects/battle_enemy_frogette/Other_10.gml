@@ -21,6 +21,7 @@ _satisfaction = 0
 //For Frogette specifically, signifies whether the book was used.
 _book=false;
 
+Battle_SetEnemyActionNumber(_enemy_slot,3);
 Battle_SetEnemyActionName(_enemy_slot,0,"* Check Out")
 Battle_SetEnemyActionName(_enemy_slot,1,"* Flirt");
 Battle_SetEnemyActionName(_enemy_slot,2,"* Pose");
