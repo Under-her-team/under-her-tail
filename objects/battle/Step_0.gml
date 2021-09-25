@@ -1,3 +1,5 @@
+//if (live_call()) return live_result;
+
 battle_bg.image_index=_bg_index;
 //菜单
 
@@ -83,8 +85,8 @@ if(_state==BATTLE_STATE.MENU){
 			//I figured putting this here before the offical transition to SEX might be good, but
 			//it could maybe just be condensed. with the other lines of code.
 			audio_play_sound(snd_menu_confirm,0,false);
-			//Battle_SetMenu(BATTLE_MENU.FUCK);
-			Battle_SetMenu(BATTLE_MENU.FIGHT_AIM);
+			Battle_SetMenu(BATTLE_MENU.FUCK);
+			//Battle_SetMenu(BATTLE_MENU.FIGHT_AIM);
 		}
 	}else
 	
@@ -194,6 +196,32 @@ if(_state==BATTLE_STATE.MENU){
 		//返回/确定
 		if(Input_IsPressed(INPUT.CANCEL)){
 			Battle_SetMenu(BATTLE_MENU.ACT_TARGET);
+		}else if(Input_IsPressed(INPUT.CONFIRM)){
+			audio_play_sound(snd_menu_confirm,0,false);
+			Battle_EndMenu();
+		}
+	}else
+	
+	if(_menu==BATTLE_MENU.FUN_TARGET){
+		if(Input_IsPressed(INPUT.CANCEL)){
+			Battle_SetMenu(BATTLE_MENU.BUTTON);
+		}else if(Input_IsPressed(INPUT.CONFIRM)){
+			audio_play_sound(snd_menu_confirm,0,false);
+			Battle_SetMenu(BATTLE_MENU.FUN_SUBJECT);
+	}else
+	
+	if(_menu==BATTLE_MENU.FUN_SUBJECT){
+		if(Input_IsPressed(INPUT.CANCEL)){
+			Battle_SetMenu(BATTLE_MENU.FUN_TARGET);
+		}else if(Input_IsPressed(INPUT.CONFIRM)){
+			audio_play_sound(snd_menu_confirm,0,false);
+			Battle_SetMenu(BATTLE_MENU.FUN_PLAYER);
+		}
+	}else
+	
+	if(_menu==BATTLE_MENU.FUN_PLAYER){
+		if(Input_IsPressed(INPUT.CANCEL)){
+			Battle_SetMenu(BATTLE_MENU.FUN_SUBJECT);
 		}else if(Input_IsPressed(INPUT.CONFIRM)){
 			audio_play_sound(snd_menu_confirm,0,false);
 			Battle_EndMenu();
@@ -327,11 +355,13 @@ if(_state==BATTLE_STATE.SEX){
 	
 	//This grabs whatever enemy was targetted by the player. Looking at it this morning,
 	//maybe the batttle number could be stored as a variable back in BATTLE_MENU.FUCK?
-	var ENEMY=_enemy[Battle_ConvertMenuChoiceEnemyToEnemySlot(Battle_GetMenuChoiceEnemy())];
+	var menu_choice = Battle_GetMenuChoiceEnemy();
+	
+	var ENEMY=_enemy[Battle_ConvertMenuChoiceEnemyToEnemySlot(menu_choice)];
 	
 	//For when it starts.
 	if(_sex_stage==0){
-		ENEMY.sprite_index=ENEMY.sex_animations[0,0];//Sets the sprite to the intro
+		ENEMY.sprite_index=Battle_GetEnemyAnimation(ENEMY,0);//Sets the sprite to the intro
 		sex_speed=6;//Having this for later on
 		if(ENEMY.image_index > (ENEMY.image_number-1)) _sex_stage=1; 
 		//Image index is how far in the animation we are, and image
@@ -339,25 +369,25 @@ if(_state==BATTLE_STATE.SEX){
 	}
 	//The player controlled animations. No issues I've noticed here.
 	else if(_sex_stage==1){
-		ENEMY.sprite_index=ENEMY.sex_animations[0,1];
+		ENEMY.sprite_index=Battle_GetEnemyAnimation(ENEMY,1);
 		sex_speed=6;
 		if(Input_IsPressed(INPUT.RIGHT)) _sex_stage=2;
 	}
 	else if(_sex_stage==2){
-		ENEMY.sprite_index=ENEMY.sex_animations[0,1];
+		ENEMY.sprite_index=Battle_GetEnemyAnimation(ENEMY,1);
 		sex_speed=10;
 		if(Input_IsPressed(INPUT.RIGHT)) _sex_stage=3;
 		else if(Input_IsPressed(INPUT.LEFT)) _sex_stage=1;
 	}
 	else if(_sex_stage==3){
-		ENEMY.sprite_index=ENEMY.sex_animations[0,1];
+		ENEMY.sprite_index=Battle_GetEnemyAnimation(ENEMY,1);
 		sex_speed=14;
 		if(Input_IsPressed(INPUT.LEFT)) _sex_stage=2;
 		else if(Input_IsPressed(INPUT.RIGHT)) _sex_stage=4;
 	}
 	//The sprite for ending the animation. No problems I noticed here.
 	else if(_sex_stage==4){
-		ENEMY.sprite_index=ENEMY.sex_animations[0,2];
+		ENEMY.sprite_index=Battle_GetEnemyAnimation(ENEMY,2);
 		sex_speed=14;
 	}
 	//This sets the speed. It's probably only important for the loops, but I figured having it

@@ -30,7 +30,12 @@ function Battle_EndMenu() {
 		}
 	
 		//调用事件
-		Battle_CallEnemyEvent(BATTLE_ENEMY_EVENT.MENU_END);
+		if(BUTTON==BATTLE_MENU_CHOICE_BUTTON.ACT) {
+			Battle_CallEnemyEvent(BATTLE_ENEMY_EVENT.MENU_END,Battle_ConvertMenuChoiceEnemyToEnemySlot(Battle_GetMenuChoiceEnemy()));	
+		}
+		else {
+			Battle_CallEnemyEvent(BATTLE_ENEMY_EVENT.MENU_END);	
+		}
 	
 		if(Battle_GetEnemyNumber()>0){
 			//逃跑
