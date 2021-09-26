@@ -3,11 +3,13 @@
 function Battle_SetEnemyFunSubjectNumber(){
 
 	var ENEMY=argument[0];
+	var NUM=argument[1];
 
-	if(instance_exists(Battle_GetEnemy(ENEMY))){
-		return battle._enemy_fun_subject_number[ENEMY];
+	if(instance_exists(Battle_GetEnemy(ENEMY)) && NUM>=0 && NUM<=6){ 
+		battle._enemy_fun_subject_number[ENEMY]=NUM;
+		return true;
 	}else{
-		return 0;
+		return false;
 	}
 
 

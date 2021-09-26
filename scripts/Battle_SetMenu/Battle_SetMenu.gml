@@ -19,7 +19,7 @@ function Battle_SetMenu() {
 	
 	////////////////////////////////////////
 	//战斗/行动目标
-	if(MENU==BATTLE_MENU.FIGHT_TARGET || MENU==BATTLE_MENU.ACT_TARGET){
+	if(MENU==BATTLE_MENU.FIGHT_TARGET || MENU==BATTLE_MENU.ACT_TARGET || MENU==BATTLE_MENU.FUN_TARGET){
 		//越界归零
 		if(Battle_GetMenuChoiceEnemy()>=Battle_GetEnemyNumber()){
 			Battle_SetMenuChoiceEnemy(0,false);
@@ -74,6 +74,58 @@ function Battle_SetMenu() {
 				target=!target;
 			}else{
 				text2+=Battle_GetEnemyActionName(ENEMY,proc)+"&";
+				target=!target;
+			}
+			proc+=1;
+		}
+	
+		Battle_SetDialog(text,true);
+		Battle_SetDialog(text2,true,true);
+	}
+	
+	if(MENU==BATTLE_MENU.FUN_SUBJECT){
+		var ENEMY=Battle_ConvertMenuChoiceEnemyToEnemySlot(Battle_GetMenuChoiceEnemy());
+		var num=Battle_GetEnemyFunSubjectNumber(ENEMY);
+		if(Battle_GetMenuChoiceFunSubject()>=num){
+			Battle_SetMenuChoiceFunSubject(0,false);
+		}
+		
+		var proc=0;
+		var text="";
+		var text2="";
+		var target=0;
+		repeat(Battle_GetEnemyFunSubjectNumber(ENEMY)){
+			if(!target){
+				text+=Battle_GetEnemyFunSubjectName(ENEMY,proc)+"&";
+				target=!target;
+			}else{
+				text2+=Battle_GetEnemyFunSubjectName(ENEMY,proc)+"&";
+				target=!target;
+			}
+			proc+=1;
+		}
+	
+		Battle_SetDialog(text,true);
+		Battle_SetDialog(text2,true,true);
+	}
+	
+	if(MENU==BATTLE_MENU.FUN_PLAYER){
+		var ENEMY=Battle_ConvertMenuChoiceEnemyToEnemySlot(Battle_GetMenuChoiceEnemy());
+		var num=Battle_GetEnemyFunPlayerBitNumber(ENEMY);
+		if(Battle_GetMenuChoiceFunPlayerBit()>num){
+			Battle_SetMenuChoiceFunPlayerBit(0,false);
+		}
+		
+		var proc=0;
+		var text="";
+		var text2="";
+		var target=0;
+		repeat(num){
+			if(!target){
+				text+=Battle_GetEnemyFunPlayerBitName(ENEMY,proc)+"&";
+				target=!target;
+			}else{
+				text2+=Battle_GetEnemyFunPlayerBitName(ENEMY,proc)+"&";
 				target=!target;
 			}
 			proc+=1;

@@ -2,11 +2,11 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "Fun",
-    "path": "folders/Scripts/Battle/Enemy/Fun.yy",
+    "name": "Choice",
+    "path": "folders/Scripts/Battle/Menu/Choice.yy",
   },
   "resourceVersion": "1.0",
-  "name": "Battle_SetEnemyFunSubjectName",
+  "name": "Battle_GetMenuChoiceFunSubject",
   "tags": [],
   "resourceType": "GMScript",
 }

@@ -6,10 +6,10 @@ function Battle_EndMenu() {
 		var MERCY=Battle_GetMenuChoiceMercy();
 	
 		//使用物品
-		if(BUTTON==BATTLE_MENU_CHOICE_BUTTON.ITEM){
-			battle._menu_item_used_last=Item_Get(Battle_GetMenuChoiceItem());
-			Item_CallEvent(Item_Get(Battle_GetMenuChoiceItem()),ITEM_EVENT.USE,Battle_GetMenuChoiceItem());
-		}
+//		if(BUTTON==BATTLE_MENU_CHOICE_BUTTON.ITEM){
+//			battle._menu_item_used_last=Item_Get(Battle_GetMenuChoiceItem());
+//			Item_CallEvent(Item_Get(Battle_GetMenuChoiceItem()),ITEM_EVENT.USE,Battle_GetMenuChoiceItem());
+//		}
 	
 		if(BUTTON==BATTLE_MENU_CHOICE_BUTTON.FIGHT){
 			if(instance_exists(battle_menu_fight)){
@@ -33,8 +33,12 @@ function Battle_EndMenu() {
 		if(BUTTON==BATTLE_MENU_CHOICE_BUTTON.ACT) {
 			Battle_CallEnemyEvent(BATTLE_ENEMY_EVENT.MENU_END,Battle_ConvertMenuChoiceEnemyToEnemySlot(Battle_GetMenuChoiceEnemy()));	
 		}
-		else {
-			Battle_CallEnemyEvent(BATTLE_ENEMY_EVENT.MENU_END);	
+//		else {
+//			Battle_CallEnemyEvent(BATTLE_ENEMY_EVENT.MENU_END);	
+//		}
+		
+		if(BUTTON==BATTLE_MENU_CHOICE_BUTTON.FUN) {
+			Battle_CallEnemyEvent(BATTLE_ENEMY_EVENT.MENU_END,Battle_ConvertMenuChoiceEnemyToEnemySlot(Battle_GetMenuChoiceEnemy()));	
 		}
 	
 		if(Battle_GetEnemyNumber()>0){

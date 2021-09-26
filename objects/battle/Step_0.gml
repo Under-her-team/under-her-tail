@@ -40,11 +40,12 @@ if(_state==BATTLE_STATE.MENU){
 					Battle_SetMenu(BATTLE_MENU.ACT_TARGET);
 					break;
 				case 2:
-					if(Item_GetNumber()>0){
-						Battle_SetMenu(BATTLE_MENU.ITEM);
-					}else{
-						audio_stop_sound(snd_menu_confirm);
-					}
+//					if(Item_GetNumber()>0){
+//						Battle_SetMenu(BATTLE_MENU.ITEM);
+//					}else{
+//						audio_stop_sound(snd_menu_confirm);
+//					}
+					Battle_SetMenu(BATTLE_MENU.FUN_TARGET);
 					break;
 				case 3:
 					Battle_SetMenu(BATTLE_MENU.MERCY);
@@ -203,14 +204,68 @@ if(_state==BATTLE_STATE.MENU){
 	}else
 	
 	if(_menu==BATTLE_MENU.FUN_TARGET){
+		if(Input_IsPressed(INPUT.UP)){
+			var enemy=_menu_choice_enemy-1;
+			if(enemy>=0){
+				audio_play_sound(snd_menu_switch,0,false);
+				Battle_SetMenuChoiceEnemy(enemy);
+			}
+		}else if(Input_IsPressed(INPUT.DOWN)){
+			var enemy=_menu_choice_enemy+1;
+			if(enemy<Battle_GetEnemyNumber()){
+				audio_play_sound(snd_menu_switch,0,false);
+				Battle_SetMenuChoiceEnemy(enemy);
+			}
+		}
+		
+		//灵魂位置
+		battle_soul.x=battle_board.x-battle_board.left-5+40;
+		battle_soul.y=battle_board.y-battle_board.up-5+36+32*_menu_choice_enemy;
+		
 		if(Input_IsPressed(INPUT.CANCEL)){
 			Battle_SetMenu(BATTLE_MENU.BUTTON);
 		}else if(Input_IsPressed(INPUT.CONFIRM)){
 			audio_play_sound(snd_menu_confirm,0,false);
 			Battle_SetMenu(BATTLE_MENU.FUN_SUBJECT);
+		}
 	}else
 	
 	if(_menu==BATTLE_MENU.FUN_SUBJECT){
+		if(Input_IsPressed(INPUT.UP)){
+			var subject=_menu_choice_fun_subject-2;
+			if(subject>=0){
+				audio_play_sound(snd_menu_switch,0,false);
+				Battle_SetMenuChoiceFunSubject(subject);
+			}
+		}else if(Input_IsPressed(INPUT.DOWN)){
+			var subject=_menu_choice_fun_subject+2;
+			if(subject<_enemy_fun_subject_number[Battle_ConvertMenuChoiceEnemyToEnemySlot(Battle_GetMenuChoiceEnemy())]){
+				audio_play_sound(snd_menu_switch,0,false);
+				Battle_SetMenuChoiceFunSubject(subject);
+			}
+		}
+		
+		if(Input_IsPressed(INPUT.LEFT)){
+			if(_menu_choice_fun_subject%2==1){
+				var subject=_menu_choice_fun_subject-1;
+				if(subject>=0){
+					audio_play_sound(snd_menu_switch,0,false);
+					Battle_SetMenuChoiceFunSubject(subject);
+				}
+			}
+		}else if(Input_IsPressed(INPUT.RIGHT)){
+			if(_menu_choice_fun_subject%2==0){
+				var subject=_menu_choice_fun_subject+1;
+				if(subject<_enemy_fun_subject_number[Battle_ConvertMenuChoiceEnemyToEnemySlot(Battle_GetMenuChoiceEnemy())]){
+					audio_play_sound(snd_menu_switch,0,false);
+					Battle_SetMenuChoiceFunSubject(subject);
+				}
+			}
+		}
+		
+		battle_soul.x=battle_board.x-battle_board.left-5+40+256*(_menu_choice_fun_subject%2);
+		battle_soul.y=battle_board.y-battle_board.up-5+36+32*floor(_menu_choice_fun_subject/2);
+		
 		if(Input_IsPressed(INPUT.CANCEL)){
 			Battle_SetMenu(BATTLE_MENU.FUN_TARGET);
 		}else if(Input_IsPressed(INPUT.CONFIRM)){
@@ -220,6 +275,41 @@ if(_state==BATTLE_STATE.MENU){
 	}else
 	
 	if(_menu==BATTLE_MENU.FUN_PLAYER){
+		if(Input_IsPressed(INPUT.UP)){
+			var player_bit=_menu_choice_fun_player-2;
+			if(player_bit>=0){
+				audio_play_sound(snd_menu_switch,0,false);
+				Battle_SetMenuChoiceFunPlayerBit(player_bit)
+			}
+		}else if(Input_IsPressed(INPUT.DOWN)){
+			var player_bit=_menu_choice_fun_player+2;
+			if(player_bit<_enemy_fun_player_number[Battle_ConvertMenuChoiceEnemyToEnemySlot(Battle_GetMenuChoiceEnemy())]){
+				audio_play_sound(snd_menu_switch,0,false);
+				Battle_SetMenuChoiceFunPlayerBit(player_bit);
+			}
+		}
+		
+		if(Input_IsPressed(INPUT.LEFT)){
+			if(_menu_choice_fun_player%2==1){
+				var player_bit=_menu_choice_fun_player-1;
+				if(player_bit>=0){
+					audio_play_sound(snd_menu_switch,0,false);
+					Battle_SetMenuChoiceFunPlayerBit(player_bit);
+				}
+			}
+		}else if(Input_IsPressed(INPUT.RIGHT)){
+			if(_menu_choice_fun_player%2==0){
+				var player_bit=_menu_choice_fun_player+1;
+				if(player_bit<_enemy_fun_subject_number[Battle_ConvertMenuChoiceEnemyToEnemySlot(Battle_GetMenuChoiceEnemy())]){
+					audio_play_sound(snd_menu_switch,0,false);
+					Battle_SetMenuChoiceFunPlayerBit(player_bit);
+				}
+			}
+		}
+		
+		battle_soul.x=battle_board.x-battle_board.left-5+40+256*(_menu_choice_fun_player%2);
+		battle_soul.y=battle_board.y-battle_board.up-5+36+32*floor(_menu_choice_fun_player/2);
+		
 		if(Input_IsPressed(INPUT.CANCEL)){
 			Battle_SetMenu(BATTLE_MENU.FUN_SUBJECT);
 		}else if(Input_IsPressed(INPUT.CONFIRM)){

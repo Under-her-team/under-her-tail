@@ -21,4 +21,30 @@ switch(Battle_GetMenuChoiceButton()){
 				break;
 		}
 		Dialog_Add(text);
+		break;
+	case BATTLE_MENU_CHOICE_BUTTON.FUN:
+		switch(Battle_GetMenuChoiceFunSubject()){
+			case 0:
+				switch(Battle_GetMenuChoiceFunPlayerBit()){
+					case 0:
+						text = "* You touched a titty.";
+						break
+					case 1:
+						text = "* You sucked a titty.";
+						break
+				}
+				break;
+			case 1:
+				switch(Battle_GetMenuChoiceFunPlayerBit()){
+					case 0:
+						text = "* You touched a butt.";
+						break
+					case 1:
+						text = "* You licked a butt. Disgusting.";
+						break
+				}
+				break;
+		}
+		Dialog_Add(text);
+		break;
 }
