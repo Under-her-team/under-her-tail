@@ -21,3 +21,7 @@
 
 "item.faded_ribbon.name"				"Faded Ribbon"
 "item.faded_ribbon.info"				"* Faded Ribbon - Armor DF 3&* If you're cuter,{sleep 20} monsters&  won't hit you as hard."
+
+"item.history_book.name"				"History Book"
+"item.history_book.info"				"* History Book - A book on&  human history."
+"item.history_book.use"					"* You read from a section when&  humans and monsters were&  together."

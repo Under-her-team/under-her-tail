@@ -17,7 +17,13 @@ _arousal = 0;
 _satisfaction = 0
 
 //For Frogette specifically, signifies whether the book was used.
-_book=false;
+book=false;
+
+//Bonus Arousal off flags. When these are true, the bonus does not occur anymore.
+_bonus_arousal_off[3]=false; //flirt
+_bonus_arousal_off[2]=false; //pose
+_bonus_arousal_off[1]=false; //Chest-Hands
+_bonus_arousal_off[0]=false; //Butt-Mouth
 
 Battle_SetEnemyActionNumber(_enemy_slot,3);
 Battle_SetEnemyActionName(_enemy_slot,0,"* Check Out")

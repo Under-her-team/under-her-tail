@@ -48,7 +48,12 @@ if(_state==BATTLE_STATE.MENU){
 					Battle_SetMenu(BATTLE_MENU.FUN_TARGET);
 					break;
 				case 3:
-					Battle_SetMenu(BATTLE_MENU.MERCY);
+					if(Item_GetNumber()>0){
+						Battle_SetMenu(BATTLE_MENU.ITEM);
+					}else{
+						audio_stop_sound(snd_menu_confirm);
+					}
+//					Battle_SetMenu(BATTLE_MENU.MERCY);
 					break;
 			}
 		}
