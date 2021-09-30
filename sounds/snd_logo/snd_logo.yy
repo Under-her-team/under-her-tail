@@ -11,7 +11,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "snd_logo",
-  "duration": 2.847993,
+  "duration": 2.842993,
   "parent": {
     "name": "SFX",
     "path": "folders/Sounds/SFX.yy",

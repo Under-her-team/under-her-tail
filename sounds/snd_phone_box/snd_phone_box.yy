@@ -11,7 +11,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "snd_phone_box",
-  "duration": 0.295249,
+  "duration": 0.290249,
   "parent": {
     "name": "SFX",
     "path": "folders/Sounds/SFX.yy",

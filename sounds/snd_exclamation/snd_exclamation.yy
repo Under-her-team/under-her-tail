@@ -11,7 +11,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "snd_exclamation",
-  "duration": 1.261553,
+  "duration": 1.256553,
   "parent": {
     "name": "SFX",
     "path": "folders/Sounds/SFX.yy",

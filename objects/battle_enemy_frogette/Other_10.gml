@@ -10,14 +10,15 @@ Battle_SetEnemyName(_enemy_slot,"* Frogette");
 _ATK = 3;
 _END = 2;
 //What I will call the number of times a successful FUCK has been done
-_sex_damage = 0;
+sex_damage = 0;
 //Arousal level
-_arousal = 0;
+arousal = 0;
 //How often the player has been able to FUCK and get the heart
-_satisfaction = 0
+satisfaction = 0
 
 //For Frogette specifically, signifies whether the book was used.
 book=false;
+book_counter=0
 
 //Bonus Arousal off flags. When these are true, the bonus does not occur anymore.
 _bonus_arousal_off[3]=false; //flirt

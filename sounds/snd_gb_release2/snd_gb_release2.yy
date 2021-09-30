@@ -11,7 +11,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "snd_gb_release2",
-  "duration": 2.412619,
+  "duration": 2.407619,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

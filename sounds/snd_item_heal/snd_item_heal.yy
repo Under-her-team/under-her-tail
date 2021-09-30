@@ -11,7 +11,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "snd_item_heal",
-  "duration": 0.440374,
+  "duration": 0.435374,
   "parent": {
     "name": "SFX",
     "path": "folders/Sounds/SFX.yy",
