@@ -3,6 +3,9 @@ function Battle_SetState() {
 	var STATE=argument[0];
 
 	battle._state=STATE;
+	
+	var sex_flag = battle._sex_flag;
+	var sexcess_flag = battle.sexcess_flag;
 
 	//菜单
 	if(STATE==BATTLE_STATE.MENU){
@@ -97,7 +100,19 @@ function Battle_SetState() {
 
 	//面版重置
 	if(STATE==BATTLE_STATE.BOARD_RESETTING){
-		Battle_SetNextState(BATTLE_STATE.MENU);
+		if(sex_flag) {
+			battle._sex_flag=false;
+			if(sexcess_flag){
+				battle.sexcess_flag=false;
+				Battle_SetNextState(BATTLE_STATE.SEX);
+			}
+			else {
+				Battle_SetNextState(BATTLE_STATE.DIALOG);
+			}
+		}
+		else {
+			Battle_SetNextState(BATTLE_STATE.MENU);
+		}
 	
 		var X_OLD=battle_board.x;
 		var Y_OLD=battle_board.y;

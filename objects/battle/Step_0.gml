@@ -124,7 +124,7 @@ if(_state==BATTLE_STATE.MENU){
 		//I'm thinking _sex_flag can be used to indicate whether a FUCK is occuring
 		_sex_flag=true;
 		_sex_stage=0;
-		Battle_SetNextState(BATTLE_STATE.SEX);
+		Battle_SetNextState(BATTLE_STATE.TURN_PREPARATION);
 		Battle_EndMenu();
 	}else
 	
@@ -492,6 +492,7 @@ if(_state==BATTLE_STATE.SEX){
 	//It follows similar logic as the intro.
 	if((ENEMY.image_index > (ENEMY.image_number-1)) && _sex_stage==4) {
 			ENEMY.sprite_index=ENEMY.idle_poses[ENEMY.idle_value];
+			Battle_LowerEND();
 			Battle_GotoNextState();
 		}
 }

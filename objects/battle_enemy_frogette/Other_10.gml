@@ -10,7 +10,7 @@ Battle_SetEnemyName(_enemy_slot,"* Frogette");
 _ATK = 3;
 _END = 2;
 //What I will call the number of times a successful FUCK has been done
-sex_damage = 0;
+_Current_END = 2;
 //Arousal level
 arousal = 0;
 //How often the player has been able to FUCK and get the heart
