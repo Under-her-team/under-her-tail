@@ -14,6 +14,10 @@ _enemy_name[2]="";
 _enemy_spareable[0]=false;
 _enemy_spareable[1]=false;
 _enemy_spareable[2]=false;
+//Enemy FUCKED
+_enemy_fucked[2]=false;
+_enemy_fucked[1]=false;
+_enemy_fucked[0]=false;
 //敌人行动列表
 _enemy_action_number[0]=0;
 _enemy_action_number[1]=0;

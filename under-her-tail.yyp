@@ -47,7 +47,7 @@
     {"id":{"name":"spr_testmonster_legs","path":"sprites/spr_testmonster_legs/spr_testmonster_legs.yy",},"order":3,},
     {"id":{"name":"spr_testmonster_hurt","path":"sprites/spr_testmonster_hurt/spr_testmonster_hurt.yy",},"order":5,},
     {"id":{"name":"spr_bullet_simple","path":"sprites/spr_bullet_simple/spr_bullet_simple.yy",},"order":1,},
-    {"id":{"name":"Battle_LowerEND","path":"scripts/Battle_LowerEND/Battle_LowerEND.yy",},"order":1,},
+    {"id":{"name":"Battle_Sexcess","path":"scripts/Battle_Sexcess/Battle_Sexcess.yy",},"order":1,},
     {"id":{"name":"spr_gb","path":"sprites/spr_gb/spr_gb.yy",},"order":1,},
     {"id":{"name":"spr_gb_beam","path":"sprites/spr_gb_beam/spr_gb_beam.yy",},"order":3,},
     {"id":{"name":"spr_battle_damage","path":"sprites/spr_battle_damage/spr_battle_damage.yy",},"order":6,},

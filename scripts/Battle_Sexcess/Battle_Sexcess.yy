@@ -6,7 +6,7 @@
     "path": "folders/Scripts/Battle/FUCK.yy",
   },
   "resourceVersion": "1.0",
-  "name": "Battle_LowerEND",
+  "name": "Battle_Sexcess",
   "tags": [],
   "resourceType": "GMScript",
 }
