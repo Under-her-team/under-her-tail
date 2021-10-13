@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_battle_soul",
-    "path": "sprites/spr_battle_soul/spr_battle_soul.yy",
+    "name": "spr_monster_soul",
+    "path": "sprites/spr_monster_soul/spr_monster_soul.yy",
   },
   "solid": false,
   "visible": true,

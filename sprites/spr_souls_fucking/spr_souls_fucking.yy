@@ -89,8 +89,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Soul",
-    "path": "folders/Sprites/Battle/Soul.yy",
+    "name": "Monster_Souls",
+    "path": "folders/Sprites/Battle/Monster_Souls.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_souls_fucking",

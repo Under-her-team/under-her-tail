@@ -11,7 +11,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "snd_level_up",
-  "duration": 0.988605,
+  "duration": 0.983605,
   "parent": {
     "name": "Reward",
     "path": "folders/Sounds/SFX/Battle/Reward.yy",

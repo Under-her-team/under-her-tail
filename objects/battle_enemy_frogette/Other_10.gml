@@ -26,11 +26,14 @@ _bonus_arousal_off[2]=false; //pose
 _bonus_arousal_off[1]=false; //Chest-Hands
 _bonus_arousal_off[0]=false; //Butt-Mouth
 
+
+//Set Actions
 Battle_SetEnemyActionNumber(_enemy_slot,3);
 Battle_SetEnemyActionName(_enemy_slot,0,"* Check Out")
 Battle_SetEnemyActionName(_enemy_slot,1,"* Flirt");
 Battle_SetEnemyActionName(_enemy_slot,2,"* Pose");
 
+//Set Fun
 Battle_SetEnemyFunSubjectNumber(_enemy_slot,2);
 Battle_SetEnemyFunPlayerBitNumber(_enemy_slot,2);
 Battle_SetEnemyFunSubjectName(_enemy_slot,0,"* Chest");

@@ -8,3 +8,5 @@ Item_Add(item_history_book);
 
 Dialog_Add("BOOK ADDED");
 Dialog_Start();
+
+instance_destroy();

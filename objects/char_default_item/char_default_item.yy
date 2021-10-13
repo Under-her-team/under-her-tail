@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_default_item_overworld",
-    "path": "sprites/spr_default_item_overworld/spr_default_item_overworld.yy",
+    "name": "spr_book133",
+    "path": "sprites/spr_book133/spr_book133.yy",
   },
   "solid": false,
   "visible": true,

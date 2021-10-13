@@ -17,3 +17,9 @@ _sex_animations[1,0]=spr_frogette_cowgirl_start;
 _sex_animations[0,2]=spr_frogette_cowgirl_fake_end;
 _sex_animations[0,1]=spr_frogette_cowgirl;
 _sex_animations[0,0]=spr_frogette_cowgirl_start;
+
+
+//Fade out/fade in stuff
+//The first two are checks for when it's happening
+_fade_out=false
+_fade_in=false;

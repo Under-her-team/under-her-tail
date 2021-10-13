@@ -91,8 +91,8 @@ if(_state==BATTLE_STATE.MENU){
 			//I figured putting this here before the offical transition to SEX might be good, but
 			//it could maybe just be condensed. with the other lines of code.
 			audio_play_sound(snd_menu_confirm,0,false);
-			//Battle_SetMenu(BATTLE_MENU.FUCK);
-			Battle_SetMenu(BATTLE_MENU.FIGHT_AIM);
+			Battle_SetMenu(BATTLE_MENU.FUCK);
+			//Battle_SetMenu(BATTLE_MENU.FIGHT_AIM);
 		}
 	}else
 	
@@ -451,8 +451,9 @@ if(_state==BATTLE_STATE.SEX){
 	//This grabs whatever enemy was targetted by the player. Looking at it this morning,
 	//maybe the batttle number could be stored as a variable back in BATTLE_MENU.FUCK?
 	var menu_choice = Battle_GetMenuChoiceEnemy();
+	var sex_enemy_slot = Battle_ConvertMenuChoiceEnemyToEnemySlot(menu_choice);
 	
-	var ENEMY=_enemy[Battle_ConvertMenuChoiceEnemyToEnemySlot(menu_choice)];
+	var ENEMY=_enemy[sex_enemy_slot];
 	
 	//For when it starts.
 	if(_sex_stage==0){
@@ -492,7 +493,7 @@ if(_state==BATTLE_STATE.SEX){
 	//It follows similar logic as the intro.
 	if((ENEMY.image_index > (ENEMY.image_number-1)) && _sex_stage==4) {
 			ENEMY.sprite_index=ENEMY.idle_poses[ENEMY.idle_value];
-			Battle_LowerEND();
+			Battle_PostCoitus(ENEMY,sex_enemy_slot);
 			Battle_GotoNextState();
 		}
 }

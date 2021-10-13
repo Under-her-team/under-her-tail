@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"85be5fb7-4d05-4e3a-b312-34ee4d3683ab","path":"sprites/spr_monster_filled_soul/spr_monster_filled_soul.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"85be5fb7-4d05-4e3a-b312-34ee4d3683ab","path":"sprites/spr_monster_filled_soul/spr_monster_filled_soul.yy",},"LayerId":{"name":"29601506-c78f-4419-87df-0267f62dc4dc","path":"sprites/spr_monster_filled_soul/spr_monster_filled_soul.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_monster_filled_soul","path":"sprites/spr_monster_filled_soul/spr_monster_filled_soul.yy",},"resourceVersion":"1.0","name":"85be5fb7-4d05-4e3a-b312-34ee4d3683ab","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"6771abe2-ee4a-4cba-8057-0fc735365bbb","path":"sprites/spr_monster_soul/spr_monster_soul.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"6771abe2-ee4a-4cba-8057-0fc735365bbb","path":"sprites/spr_monster_soul/spr_monster_soul.yy",},"LayerId":{"name":"5d9944c1-53c3-4691-856d-6a76c3e69ea2","path":"sprites/spr_monster_soul/spr_monster_soul.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_monster_soul","path":"sprites/spr_monster_soul/spr_monster_soul.yy",},"resourceVersion":"1.0","name":"6771abe2-ee4a-4cba-8057-0fc735365bbb","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_monster_filled_soul","path":"sprites/spr_monster_filled_soul/spr_monster_filled_soul.yy",},
+    "spriteId": {"name":"spr_monster_soul","path":"sprites/spr_monster_soul/spr_monster_soul.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"679cc39a-2e5c-4e5f-a069-1a62c016bd1c","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"85be5fb7-4d05-4e3a-b312-34ee4d3683ab","path":"sprites/spr_monster_filled_soul/spr_monster_filled_soul.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"5f6df990-95fc-47fb-bfb5-c6239902910f","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"6771abe2-ee4a-4cba-8057-0fc735365bbb","path":"sprites/spr_monster_soul/spr_monster_soul.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -58,14 +58,14 @@
     "yorigin": 15,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_monster_filled_soul","path":"sprites/spr_monster_filled_soul/spr_monster_filled_soul.yy",},
+    "parent": {"name":"spr_monster_soul","path":"sprites/spr_monster_soul/spr_monster_soul.yy",},
     "resourceVersion": "1.3",
-    "name": "spr_monster_filled_soul",
+    "name": "spr_monster_soul",
     "tags": [],
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"29601506-c78f-4419-87df-0267f62dc4dc","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"5d9944c1-53c3-4691-856d-6a76c3e69ea2","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
@@ -73,7 +73,7 @@
     "path": "folders/Sprites/Battle/Monster_Souls.yy",
   },
   "resourceVersion": "1.0",
-  "name": "spr_monster_filled_soul",
+  "name": "spr_monster_soul",
   "tags": [],
   "resourceType": "GMSprite",
 }
