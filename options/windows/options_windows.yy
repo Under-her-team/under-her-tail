@@ -1,6 +1,6 @@
 {
   "option_windows_display_name": "Under(her)tail: Love and Lust",
-  "option_windows_executable_name": "${Under(her)tail: Love and Lust}",
+  "option_windows_executable_name": "UHT-L&L",
   "option_windows_version": "0.0.0.0",
   "option_windows_company_info": "Under(her)team",
   "option_windows_product_info": "Under(her)tail: Love and Lust",
