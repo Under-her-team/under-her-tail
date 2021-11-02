@@ -13,4 +13,5 @@ function Flag_Custom() {
 	Item_SetArmor(item_bandage);
     
 	Flag_Set(FLAG_TYPE.TEMP,FLAG_TEMP.TEXT_TYPER_CHOICE,-1);
+	Flag_Set(FLAG_TYPE.STATIC,FLAG_STATIC.FROGETTE_RESULT,-1);
 }

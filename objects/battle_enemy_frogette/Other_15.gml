@@ -85,3 +85,5 @@ switch(Battle_GetMenuChoiceButton()){
 			Dialog_Add("Frogette book 1");
 		}
 }
+
+if(arousal>100) arousal=100;

@@ -297,6 +297,7 @@
     {"id":{"name":"GMLive","path":"scripts/GMLive/GMLive.yy",},"order":0,},
     {"id":{"name":"spr_ruins_bridge_water_M","path":"sprites/spr_ruins_bridge_water_M/spr_ruins_bridge_water_M.yy",},"order":2,},
     {"id":{"name":"Item_GetTextHeal","path":"scripts/Item_GetTextHeal/Item_GetTextHeal.yy",},"order":21,},
+    {"id":{"name":"spr_battle_bg_alt","path":"sprites/spr_battle_bg_alt/spr_battle_bg_alt.yy",},"order":2,},
     {"id":{"name":"Item_GetTextEat","path":"scripts/Item_GetTextEat/Item_GetTextEat.yy",},"order":23,},
     {"id":{"name":"Item_GetTextEquip","path":"scripts/Item_GetTextEquip/Item_GetTextEquip.yy",},"order":25,},
     {"id":{"name":"Item_SetWeapon","path":"scripts/Item_SetWeapon/Item_SetWeapon.yy",},"order":27,},
