@@ -37,7 +37,7 @@ if(_state==BATTLE_STATE.MENU){
 					Battle_SetMenu(BATTLE_MENU.FIGHT_TARGET);
 					break;
 				case 1:
-					Battle_SetMenu(BATTLE_MENU.ACT_TARGET);
+					Battle_SetMenu(BATTLE_MENU.FUN_TARGET);
 					break;
 				case 2:
 //					if(Item_GetNumber()>0){
@@ -45,7 +45,7 @@ if(_state==BATTLE_STATE.MENU){
 //					}else{
 //						audio_stop_sound(snd_menu_confirm);
 //					}
-					Battle_SetMenu(BATTLE_MENU.FUN_TARGET);
+					Battle_SetMenu(BATTLE_MENU.ACT_TARGET);
 					break;
 				case 3:
 					if(Item_GetNumber()>0){
@@ -231,94 +231,6 @@ if(_state==BATTLE_STATE.MENU){
 			Battle_SetMenu(BATTLE_MENU.BUTTON);
 		}else if(Input_IsPressed(INPUT.CONFIRM)){
 			audio_play_sound(snd_menu_confirm,0,false);
-			Battle_SetMenu(BATTLE_MENU.FUN_SUBJECT);
-		}
-	}else
-	
-	if(_menu==BATTLE_MENU.FUN_SUBJECT){
-		if(Input_IsPressed(INPUT.UP)){
-			var subject=_menu_choice_fun_subject-2;
-			if(subject>=0){
-				audio_play_sound(snd_menu_switch,0,false);
-				Battle_SetMenuChoiceFunSubject(subject);
-			}
-		}else if(Input_IsPressed(INPUT.DOWN)){
-			var subject=_menu_choice_fun_subject+2;
-			if(subject<_enemy_fun_subject_number[Battle_ConvertMenuChoiceEnemyToEnemySlot(Battle_GetMenuChoiceEnemy())]){
-				audio_play_sound(snd_menu_switch,0,false);
-				Battle_SetMenuChoiceFunSubject(subject);
-			}
-		}
-		
-		if(Input_IsPressed(INPUT.LEFT)){
-			if(_menu_choice_fun_subject%2==1){
-				var subject=_menu_choice_fun_subject-1;
-				if(subject>=0){
-					audio_play_sound(snd_menu_switch,0,false);
-					Battle_SetMenuChoiceFunSubject(subject);
-				}
-			}
-		}else if(Input_IsPressed(INPUT.RIGHT)){
-			if(_menu_choice_fun_subject%2==0){
-				var subject=_menu_choice_fun_subject+1;
-				if(subject<_enemy_fun_subject_number[Battle_ConvertMenuChoiceEnemyToEnemySlot(Battle_GetMenuChoiceEnemy())]){
-					audio_play_sound(snd_menu_switch,0,false);
-					Battle_SetMenuChoiceFunSubject(subject);
-				}
-			}
-		}
-		
-		battle_soul.x=battle_board.x-battle_board.left-5+40+256*(_menu_choice_fun_subject%2);
-		battle_soul.y=battle_board.y-battle_board.up-5+36+32*floor(_menu_choice_fun_subject/2);
-		
-		if(Input_IsPressed(INPUT.CANCEL)){
-			Battle_SetMenu(BATTLE_MENU.FUN_TARGET);
-		}else if(Input_IsPressed(INPUT.CONFIRM)){
-			audio_play_sound(snd_menu_confirm,0,false);
-			Battle_SetMenu(BATTLE_MENU.FUN_PLAYER);
-		}
-	}else
-	
-	if(_menu==BATTLE_MENU.FUN_PLAYER){
-		if(Input_IsPressed(INPUT.UP)){
-			var player_bit=_menu_choice_fun_player-2;
-			if(player_bit>=0){
-				audio_play_sound(snd_menu_switch,0,false);
-				Battle_SetMenuChoiceFunPlayerBit(player_bit)
-			}
-		}else if(Input_IsPressed(INPUT.DOWN)){
-			var player_bit=_menu_choice_fun_player+2;
-			if(player_bit<_enemy_fun_player_number[Battle_ConvertMenuChoiceEnemyToEnemySlot(Battle_GetMenuChoiceEnemy())]){
-				audio_play_sound(snd_menu_switch,0,false);
-				Battle_SetMenuChoiceFunPlayerBit(player_bit);
-			}
-		}
-		
-		if(Input_IsPressed(INPUT.LEFT)){
-			if(_menu_choice_fun_player%2==1){
-				var player_bit=_menu_choice_fun_player-1;
-				if(player_bit>=0){
-					audio_play_sound(snd_menu_switch,0,false);
-					Battle_SetMenuChoiceFunPlayerBit(player_bit);
-				}
-			}
-		}else if(Input_IsPressed(INPUT.RIGHT)){
-			if(_menu_choice_fun_player%2==0){
-				var player_bit=_menu_choice_fun_player+1;
-				if(player_bit<_enemy_fun_subject_number[Battle_ConvertMenuChoiceEnemyToEnemySlot(Battle_GetMenuChoiceEnemy())]){
-					audio_play_sound(snd_menu_switch,0,false);
-					Battle_SetMenuChoiceFunPlayerBit(player_bit);
-				}
-			}
-		}
-		
-		battle_soul.x=battle_board.x-battle_board.left-5+40+256*(_menu_choice_fun_player%2);
-		battle_soul.y=battle_board.y-battle_board.up-5+36+32*floor(_menu_choice_fun_player/2);
-		
-		if(Input_IsPressed(INPUT.CANCEL)){
-			Battle_SetMenu(BATTLE_MENU.FUN_SUBJECT);
-		}else if(Input_IsPressed(INPUT.CONFIRM)){
-			audio_play_sound(snd_menu_confirm,0,false);
 			Battle_EndMenu();
 		}
 	}else
@@ -492,7 +404,7 @@ if(_state==BATTLE_STATE.SEX){
 	//This causes the transition back to MENU. This will probably change later to better fit the design.
 	//It follows similar logic as the intro.
 	if((ENEMY.image_index > (ENEMY.image_number-1)) && _sex_stage==4) {
-			ENEMY.sprite_index=ENEMY.idle_poses[ENEMY.idle_value];
+			ENEMY.sprite_index=Battle_GetIdleAnimation(ENEMY);
 			Battle_PostCoitus(ENEMY,sex_enemy_slot);
 			Battle_GotoNextState();
 		}

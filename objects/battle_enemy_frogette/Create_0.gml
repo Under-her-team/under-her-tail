@@ -4,12 +4,17 @@
 // Inherit the parent event
 event_inherited();
 
-idle_poses[2]=spr_frogette_battle_3;
-idle_poses[1]=spr_frogette_battle_2;
-idle_poses[0]=spr_frogette_battle_1;
+//Sprites when not in sex
+_idle_poses[0]=spr_frogette_battle_1; //No mindblow percent
 
-idle_value=0;
+_idle_value=0;
 
+//Mindblow
+_sex_animations[2,2]=spr_frogette_cowgirl_fake_end;
+_sex_animations[2,1]=spr_frogette_cowgirl;
+_sex_animations[2,0]=spr_frogette_cowgirl_start;
+
+//Standard Sex
 _sex_animations[1,2]=spr_frogette_cowgirl_fake_end;
 _sex_animations[1,1]=spr_frogette_cowgirl;
 _sex_animations[1,0]=spr_frogette_cowgirl_start;
