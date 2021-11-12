@@ -11,7 +11,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "snd_textblip0",
-  "duration": 0.065476,
+  "duration": 0.060476,
   "parent": {
     "name": "Voices",
     "path": "folders/Sounds/SFX/Voices.yy",

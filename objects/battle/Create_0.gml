@@ -14,10 +14,30 @@ _enemy_name[2]="";
 _enemy_spareable[0]=false;
 _enemy_spareable[1]=false;
 _enemy_spareable[2]=false;
-//Enemy FUCKED
-_enemy_fucked[2]=false;
-_enemy_fucked[1]=false;
-_enemy_fucked[0]=false;
+//Enemy Threshold - What I'll call the number of times a monster needs to be FUCKed
+//Will be used in reference for judging final result
+_enemy_threshold[2]=0;
+_enemy_threshold[1]=0;
+_enemy_threshold[0]=0;
+//Enemy Turned On - Lists if the monster is turned on
+//0 is not, <=1 is
+_enemy_turned_on[2]=0;
+_enemy_turned_on[1]=0;
+_enemy_turned_on[0]=0;
+//Enemy Mindblow Percent - Used to indicate how close a monster is to Mindblow
+_enemy_mindblow_percent[2]=0;
+_enemy_mindblow_percent[1]=0;
+_enemy_mindblow_percent[0]=0;
+//Enemy Satisfaction - Essentially how many times a FUCK occurs while turned on
+//Needs to match threshold for Very Pleased
+_enemy_satsifaction[2]=0;
+_enemy_satsifaction[1]=0;
+_enemy_satsifaction[0]=0;
+//Enemy Mindblow Points - How many times a monster has been FUCKed at full mindblow precent
+//Needs to match threshold for Mindblown
+_enemy_mindblow_points[2]=0;
+_enemy_mindblow_points[1]=0;
+_enemy_mindblow_points[0]=0;
 //敌人行动列表
 _enemy_action_number[0]=0;
 _enemy_action_number[1]=0;
@@ -88,6 +108,13 @@ _dialog[0]=noone;
 _dialog[1]=noone;
 _dialog_auto_end=true;
 _dialog_enemy_auto_end=true;
+
+//Endruance dialogue, for it showing up on the menu
+_endurance_dialogue=noone;
+//Mindblow bars. Used to prompt them showing up or not. 
+_mindblow_bar[2]=noone;
+_mindblow_bar[1]=noone;
+_mindblow_bar[0]=noone;
 
 _reward_gold=0;
 _reward_exp=0;

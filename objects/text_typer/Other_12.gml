@@ -1,3 +1,5 @@
+if (live_call()) return live_result;
+
 ///@desc Command
 var cmd=_list_cmd;
 
@@ -24,7 +26,8 @@ switch(cmd[|0]){
 					_color_shadow[2]=make_color_rgb(15,15,115);
 					_color_shadow[3]=make_color_rgb(15,15,115);
 					break;
-					
+				
+				//original
 				case c_yellow:
 					_color_text[0]=make_color_rgb(255,255,195);
 					_color_text[1]=make_color_rgb(255,255,195);
@@ -35,6 +38,8 @@ switch(cmd[|0]){
 					_color_shadow[2]=make_color_rgb(76,76,0);
 					_color_shadow[3]=make_color_rgb(76,76,0);
 					break;
+				
+
 					
 				case c_red:
 					_color_text[0]=make_color_rgb(255,195,195);
@@ -45,6 +50,16 @@ switch(cmd[|0]){
 					_color_shadow[1]=make_color_rgb(76,0,0);
 					_color_shadow[2]=make_color_rgb(76,0,0);
 					_color_shadow[3]=make_color_rgb(76,0,0);
+					break;
+				case c_fuchsia:
+					_color_text[0]=make_color_rgb(255,255,255);
+					_color_text[1]=make_color_rgb(255,255,255);
+					_color_text[2]=make_color_rgb(245,158,255);
+					_color_text[3]=make_color_rgb(245,158,255);
+					_color_shadow[0]=make_color_rgb(152,99,160);
+					_color_shadow[1]=make_color_rgb(152,99,160);
+					_color_shadow[2]=make_color_rgb(152,99,160);
+					_color_shadow[3]=make_color_rgb(152,99,160);
 					break;
 			}
 		}

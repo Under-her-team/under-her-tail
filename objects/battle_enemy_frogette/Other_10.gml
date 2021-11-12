@@ -7,34 +7,22 @@ event_inherited();
 Battle_SetEnemyName(_enemy_slot,"* Frogette");
 
 //default stats
-_ATK = 3;
 _END = 2;
 //What I will call the number of times a successful FUCK has been done
 _Current_END = 2;
 
-//Arousal level. Used for Mindblow
-arousal = 0;
-//Current fun value for which FUN is to occur
+//Current fun value for which FUN is to occur. Used as a counter
 fun_value = 0;
 
-//Used to check if a turn on has been set
-turned_on=false;
-turned_on_counter=0;
-//How often the player has been able to FUCK and get the heart
-satisfaction = 0;
-
-//<--------------This section may be removed--------------------->
-//For Frogette specifically, signifies whether the book was used.
-book=false;
-book_counter=0
-
-//Bonus Arousal off flags. When these are true, the bonus does not occur anymore.
-_bonus_arousal_off[3]=false; //flirt
-_bonus_arousal_off[2]=false; //pose
-_bonus_arousal_off[1]=false; //Chest-Hands
-_bonus_arousal_off[0]=false; //Butt-Mouth
-//<--------------End of section--------------------->
-
+//For Frogette specifically
+//Variables that keep track of what turn on sequences are available. 
+//Listen is part of a sequence, so it's a number. If it's interrupted, it's
+//set back to 0, and reset. If it's completed, it's -1, showing it's no longer available
+//The other two need only one thing done to activated their turn ons. If it's
+//true, it can still be done. If not, it's be achieved.
+_turn_on_listen = 0;
+_turn_on_geek_out = true;
+_turn_on_book = true;
 
 //Set Actions
 Battle_SetEnemyActionNumber(_enemy_slot,3);
