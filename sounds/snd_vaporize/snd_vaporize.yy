@@ -11,7 +11,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "snd_vaporize",
-  "duration": 1.719286,
+  "duration": 1.714286,
   "parent": {
     "name": "SFX",
     "path": "folders/Sounds/SFX.yy",

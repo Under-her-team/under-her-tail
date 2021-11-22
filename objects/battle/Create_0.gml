@@ -126,6 +126,13 @@ _player_temp_inv=0;
 
 _bg_index=0;
 
+//This says if we're using FUCK or FUN
 _sex_flag=false;
+//This says if we've had a successful FUCK
 sexcess_flag=false;
-_sex_stage=0
+//This says if we're holding the animation for FUCK
+_sex_in_progress=false;
+
+
+//Used to determine what animation is used during sex segments
+_battle_sex_stage=BATTLE_SEX_STATE.NONE;

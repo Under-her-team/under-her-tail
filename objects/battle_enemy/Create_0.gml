@@ -1,2 +1,12 @@
+enum BATTLE_ENEMY_STATE{
+		IDLE,
+		SEX,
+		ATTACK,
+		CUTSCENE,
+		DEFEAT,
+		MINDBLOW
+};
+
 depth=DEPTH_BATTLE.ENEMY;
 _enemy_slot=-1;
+_state = BATTLE_ENEMY_STATE.IDLE;

@@ -3,13 +3,10 @@
 function Battle_Sexcess(){
 	var heart = argument[0];
 	var enemy_choice = Battle_ConvertMenuChoiceEnemyToEnemySlot(Battle_GetMenuChoiceEnemy());
-	var INST=Battle_GetEnemy(enemy_choice);
-	if(instance_exists(INST)){
-		with(INST){
-			INST._Current_END-=1;
-			if(heart) INST.satisfaction+=1;
-		}
-	}
+	
+	if (Battle_GetMindblowPercent(enemy_choice)==100) Battle_IncreaseMindblowPoints(enemy_choice);
+	else if(heart) Battle_IncreaseSatisfaction(enemy_choice);
+	
 	//Add each soul's properties here
 	with(battle_soul_red){
 		moveable=false;

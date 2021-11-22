@@ -3,10 +3,13 @@
 function Battle_Get_END_String(){
 	var ENEMY=argument[0];
 	
-	var curr_end = Battle_GetCurrentEND(ENEMY);
+	var max_end = Battle_GetEnemyMaxEND(ENEMY);
 	var endurance = Battle_GetEND(ENEMY);
 	
-	var end_string = "END "+string(curr_end)+"/"+string(endurance);
+	var end_string = "";
+	
+	if(endurance!=-1 && max_end!=-1) end_string = "END "+string(endurance)+"/"+string(max_end);
+	
 	
 	return end_string;
 }

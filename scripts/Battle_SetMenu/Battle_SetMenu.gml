@@ -34,18 +34,12 @@ function Battle_SetMenu() {
 		repeat(3){
 			var inst=Battle_GetEnemy(proc);
 			if(instance_exists(inst)){
-//				if(Battle_IsEnemySpareable(proc)){
-//					text+="{color `yellow`}"
-//				}
-				if(proc==0){
-					text+="{color `yellow`}";
-				}
-				if(proc==2){
-					text+="{color `red`}";
+				if(Battle_GetTurnedOn(proc)>0){
+					text+="{color `pink`}"
 				}
 				text+=Battle_GetEnemyName(proc)+"{color `white`}&";
 				end_text+=Battle_Get_END_String(proc)+"&";
-				Battle_CreateMindblowBar(Battle_ConvertEnemySlotToMenuChoiceEnemy(proc));
+				Battle_CreateMindblowBar(proc);
 			}
 			proc+=1;
 		}

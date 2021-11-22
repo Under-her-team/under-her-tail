@@ -51,7 +51,13 @@ function Macro_Battle() {
 		BOARD_RESETTING_START,
 		BOARD_RESETTING_END,
 		MONSTER_REAPPEAR,
-		SEX_DAMAGE
+		SEX
+	};
+	
+	enum BATTLE_SEX_STATE{
+		NONE,
+		FUCK,
+		FUN
 	};
 
 	enum BATTLE_SOUL_EVENT{

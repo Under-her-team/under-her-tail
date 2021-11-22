@@ -9,8 +9,7 @@ function Battle_SetState() {
 
 	//菜单
 	if(STATE==BATTLE_STATE.MENU){
-		if(battle._sex_flag) { Battle_SetNextState(BATTLE_STATE.SEX); }
-		else { Battle_SetNextState(BATTLE_STATE.DIALOG); }
+		Battle_SetNextState(BATTLE_STATE.DIALOG);
 	
 		Battle_SetMenuChoiceEnemy(0,false);
 		Battle_SetMenuChoiceAction(0,false);
@@ -102,17 +101,14 @@ function Battle_SetState() {
 	if(STATE==BATTLE_STATE.BOARD_RESETTING){
 		if(sex_flag) {
 			battle._sex_flag=false;
-			if(sexcess_flag){
-				battle.sexcess_flag=false;
-				Battle_SetNextState(BATTLE_STATE.SEX);
-			}
-			else {
-				Battle_SetNextState(BATTLE_STATE.DIALOG);
-			}
+			if(sexcess_flag) Battle_SetNextState(BATTLE_STATE.SEX);
+			else Battle_SetNextState(BATTLE_STATE.DIALOG);
 		}
-		else {
-			Battle_SetNextState(BATTLE_STATE.MENU);
+		else if(sexcess_flag) {
+			battle.sexcess_flag=false;
+			Battle_SetNextState(BATTLE_STATE.DIALOG);
 		}
+		else Battle_SetNextState(BATTLE_STATE.MENU);
 	
 		var X_OLD=battle_board.x;
 		var Y_OLD=battle_board.y;
@@ -160,7 +156,9 @@ function Battle_SetState() {
 	}
 	
 	if(STATE=BATTLE_STATE.SEX) {
-		Battle_SetNextState(BATTLE_STATE.DIALOG);
+		//Battle_SetSexState(BATTLE_SEX_STATE.FUCK);
+		Battle_CallEnemyEvent(BATTLE_ENEMY_EVENT.SEX,Battle_ConvertMenuChoiceEnemyToEnemySlot(Battle_GetMenuChoiceEnemy()));
+		Battle_SetNextState(BATTLE_STATE.BOARD_RESETTING);
 		//if(all_enemies_defeated) go to the mindblow/leave choice. This might be in battle itself
 	}
 

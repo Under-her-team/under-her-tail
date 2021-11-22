@@ -13,5 +13,8 @@ function Encounter_Custom() {
 
 	//LOTS OF FROGS
 	Encounter_Set(4,battle_enemy_frogette,-1,battle_enemy_frogette,"* Gay(?) Frogs.",-1);
+	
+	//Frogette
+	Encounter_Set(5,-1,battle_enemy_frogette_changed,-1,"* New Battle System.",-1);
 
 }
