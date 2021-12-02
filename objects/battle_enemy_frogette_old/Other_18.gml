@@ -1,10 +1,8 @@
-
 /// @description Turn Preparation Start
 // You can write your code in this editor
 //Prepare the attack
 if(Battle_GetSexFlag()){
-	if(Battle_GetTurnedOn(_enemy_slot)>0) instance_create_depth(0,0,0,battle_turn_simple_frogette);
-	else instance_create_depth(0,0,0,battle_turn_simple_frogette_nonTurnedOn);
+	instance_create_depth(0,0,0,battle_turn_simple_frogette);
 }
 else {
 	instance_create_depth(0,0,0,battle_turn_simple);

@@ -1,1 +1,1 @@
-encounter=1;
+encounter=5;

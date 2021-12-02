@@ -10,8 +10,8 @@ function Battle_SetMenu() {
 	battle._menu=MENU;
 	Battle_SetDialog("",false,false);
 	Battle_SetDialog("",false,true);
-	Battle_UI_Endurance();
-	Battle_ClearMindblowBars();
+	//Battle_UI_Endurance();
+	//Battle_ClearMindblowBars();
 	
 	////////////////////////////////////////
 	//按钮
@@ -39,12 +39,12 @@ function Battle_SetMenu() {
 				}
 				text+=Battle_GetEnemyName(proc)+"{color `white`}&";
 				end_text+=Battle_Get_END_String(proc)+"&";
-				Battle_CreateMindblowBar(proc);
+				//Battle_CreateMindblowBar(proc);
 			}
 			proc+=1;
 		}
 		Battle_SetDialog(text,true);
-		Battle_UI_Endurance(end_text);
+		//Battle_UI_Endurance(end_text);
 	}
 
 	if(MENU==BATTLE_MENU.FIGHT_AIM){

@@ -111,10 +111,6 @@ _dialog_enemy_auto_end=true;
 
 //Endruance dialogue, for it showing up on the menu
 _endurance_dialogue=noone;
-//Mindblow bars. Used to prompt them showing up or not. 
-_mindblow_bar[2]=noone;
-_mindblow_bar[1]=noone;
-_mindblow_bar[0]=noone;
 
 _reward_gold=0;
 _reward_exp=0;
