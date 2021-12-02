@@ -7,3 +7,5 @@ event_inherited();
 Battle_SetEnemyName(_enemy_slot,"* Spare Effects");
 Battle_SetEnemyActionNumber(_enemy_slot,1);
 Battle_SetEnemyActionName(_enemy_slot,0,"* Puff");
+
+image_alpha=0.5;

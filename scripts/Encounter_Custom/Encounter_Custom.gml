@@ -15,6 +15,6 @@ function Encounter_Custom() {
 	Encounter_Set(4,battle_enemy_frogette,-1,battle_enemy_frogette,"* Gay(?) Frogs.",-1);
 	
 	//Frogette
-	Encounter_Set(5,-1,battle_spare_effects,-1,"* Testing Spare Effects.",-1);
+	Encounter_Set(5,battle_spare_effects,battle_spare_effects,battle_spare_effects,"* Testing Spare Effects.",-1);
 
 }

@@ -1,9 +1,11 @@
+if (live_call()) return live_result;
+
 randomize();
 
-image_speed=0.2;
+image_speed=0.5;
 direction=random(360);
-friction=0.4;
-speed=5;
+friction=0.5;
+speed=5.5;
 
 image_xscale=0.8+random(1);
 image_yscale=0.8+random(1);

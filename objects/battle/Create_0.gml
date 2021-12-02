@@ -109,8 +109,6 @@ _dialog[1]=noone;
 _dialog_auto_end=true;
 _dialog_enemy_auto_end=true;
 
-//Endruance dialogue, for it showing up on the menu
-_endurance_dialogue=noone;
 
 _reward_gold=0;
 _reward_exp=0;

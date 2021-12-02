@@ -1,5 +1,8 @@
 {
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_frogette_battle_1",
+    "path": "sprites/spr_frogette_battle_1/spr_frogette_battle_1.yy",
+  },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,

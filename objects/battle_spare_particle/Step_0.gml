@@ -1,4 +1,1 @@
-if(image_alpha>0)
-	image_alpha-=0.08;
-else
-	instance_destroy();
+if(speed==0) instance_destroy();
