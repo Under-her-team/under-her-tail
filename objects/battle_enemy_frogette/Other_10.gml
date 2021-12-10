@@ -82,3 +82,5 @@ _fun_animations[0]=spr_frogette_cowgirl;
 _turn_on_listen = 0;
 _turn_on_geek_out = true;
 _turn_on_book = true;
+
+

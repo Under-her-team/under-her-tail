@@ -7,5 +7,6 @@ direction=random(360);
 friction=0.5;
 speed=5.5;
 
-image_xscale=0.8+random(1);
-image_yscale=0.8+random(1);
+var image_variation=random(1);
+image_xscale=0.8+image_variation;
+image_yscale=0.8+image_variation;

@@ -30,11 +30,11 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Spare_Effects",
-    "path": "folders/Objects/Battle/Enemy/Spare_Effects.yy",
+    "name": "Spare_Effect_Tester",
+    "path": "folders/Objects/Battle/Enemy/Spare_Effect_Tester.yy",
   },
   "resourceVersion": "1.0",
-  "name": "battle_spare_effects",
+  "name": "battle_spare_tester",
   "tags": [],
   "resourceType": "GMObject",
 }
