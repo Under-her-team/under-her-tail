@@ -202,6 +202,7 @@
     {"id":{"name":"Battle_SetMenuChoiceMercyOverrideNumber","path":"scripts/Battle_SetMenuChoiceMercyOverrideNumber/Battle_SetMenuChoiceMercyOverrideNumber.yy",},"order":25,},
     {"id":{"name":"Battle_GetEnemyFunSubjectNumber","path":"scripts/Battle_GetEnemyFunSubjectNumber/Battle_GetEnemyFunSubjectNumber.yy",},"order":7,},
     {"id":{"name":"spr_ruins_grate_M","path":"sprites/spr_ruins_grate_M/spr_ruins_grate_M.yy",},"order":6,},
+    {"id":{"name":"Pink_Transition_Color","path":"shaders/Pink_Transition_Color/Pink_Transition_Color.yy",},"order":0,},
     {"id":{"name":"Battle_GetMenuChoiceMercyOverrideNumber","path":"scripts/Battle_GetMenuChoiceMercyOverrideNumber/Battle_GetMenuChoiceMercyOverrideNumber.yy",},"order":27,},
     {"id":{"name":"Battle_GetMenuChoiceMercyOverrideName","path":"scripts/Battle_GetMenuChoiceMercyOverrideName/Battle_GetMenuChoiceMercyOverrideName.yy",},"order":29,},
     {"id":{"name":"player_options4","path":"sprites/player_options4/player_options4.yy",},"order":4,},
@@ -872,6 +873,7 @@
     {"folderPath":"folders/Sprites/Battle/Menu/Fuck.yy","order":8,"resourceVersion":"1.0","name":"Fuck","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sprites/Battle/Monsters/Spare_Effects_Tester.yy","order":5,"resourceVersion":"1.0","name":"Spare_Effects_Tester","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Objects/Battle/Sex Transition.yy","order":36,"resourceVersion":"1.0","name":"Sex Transition","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Shaders.yy","order":23,"resourceVersion":"1.0","name":"Shaders","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":-1,"resourceVersion":"1.3","name":"audiogroup_default","resourceType":"GMAudioGroup",},
