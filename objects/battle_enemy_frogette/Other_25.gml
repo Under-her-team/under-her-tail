@@ -17,7 +17,6 @@ else if(Battle_GetTurnedOn(_enemy_slot)) {
 }
 
 Battle_HoldSex();
-audio_play_sound(snd_level_up,0,false);
 instance_create_depth(x,y-(sprite_width/2),DEPTH_BATTLE.UI_HIGH,battle_sex_transition_effect);
 
 _transition_count=0.0;

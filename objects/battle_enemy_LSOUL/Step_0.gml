@@ -1,8 +1,7 @@
-/// @description Adding True Soul Get
+/// @description 
 // You can write your code in this editor
 
 // Inherit the parent event
 event_inherited();
 
-_true_soul=false;
-_fucked=false;
+if(_fucked && (image_index > (image_number-1))) Battle_EndTurn();
