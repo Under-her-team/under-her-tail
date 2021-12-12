@@ -20,16 +20,17 @@ Battle_HoldSex();
 audio_play_sound(snd_level_up,0,false);
 instance_create_depth(x,y-(sprite_width/2),DEPTH_BATTLE.UI_HIGH,battle_sex_transition_effect);
 
+_transition_count=0.0;
+_animation_stage = 0;
+
 //Set what set of animations to use
 switch(sex_stage) {
 	case BATTLE_SEX_STATE.FUCK:
 		_fuck_or_fun = 0;
-		_animation_stage = 0;
 		//sprite_index=_sex_animations[_END_MAX-_END,0];
 		break;
 	case BATTLE_SEX_STATE.FUN:
 		_fuck_or_fun = 1;
-		_animation_stage = 1;
 		//sprite_index=_fun_animations[_fun_value];
 		break;
 	default: 

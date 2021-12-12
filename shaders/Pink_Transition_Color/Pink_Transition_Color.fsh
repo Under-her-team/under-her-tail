@@ -4,12 +4,13 @@
 varying vec2 v_vTexcoord;
 varying vec4 v_vColour;
 
+uniform float time;
+
 void main()
 {
 	vec4 pink_color  = vec4(1.0,0.52941,0.94118,1.0);
 	vec4 texColor = texture2D( gm_BaseTexture, v_vTexcoord );
 	vec4 altered_color;
-	float time = 4.0;
 	if(texColor.a!=0.0){
 		float red = (time*((pink_color.r-texColor.r)/10.0))+texColor.r;
 		float green = (time*(pink_color.g-texColor.g)/10.0)+texColor.g;

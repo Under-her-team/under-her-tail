@@ -6,8 +6,13 @@ switch(_state){
 	case BATTLE_ENEMY_STATE.SEX:
 		switch(_animation_stage){
 			case 0:
+				if(_transition_count<=20.0) _transition_count+=1.0;
+				if(_transition_count<10.0) _shader_scale=_transition_count;
+				else if(_transition_count<20.0) _shader_scale=20.0-_transition_count;
+				else _shader_scale=0.0;
 				sprite_index=_sex_animations[_END-1,0];
-				if(image_index > (image_number-1)) _animation_stage = 1;
+				//if(image_index > (image_number-1)) _animation_stage = 1;
+				if(keyboard_check_pressed(vk_tab)) _animation_stage = 1;
 				break;
 			case 1:
 				if(_fuck_or_fun==0){
@@ -16,7 +21,8 @@ switch(_state){
 					sprite_index=_fun_animations[_fun_value];
 				}
 				sprite_set_speed(sprite_index, 6, spritespeed_framespersecond);
-				if(Input_IsPressed(INPUT.RIGHT)) _animation_stage=2;
+				//if(Input_IsPressed(INPUT.RIGHT)) _animation_stage=2;
+				if(keyboard_check_pressed(vk_tab)) _animation_stage = 0;
 				break;
 			case 2:
 				sprite_set_speed(sprite_index, 10, spritespeed_framespersecond);

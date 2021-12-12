@@ -34,8 +34,13 @@ _monster_fun_flag=false;
 _fuck_or_fun = -1;
 
 //Animation stage variable. Used to say where the animation is. 
-//-1 = unused. 0 = start. 1:3 = intermediate stages. 4 = end
+//-1 = unused. 0 = transition 1 = start. 2:4 = intermediate stages. 5 = end
 _animation_stage = -1;
+
+//Transition Count - Used to count for how far in the transition it is. Float number
+_transition_count = 0.0;
+_shader_scale = 0.0;
+_uni_transitCount = shader_get_uniform(Pink_Transition_Color,"time");
 
 //Mindblow stage - What part of the mindblow animation to be in.
 _mindblow_stage = 0;
