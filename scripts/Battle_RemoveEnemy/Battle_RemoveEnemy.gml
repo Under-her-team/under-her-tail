@@ -3,11 +3,11 @@ function Battle_RemoveEnemy() {
 	var ENEMY=argument[0];
 
 	if(Battle_IsEnemySlotValid(ENEMY)){
-		var INST=Battle_GetEnemy(ENEMY);
-		if(instance_exists(INST)){
-			INST._enemy_slot=-1;
-		}
-		battle._enemy[ENEMY]=noone;
+		//var INST=Battle_GetEnemy(ENEMY);
+		//if(instance_exists(INST)){
+		//	INST._enemy_slot=-1;
+		//}
+		battle._enemy_active[ENEMY]=false;
 		battle._enemy_name[ENEMY]="";
 		battle._enemy_spareable[ENEMY]=false;
 		battle._enemy_action_number[ENEMY]=0;

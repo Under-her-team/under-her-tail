@@ -22,6 +22,7 @@ function Battle_SetEnemy() {
 		}
 		if(object_exists(ENEMY)){
 			battle._enemy[SLOT]=instance_create_depth(160*(SLOT+1),240,DEPTH_BATTLE.ENEMY,ENEMY);
+			battle._enemy_active[SLOT]=true;
 			Battle_SetEnemyCenterPos(SLOT,160*(SLOT+1),160);
 		}
 		battle._enemy[SLOT]._enemy_slot=SLOT;

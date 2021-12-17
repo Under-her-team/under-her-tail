@@ -2,11 +2,11 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "END",
-    "path": "folders/Scripts/Battle/Enemy/END.yy",
+    "name": "FUCK_&_FUN",
+    "path": "folders/Scripts/Battle/FUCK_&_FUN.yy",
   },
   "resourceVersion": "1.0",
-  "name": "Battle_GetEnemyCurrentEND",
+  "name": "Battle_MindblowEvent",
   "tags": [],
   "resourceType": "GMScript",
 }

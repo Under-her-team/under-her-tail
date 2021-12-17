@@ -7,7 +7,7 @@ function Battle_ConvertMenuChoiceEnemyToEnemySlot() {
 		var proc2=0;
 		var result=-1;
 		repeat(3){
-			if(instance_exists(Battle_GetEnemy(proc))){
+			if(instance_exists(Battle_GetEnemy(proc))  && Battle_GetEnemyActive(proc)){
 				if(proc2==CHOICE_ENEMY){
 					result=proc;
 					break;

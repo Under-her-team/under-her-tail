@@ -30,7 +30,7 @@ function Battle_SetMenu() {
 		//创建敌人列表文字
 		repeat(3){
 			var inst=Battle_GetEnemy(proc);
-			if(instance_exists(inst)){
+			if(instance_exists(inst) && Battle_GetEnemyActive(proc)){
 				if(Battle_GetTurnedOn(proc)>0){
 					text+="{color `pink`}"
 				}

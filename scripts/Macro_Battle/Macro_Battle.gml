@@ -6,7 +6,8 @@ function Macro_Battle() {
 		IN_TURN,
 		BOARD_RESETTING,
 		RESULT,
-		SEX
+		SEX,
+		MINDBLOW
 	};
 
 	enum BATTLE_MENU{

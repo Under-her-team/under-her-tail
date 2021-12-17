@@ -12,7 +12,7 @@ function Battle_CallEnemyEvent() {
 		var proc=0;
 		repeat(3){
 			var INST=Battle_GetEnemy(proc);
-			if(instance_exists(INST)){
+			if(instance_exists(INST)  && Battle_GetEnemyActive(proc)){
 				with(INST){
 					event_user(EVENT);
 				}
@@ -23,7 +23,7 @@ function Battle_CallEnemyEvent() {
 	}else if(Battle_IsEnemySlotValid(ENEMY)){
 		//单独调用
 		var INST=Battle_GetEnemy(ENEMY);
-		if(instance_exists(INST)){
+		if(instance_exists(INST)  && Battle_GetEnemyActive(ENEMY)){
 			with(INST){
 				event_user(EVENT);
 			}

@@ -1,13 +1,11 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function Battle_GetCurrentEND(){
+function Battle_GetEnemyActive(){
 	var ENEMY=argument[0];
 	
-	var ENEMY_inst = Battle_GetEnemy(ENEMY);
-
-	if(instance_exists(ENEMY_inst)){
-		return ENEMY_inst._Current_END;
+	if(instance_exists(Battle_GetEnemy(ENEMY))){
+		return battle._enemy_active[ENEMY];
 	}else{
-		return -1;
+		return 0;
 	}
 }

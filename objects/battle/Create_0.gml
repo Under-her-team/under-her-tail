@@ -38,6 +38,13 @@ _enemy_satsifaction[0]=0;
 _enemy_mindblow_points[2]=0;
 _enemy_mindblow_points[1]=0;
 _enemy_mindblow_points[0]=0;
+
+//Active enemy - Says if an enemy is active or not. Should allow me to reactive a monster if necessary,
+//particularly for mindblow
+_enemy_active[2]=false;
+_enemy_active[1]=false;
+_enemy_active[0]=false;
+
 //敌人行动列表
 _enemy_action_number[0]=0;
 _enemy_action_number[1]=0;
@@ -127,6 +134,8 @@ sexcess_flag=false;
 //This says if we're holding the animation for FUCK
 _sex_in_progress=false;
 
+//Used to signify if the heart has been grabbed
+_heart_received=false;
 
 //Used to determine what animation is used during sex segments
 _battle_sex_stage=BATTLE_SEX_STATE.NONE;
