@@ -138,13 +138,13 @@ switch(cmd[|0]){
 		break;
 		
 	case "shadow":
-		if(is_real(cmd[|1])){
+		if(is_bool(cmd[|1])){
 			_shadow=cmd[|1];
 		}
 		break;
 		
 	case "outline":
-		if(is_real(cmd[|1])){
+		if(is_bool(cmd[|1])){
 			_outline=cmd[|1];
 		}
 		break;
@@ -208,13 +208,13 @@ switch(cmd[|0]){
 		break;
 		
 	case "instant":
-		if(is_real(cmd[|1])){
+		if(is_bool(cmd[|1])){
 			_instant=bool(cmd[|1]);
 		}
 		break;
 		
 	case "skippable":
-		if(is_real(cmd[|1])){
+		if(is_bool(cmd[|1])){
 			_skippable=bool(cmd[|1]);
 		}
 		break;
@@ -440,7 +440,7 @@ switch(cmd[|0]){
 		break;
 		
 	case "gui":
-		if(is_real(cmd[|1])){
+		if(is_bool(cmd[|1])){
 			_gui=cmd[|1];
 		}
 		break;
@@ -587,7 +587,7 @@ switch(cmd[|0]){
 		break;
 		
 	case "skip_space":
-		if(is_real(cmd[|1])){
+		if(is_bool(cmd[|1])){
 			_skip_space=cmd[|1];
 		}
 		break;
