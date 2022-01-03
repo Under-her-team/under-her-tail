@@ -87,7 +87,3 @@ _fun_animations[0]=spr_frogette_cowgirl;
 _turn_on_listen = 0;
 _turn_on_geek_out = true;
 _turn_on_book = true;
-
-//Sex Dialogue - Used to hold the two dialogue boxes for sex
-_sex_dialogue[1]=noone;
-_sex_dialogue[0]=noone;
