@@ -15,6 +15,6 @@ function Encounter_Custom() {
 	Encounter_Set(4,battle_enemy_frogette,-1,battle_enemy_frogette,"* Gay(?) Frogs.",-1);
 	
 	//Spare Effect Tester
-	Encounter_Set(5,battle_spare_tester,battle_spare_tester,battle_spare_tester,"* Testing Spare Effects.",-1);
+	Encounter_Set(5,-1,-1,-1,"* Testing Animation.",-1);
 
 }

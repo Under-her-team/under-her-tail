@@ -10,6 +10,7 @@ _sleep=0;
 _skippable=true;
 _skipping=false;
 _paused=false;
+disable_confirmation=false;//Addition. Used to prevent player from getting rid of line.
 _instant=false;
 _space_x=0;
 _space_y=0;

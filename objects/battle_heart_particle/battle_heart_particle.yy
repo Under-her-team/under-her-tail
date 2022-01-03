@@ -27,8 +27,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Sex Transition",
-    "path": "folders/Objects/Battle/Sex Transition.yy",
+    "name": "Sex_Transition",
+    "path": "folders/Objects/Battle/Sex_Transition.yy",
   },
   "resourceVersion": "1.0",
   "name": "battle_heart_particle",

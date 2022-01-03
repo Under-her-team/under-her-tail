@@ -4,7 +4,10 @@
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "battle_dialog_enemy",
+    "path": "objects/battle_dialog_enemy/battle_dialog_enemy.yy",
+  },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -18,17 +21,18 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
+    {"isDnD":false,"eventNum":0,"eventType":2,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Sex_Transition",
-    "path": "folders/Objects/Battle/Sex_Transition.yy",
+    "name": "Sex_Dialog",
+    "path": "folders/Objects/Battle/Sex_Dialog.yy",
   },
   "resourceVersion": "1.0",
-  "name": "battle_sex_transition_effect",
+  "name": "battle_dialog_enemy_sex",
   "tags": [],
   "resourceType": "GMObject",
 }
