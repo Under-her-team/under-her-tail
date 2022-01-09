@@ -4,7 +4,7 @@
 if(instance_exists(_inst)){
 	_inst.x=x-left+text_offset_x;
 	_inst.y=y-up+text_offset_y;
-	done=_inst._done[0];
+	done=_inst.sex_dialog_finish
 }else{
 	instance_destroy();
 }

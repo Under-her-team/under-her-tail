@@ -78,6 +78,11 @@ _sex_animations[0,0]=spr_frogette_cowgirl_start;
 _fun_animations[1]=spr_frogette_cowgirl;
 _fun_animations[0]=spr_frogette_cowgirl;
 
+//Sex Dialog
+_sex_dialog=noone; //The dialogue itself
+_sex_dialog_timer=150; 
+
+
 //For Frogette specifically
 //Variables that keep track of what turn on sequences are available. 
 //Listen is part of a sequence, so it's a number. If it's interrupted, it's

@@ -10,8 +10,10 @@ if(_END==0) {
 //endurance. That should really only happen if we're in the mindblow battle statte
 	image_alpha=1;
 	sex_stage= BATTLE_SEX_STATE.FUCK;
+	text = "Break her.";
 }
 else _state=BATTLE_ENEMY_STATE.SEX; 
+
 
 //Determine if mindblow points or satisfaction increases.
 if(_mindblow_percent==100) Battle_IncreaseMindblowPoints(_enemy_slot);
@@ -25,6 +27,7 @@ instance_create_depth(x,y-(sprite_width/2),DEPTH_BATTLE.UI_HIGH,battle_sex_trans
 
 _transition_count=0.0;
 _animation_stage = 0;
+
 
 //Set what set of animations to use
 switch(sex_stage) {

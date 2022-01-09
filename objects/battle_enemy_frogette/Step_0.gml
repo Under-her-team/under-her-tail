@@ -42,6 +42,8 @@ switch(_state){
 				}
 				sprite_set_speed(sprite_index, 6, spritespeed_framespersecond);
 				if(Input_IsPressed(INPUT.RIGHT)) _animation_stage=3;
+				
+				
 				break;
 			case 3:
 				sprite_set_speed(sprite_index, 10, spritespeed_framespersecond);
@@ -68,6 +70,15 @@ switch(_state){
 				}
 				break;
 		}
+		
+		if(Input_IsPressed(INPUT.RIGHT) || Input_IsPressed(INPUT.LEFT)) {
+			instance_destroy(_sex_dialog);	
+			_sex_dialog_timer=150; 
+		}
+		if(_sex_dialog_timer<=0) alarm[0]=1;
+		else if(!instance_exists(_sex_dialog)) _sex_dialog_timer-=1;
+		
+		
 		break;
 	case BATTLE_ENEMY_STATE.MINDBLOW:
 		switch(_animation_stage){

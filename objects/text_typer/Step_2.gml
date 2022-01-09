@@ -15,7 +15,7 @@ if (!_done[0])&&(instance_exists(ui_dialog)){
 	}
 }
 
-if(_paused&&Input_IsPressed(INPUT.CONFIRM)&&disable_confirmation){
+if(_paused&&Input_IsPressed(INPUT.CONFIRM)&&!disable_confirmation){
 	_paused=false;
 	_done[0]=false;
 	_done[1]=false;

@@ -83,3 +83,6 @@ override_color_text[3]=c_white;
 _current_height=0;
 _done[0]=false;
 _done[1]=false;
+
+//finished with sex dialog
+sex_dialog_finish=false;

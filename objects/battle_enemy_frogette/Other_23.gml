@@ -18,3 +18,5 @@ if (_END==0) {
 	}
 	Battle_RemoveEnemy(_enemy_slot);
 }
+
+_sex_dialog_timer=150; 

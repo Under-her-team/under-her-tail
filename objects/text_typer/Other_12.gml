@@ -591,4 +591,12 @@ switch(cmd[|0]){
 			_skip_space=cmd[|1];
 		}
 		break;
+		
+	case "sex_dialog":
+		_paused=true;
+		_skipping=false;
+		_sleep=0;
+		_char_frame_remain=0;
+		sex_dialog_finish=true;
+		break;
 }

@@ -55,5 +55,5 @@ switch(template){
 }
 
 visible=true;
-_inst.text="{shadow false}{color_text `black`}{speed 0}{effect `wavy`}{font 2}{depth "+string(DEPTH_BATTLE.UI_HIGH-10)+"}"+text+"{pause}";
+_inst.text="{shadow false}{color_text `black`}{speed 0}{font 2}{depth "+string(DEPTH_BATTLE.UI_HIGH-10)+"}"+text+"{sex_dialog}";
 _inst.disable_confirmation=true;
