@@ -159,6 +159,7 @@ function Battle_SetState() {
 		//Battle_SetSexState(BATTLE_SEX_STATE.FUCK);
 		Battle_CallEnemyEvent(BATTLE_ENEMY_EVENT.SEX,Battle_ConvertMenuChoiceEnemyToEnemySlot(Battle_GetMenuChoiceEnemy()));
 		Battle_SetNextState(BATTLE_STATE.BOARD_RESETTING);
+		Battle_MindblowBackground();
 		//if(all_enemies_defeated) go to the mindblow/leave choice. This might be in battle itself
 	}
 	

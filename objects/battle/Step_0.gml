@@ -374,8 +374,21 @@ if(_state==BATTLE_STATE.SEX){
 //			ENEMY.sprite_index=Battle_GetIdleAnimation(ENEMY);
 //			Battle_GotoNextState();
 //		}
+	if(!instance_exists(_dialog[0])){
+		if(!Dialog_IsEmpty()){
+			Battle_SetDialog(Dialog_Get()+"{sex_dialog}");
+		}else{
+			if(Battle_IsDialogAutoEnd()){
+				Battle_EndDialog();
+			}
+		}
+	}
+
 	if(_sex_in_progress==false){
 		_battle_sex_stage=BATTLE_SEX_STATE.NONE;
+		if(instance_exists(battle._dialog[0])){
+			instance_destroy(battle._dialog[0]);
+		}
 		Battle_RestoreSoul();
 		Battle_GotoNextState();
 	}

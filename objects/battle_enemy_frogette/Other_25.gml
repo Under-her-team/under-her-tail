@@ -3,6 +3,7 @@
 if (live_call()) return live_result;
 
 var sex_stage = Battle_GetSexState();
+Dialog_Add("TEST MESSAGE");
 
 //Set if this is Mindblow or normal sex
 if(_END==0) {
@@ -10,7 +11,6 @@ if(_END==0) {
 //endurance. That should really only happen if we're in the mindblow battle statte
 	image_alpha=1;
 	sex_stage= BATTLE_SEX_STATE.FUCK;
-	text = "Break her.";
 }
 else _state=BATTLE_ENEMY_STATE.SEX; 
 
