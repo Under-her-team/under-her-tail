@@ -9,7 +9,7 @@ function Encounter_Custom() {
 	Encounter_Set(2,-1,battle_enemy_gb,-1,"* Gaster Blaster example.",-1);
 	
 	//Frogette
-	Encounter_Set(3,-1,battle_enemy_frogette,-1,"* UTH Battle Test.",-1);
+	Encounter_Set(3,-1,battle_enemy_frogette,-1,"* UTH Battle Test.",-1,spr_battle_bg_alt);
 
 	//LOTS OF FROGS
 	Encounter_Set(4,battle_enemy_frogette,-1,battle_enemy_frogette,"* Gay(?) Frogs.",-1);

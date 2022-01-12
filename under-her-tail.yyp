@@ -606,6 +606,7 @@
     {"id":{"name":"shaker","path":"objects/shaker/shaker.yy",},"order":11,},
     {"id":{"name":"block","path":"objects/block/block.yy",},"order":13,},
     {"id":{"name":"block_corner_topleft","path":"objects/block_corner_topleft/block_corner_topleft.yy",},"order":15,},
+    {"id":{"name":"Encounter_GetBackground","path":"scripts/Encounter_GetBackground/Encounter_GetBackground.yy",},"order":28,},
     {"id":{"name":"block_corner_bottomleft","path":"objects/block_corner_bottomleft/block_corner_bottomleft.yy",},"order":17,},
     {"id":{"name":"block_corner_topright","path":"objects/block_corner_topright/block_corner_topright.yy",},"order":19,},
     {"id":{"name":"block_corner_bottomright","path":"objects/block_corner_bottomright/block_corner_bottomright.yy",},"order":21,},

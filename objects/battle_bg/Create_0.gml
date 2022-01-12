@@ -1,5 +1,8 @@
 depth=DEPTH_BATTLE.BG;
-sprite_index=spr_battle_bg;
+var ENCOUNTER=Flag_Get(FLAG_TYPE.TEMP,FLAG_TEMP.ENCOUNTER);
+var BG = Encounter_GetBackground(ENCOUNTER);
+
+sprite_index=BG;
 
 image_speed=0;
 image_index=0;
