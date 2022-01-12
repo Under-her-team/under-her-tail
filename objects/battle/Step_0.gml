@@ -395,6 +395,17 @@ if(_state==BATTLE_STATE.SEX){
 }
 
 if(_state==BATTLE_STATE.MINDBLOW){
+	
+	if(!instance_exists(_dialog[0])){
+		if(!Dialog_IsEmpty()){
+			Battle_SetDialog(Dialog_Get()+"{sex_dialog}");
+		}else{
+			if(Battle_IsDialogAutoEnd()){
+				Battle_EndDialog();
+			}
+		}
+	}
+	
 	if(_sex_in_progress==false){
 		_battle_sex_stage=BATTLE_SEX_STATE.NONE;
 		
