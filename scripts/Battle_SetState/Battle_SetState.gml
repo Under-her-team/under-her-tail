@@ -4,8 +4,8 @@ function Battle_SetState() {
 
 	battle._state=STATE;
 	
-	var sex_flag = battle._sex_flag;
-	var sexcess_flag = battle.sexcess_flag;
+	var sex_flag = Battle_GetSexFlag();
+	var sexcess_flag = Battle_GetSexcessFlag();
 
 	//菜单
 	if(STATE==BATTLE_STATE.MENU){
@@ -100,12 +100,12 @@ function Battle_SetState() {
 	//面版重置
 	if(STATE==BATTLE_STATE.BOARD_RESETTING){
 		if(sex_flag) {
-			battle._sex_flag=false;
+			Battle_SetSexFlag(false);
 			if(sexcess_flag) Battle_SetNextState(BATTLE_STATE.SEX);
 			else Battle_SetNextState(BATTLE_STATE.DIALOG);
 		}
 		else if(sexcess_flag) {
-			battle.sexcess_flag=false;
+			Battle_SetSexcessFlag(false);
 			Battle_SetNextState(BATTLE_STATE.DIALOG);
 		}
 		else Battle_SetNextState(BATTLE_STATE.MENU);

@@ -230,7 +230,6 @@ if(_state==BATTLE_STATE.MENU){
 		if(Input_IsPressed(INPUT.CANCEL)){
 			Battle_SetMenu(BATTLE_MENU.BUTTON);
 		}else if(Input_IsPressed(INPUT.CONFIRM)){
-			//_battle_sex_stage=BATTLE_SEX_STATE.FUN;
 			audio_play_sound(snd_menu_confirm,0,false);
 			Battle_EndMenu();
 		}

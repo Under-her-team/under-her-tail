@@ -1,0 +1,8 @@
+// Script assets have changed for v2.3.0 see
+// https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
+function Battle_SetSexFlag(){
+	var sex_flag_value=argument[0];
+	
+	battle._sex_flag=sex_flag_value;
+	return true;
+}

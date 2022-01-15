@@ -27,9 +27,6 @@ _fun_value = 0;
 //Max fun value. Used to signify how many funs there are max.
 _fun_max = 2;
 
-//Fun Flag - Says whenever this monster's FUN is triggered.
-_monster_fun_flag=false;
-
 //FUCK or FUN flag. Essentially used to communicate which is used. 0 is FUCK, 1 is FUN, -1 is undefined
 _fuck_or_fun = -1;
 

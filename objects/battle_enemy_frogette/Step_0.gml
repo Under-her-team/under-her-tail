@@ -16,10 +16,11 @@ switch(_state){
 						_shader_scale=20.0-_transition_count;
 						if(_fuck_or_fun==0){
 							sprite_index=_sex_animations[_END-1,0];
+							image_speed=0;
 						} else if(_fuck_or_fun==1) {
 							sprite_index=_fun_animations[_fun_value];
+							image_speed=1;
 						}
-						image_speed=0;
 					}
 				}
 				//Otherwise change to the sex animations

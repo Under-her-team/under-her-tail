@@ -6,10 +6,17 @@
 
 var dialog_text="";
 
+var sex_flag=Battle_GetSexFlag();
 
-if(Battle_GetSexFlag()){
+var sex_state=Battle_GetSexState();
+
+
+if(sex_flag && sex_state==BATTLE_SEX_STATE.FUCK){//For FUCKs
 	if(Battle_GetTurnedOn(_enemy_slot)>0) instance_create_depth(0,0,0,battle_turn_simple_frogette);
 	else instance_create_depth(0,0,0,battle_turn_simple_frogette_nonTurnedOn);
+}
+else if (sex_flag){//For FUNs. Cycle through bullet patterns 
+	instance_create_depth(0,0,0,battle_turn_simple);
 }
 else {
 	switch(_dialogue_reaction){

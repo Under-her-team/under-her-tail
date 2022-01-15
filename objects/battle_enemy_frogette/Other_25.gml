@@ -37,7 +37,6 @@ switch(sex_stage) {
 	case BATTLE_SEX_STATE.FUN:
 		_fuck_or_fun = 1;
 		_mindblow_percent+=50;
-		//sprite_index=_fun_animations[_fun_value];
 		break;
 	default: 
 		_fuck_or_fun = -1;

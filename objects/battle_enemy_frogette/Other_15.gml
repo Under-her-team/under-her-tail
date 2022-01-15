@@ -58,8 +58,6 @@ switch(Battle_GetMenuChoiceButton()){
 			_turn_on_listen=-1;
 			Battle_IncreaseTurnedOn(_enemy_slot);
 		}
-		_monster_fun_flag=true;
-		_mindblow_percent+=50;
 		break;
 	case BATTLE_MENU_CHOICE_BUTTON.FIGHT:
 		if(_reset_mindblow) _reset_mindblow=false; //disable reset
