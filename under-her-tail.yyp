@@ -479,6 +479,7 @@
     {"id":{"name":"Player_GetDefItem","path":"scripts/Player_GetDefItem/Player_GetDefItem.yy",},"order":39,},
     {"id":{"name":"battle_menu_end_text","path":"objects/battle_menu_end_text/battle_menu_end_text.yy",},"order":7,},
     {"id":{"name":"Player_GetSpdItem","path":"scripts/Player_GetSpdItem/Player_GetSpdItem.yy",},"order":41,},
+    {"id":{"name":"Battle_IsEmptyBattle","path":"scripts/Battle_IsEmptyBattle/Battle_IsEmptyBattle.yy",},"order":20,},
     {"id":{"name":"Player_GetInvItem","path":"scripts/Player_GetInvItem/Player_GetInvItem.yy",},"order":43,},
     {"id":{"name":"char_sign_changebgm","path":"objects/char_sign_changebgm/char_sign_changebgm.yy",},"order":9,},
     {"id":{"name":"spr_default_item_overworld","path":"sprites/spr_default_item_overworld/spr_default_item_overworld.yy",},"order":4,},

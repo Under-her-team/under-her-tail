@@ -24,13 +24,16 @@ switch(Battle_GetMenuChoiceButton()){
 			switch(menu_choice_action){
 				case 0:
 					text = "* Frogette - ATK 3 END 2&* Croaks for no reason.";
+					_dialogue_reaction=0;
 					break;
 				case 1:
 					text = "* You geek out.";
 					if(_turn_on_geek_out) {
 						Battle_IncreaseTurnedOn(_enemy_slot);
 						_turn_on_geek_out=false;
+						_dialogue_reaction=1;
 					}
+					else _dialogue_reaction=2;
 					if(_turn_on_listen>0){
 						_turn_on_listen=0;
 						text+=" She seems to have& forgot about the previous topic.";
@@ -40,7 +43,9 @@ switch(Battle_GetMenuChoiceButton()){
 					text = "* You listen.";
 					if(_turn_on_listen==0){
 						_turn_on_listen=1;
-					}	
+						_dialogue_reaction=3;
+					}
+					else _dialogue_reaction=4;
 					break;
 			}
 		}
@@ -58,6 +63,20 @@ switch(Battle_GetMenuChoiceButton()){
 		break;
 	case BATTLE_MENU_CHOICE_BUTTON.FIGHT:
 		if(_reset_mindblow) _reset_mindblow=false; //disable reset
+		break;
+	case BATTLE_MENU_CHOICE_BUTTON.ITEM:
+		if(Battle_GetMenuItemUsedLast()==item_history_book){
+			if(_turn_on_book){
+				text= "* Frogette was excited to see the book!"
+				_turn_on_book=false;
+				Battle_IncreaseTurnedOn(_enemy_slot);
+				_dialogue_reaction=5;
+			}
+			else {
+				text="* Frogette smiled at seeing the book again."
+				_dialogue_reaction=6;
+			}
+		}
 		break;
 
 }

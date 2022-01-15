@@ -20,3 +20,4 @@ if (_END==0) {
 }
 
 _sex_dialog_timer=150; 
+_dialogue_reaction=-1;

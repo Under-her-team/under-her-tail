@@ -40,6 +40,10 @@ function Battle_EndMenu() {
 		if(BUTTON==BATTLE_MENU_CHOICE_BUTTON.FUN) {
 			Battle_CallEnemyEvent(BATTLE_ENEMY_EVENT.MENU_END,Battle_ConvertMenuChoiceEnemyToEnemySlot(Battle_GetMenuChoiceEnemy()));	
 		}
+		
+		if(BUTTON==BATTLE_MENU_CHOICE_BUTTON.ITEM) {
+			Battle_CallEnemyEvent(BATTLE_ENEMY_EVENT.MENU_END);	
+		}
 	
 		if(Battle_GetEnemyNumber()>0){
 			//逃跑

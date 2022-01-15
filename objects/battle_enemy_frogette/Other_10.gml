@@ -92,3 +92,8 @@ _sex_dialog_timer=150;
 _turn_on_listen = 0;
 _turn_on_geek_out = true;
 _turn_on_book = true;
+
+
+//A variable used to guage the dialogue reaction of frogette
+//The value signals the exact type. 
+_dialogue_reaction=-1;

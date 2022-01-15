@@ -15,12 +15,6 @@ if(_END==0) {
 else _state=BATTLE_ENEMY_STATE.SEX; 
 
 
-//Determine if mindblow points or satisfaction increases.
-if(_mindblow_percent==100) Battle_IncreaseMindblowPoints(_enemy_slot);
-else if(Battle_HeartCheck()) {
-	Battle_IncreaseSatisfaction(_enemy_slot);
-	Battle_DecreaseTurnedOn(_enemy_slot);
-}
 
 Battle_HoldSex();
 instance_create_depth(x,y-(sprite_width/2),DEPTH_BATTLE.UI_HIGH,battle_sex_transition_effect);
@@ -33,10 +27,16 @@ _animation_stage = 0;
 switch(sex_stage) {
 	case BATTLE_SEX_STATE.FUCK:
 		_fuck_or_fun = 0;
-		//sprite_index=_sex_animations[_END_MAX-_END,0];
+		//Determine if mindblow points or satisfaction increases.
+		if(_mindblow_percent==100) Battle_IncreaseMindblowPoints(_enemy_slot);
+		else if(Battle_HeartCheck()) {
+			Battle_IncreaseSatisfaction(_enemy_slot);
+			Battle_DecreaseTurnedOn(_enemy_slot);
+		}
 		break;
 	case BATTLE_SEX_STATE.FUN:
 		_fuck_or_fun = 1;
+		_mindblow_percent+=50;
 		//sprite_index=_fun_animations[_fun_value];
 		break;
 	default: 
