@@ -4,6 +4,6 @@
 // Inherit the parent event
 event_inherited();
 
-_button_slot=0;
+_button_slot=3;
 
 sprite_index=Lang_GetSprite("battle.button.fuck",spr_default);
