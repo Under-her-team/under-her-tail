@@ -13,6 +13,7 @@ switch(Battle_GetMenuChoiceButton()){
 		if(menu_choice_action>0 && _mindblow_percent==100 && !_reset_mindblow) {
 			_reset_mindblow=true;
 			text = "* Frogette seems to be in a euphoric trance.& She doesn't respond."
+			
 		}
 		else if (menu_choice_action>0 && _mindblow_percent==100 && _reset_mindblow) {
 			_reset_mindblow=false;
@@ -78,7 +79,8 @@ switch(Battle_GetMenuChoiceButton()){
 		break;
 
 }
-
-Dialog_Add(text);
+if(text!=""){
+	Dialog_Add(text);
+}
 if(_mindblow_percent>100) _mindblow_percent=100;
 Battle_SetMindblowPercent(_enemy_slot,_mindblow_percent);

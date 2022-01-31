@@ -34,26 +34,25 @@ if(_state==BATTLE_STATE.MENU){
 			audio_play_sound(snd_menu_confirm,0,false);
 			switch(_menu_choice_button){
 				case 0:
-					Battle_SetMenu(BATTLE_MENU.FIGHT_TARGET);
-					break;
-				case 1:
 					Battle_SetMenu(BATTLE_MENU.FUN_TARGET);
 					break;
-				case 2:
-//					if(Item_GetNumber()>0){
-//						Battle_SetMenu(BATTLE_MENU.ITEM);
-//					}else{
-//						audio_stop_sound(snd_menu_confirm);
-//					}
+				case 1:
 					Battle_SetMenu(BATTLE_MENU.ACT_TARGET);
 					break;
-				case 3:
+				case 2:
 					if(Item_GetNumber()>0){
 						Battle_SetMenu(BATTLE_MENU.ITEM);
 					}else{
 						audio_stop_sound(snd_menu_confirm);
 					}
-//					Battle_SetMenu(BATTLE_MENU.MERCY);
+					break;
+				case 3:
+//					if(Item_GetNumber()>0){
+//						Battle_SetMenu(BATTLE_MENU.ITEM);
+//					}else{
+//						audio_stop_sound(snd_menu_confirm);
+//					}
+					Battle_SetMenu(BATTLE_MENU.FIGHT_TARGET);
 					break;
 			}
 		}
