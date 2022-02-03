@@ -9,9 +9,9 @@ instance_create_depth(32,432,0,battle_button_fun);
 instance_create_depth(185,432,0,battle_button_act);
 //instance_create_depth(345,432,0,battle_button_item);
 //instance_create_depth(345,432,0,battle_button_fun);
-instance_create_depth(345,432,0,battle_button_item_UHT);
+instance_create_depth(345,432,0,battle_button_item);
 //instance_create_depth(500,432,0,battle_button_mercy);
-instance_create_depth(500,432,0,battle_button_fuck);
+instance_create_depth(500,432,0,battle_button_finish);
 Battle_SetSoul(battle_soul_red);
 
 var ENCOUNTER=Flag_Get(FLAG_TYPE.TEMP,FLAG_TEMP.ENCOUNTER);

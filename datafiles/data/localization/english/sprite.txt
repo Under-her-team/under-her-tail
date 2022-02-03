@@ -5,3 +5,4 @@
 ./sprite/battle_button_mercy.ini
 ./sprite/battle_button_fuck.ini
 ./sprite/battle_button_fun.ini
+./sprite/battle_button_finish.ini

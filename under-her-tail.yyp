@@ -347,6 +347,7 @@
     {"id":{"name":"Phone_CallEvent","path":"scripts/Phone_CallEvent/Phone_CallEvent.yy",},"order":17,},
     {"id":{"name":"char_sign_choice","path":"objects/char_sign_choice/char_sign_choice.yy",},"order":8,},
     {"id":{"name":"Phone_Remove","path":"scripts/Phone_Remove/Phone_Remove.yy",},"order":19,},
+    {"id":{"name":"battle_button_finish","path":"objects/battle_button_finish/battle_button_finish.yy",},"order":13,},
     {"id":{"name":"Anim_Init","path":"scripts/Anim_Init/Anim_Init.yy",},"order":1,},
     {"id":{"name":"Anim_Create","path":"scripts/Anim_Create/Anim_Create.yy",},"order":3,},
     {"id":{"name":"Anim_Destroy","path":"scripts/Anim_Destroy/Anim_Destroy.yy",},"order":5,},
@@ -941,6 +942,8 @@
     {"CopyToMask":-1,"filePath":"datafiles/GMLive","resourceVersion":"1.0","name":"regexp.ndll","resourceType":"GMIncludedFile",},
     {"CopyToMask":-1,"filePath":"datafiles/GMLive","resourceVersion":"1.0","name":"std.ndll","resourceType":"GMIncludedFile",},
     {"CopyToMask":-1,"filePath":"datafiles/GMLive","resourceVersion":"1.0","name":"neko.dll","resourceType":"GMIncludedFile",},
+    {"CopyToMask":-1,"filePath":"datafiles/data/localization/english/sprite","resourceVersion":"1.0","name":"battle_button_finish.png","resourceType":"GMIncludedFile",},
+    {"CopyToMask":-1,"filePath":"datafiles/data/localization/english/sprite","resourceVersion":"1.0","name":"battle_button_finish.ini","resourceType":"GMIncludedFile",},
   ],
   "MetaData": {
     "IDEVersion": "2.3.7.606",
