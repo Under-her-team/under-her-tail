@@ -9,17 +9,18 @@ Battle_SetEnemyName(_enemy_slot,"* Frogette");
 Battle_SetEnemyThreshold(_enemy_slot,2);
 
 //default stats
-_END_MAX = 2;
 _END = 2;
 _mindblow_percent=0;
 Battle_SetMindblowPercent(_enemy_slot,_mindblow_percent);
 
 //Set Actions
-Battle_SetEnemyActionNumber(_enemy_slot,3);
+Battle_SetEnemyActionNumber(_enemy_slot,4);
 Battle_SetEnemyActionName(_enemy_slot,0,"* Check Out")
 Battle_SetEnemyActionName(_enemy_slot,1,"* Geek Out");
 Battle_SetEnemyActionName(_enemy_slot,2,"* Listen");
 
+
+Battle_SetEnemyActionName(_enemy_slot,3,"* Remove");
 
 //Current fun value for which FUN is to occur. Used as a counter
 _fun_value = 0;

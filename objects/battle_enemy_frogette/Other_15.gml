@@ -48,6 +48,13 @@ switch(Battle_GetMenuChoiceButton()){
 					}
 					else _dialogue_reaction=4;
 					break;
+				case 3:
+					text = "* Bye Frogette.";
+					audio_play_sound(snd_vaporize,0,false);
+					image_alpha=0.5;
+					repeat(12)
+						instance_create_depth(x,y-(sprite_width/2),DEPTH_BATTLE.UI_HIGH,battle_spare_particle);
+					Battle_RemoveEnemy(_enemy_slot);
 			}
 		}
 		break;

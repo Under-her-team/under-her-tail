@@ -1,4 +1,5 @@
 {
+  "conversionMode": 0,
   "compression": 0,
   "volume": 1.0,
   "preload": false,
@@ -11,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "bgm_ruins.ogg",
-  "duration": 91.318924,
+  "duration": 91.31393,
   "parent": {
     "name": "BGM",
     "path": "folders/Sounds/BGM.yy",

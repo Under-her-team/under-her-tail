@@ -672,6 +672,7 @@
     {"id":{"name":"battle_dialog_enemy","path":"objects/battle_dialog_enemy/battle_dialog_enemy.yy",},"order":31,},
     {"id":{"name":"spr_frogette_cowgirl_fake_end_mindblow_2","path":"sprites/spr_frogette_cowgirl_fake_end_mindblow_2/spr_frogette_cowgirl_fake_end_mindblow_2.yy",},"order":5,},
     {"id":{"name":"battle_result_flee","path":"objects/battle_result_flee/battle_result_flee.yy",},"order":33,},
+    {"id":{"name":"Encounter_Set_UHT","path":"scripts/Encounter_Set_UHT/Encounter_Set_UHT.yy",},"order":29,},
     {"id":{"name":"item","path":"objects/item/item.yy",},"order":0,},
     {"id":{"name":"item_stick","path":"objects/item_stick/item_stick.yy",},"order":1,},
     {"id":{"name":"item_bandage","path":"objects/item_bandage/item_bandage.yy",},"order":2,},
