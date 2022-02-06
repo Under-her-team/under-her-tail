@@ -1,6 +1,6 @@
 var ENCOUNTER=Flag_Get(FLAG_TYPE.TEMP,FLAG_TEMP.ENCOUNTER);
 _enemy_object[0]=Encounter_GetEnemy(ENCOUNTER,0);
-_enemy_object[1]=Encounter_GetEnemy(ENCOUNTER,1);
+_enemy_object[1]=Encounter_GetEnemy_UHT(ENCOUNTER);
 _enemy_object[2]=Encounter_GetEnemy(ENCOUNTER,2);
 //敌人实例
 _enemy[0]=noone;

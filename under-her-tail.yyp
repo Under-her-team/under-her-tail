@@ -619,6 +619,7 @@
     {"id":{"name":"exclamation","path":"objects/exclamation/exclamation.yy",},"order":27,},
     {"id":{"name":"encounter_anim","path":"objects/encounter_anim/encounter_anim.yy",},"order":29,},
     {"id":{"name":"intro","path":"objects/intro/intro.yy",},"order":31,},
+    {"id":{"name":"Encounter_GetEnemy_UHT","path":"scripts/Encounter_GetEnemy_UHT/Encounter_GetEnemy_UHT.yy",},"order":30,},
     {"id":{"name":"logo","path":"objects/logo/logo.yy",},"order":33,},
     {"id":{"name":"menu","path":"objects/menu/menu.yy",},"order":35,},
     {"id":{"name":"text_typer","path":"objects/text_typer/text_typer.yy",},"order":1,},
