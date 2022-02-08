@@ -633,7 +633,6 @@
     {"id":{"name":"bgm_battle","path":"sounds/bgm_battle/bgm_battle.yy",},"order":0,},
     {"id":{"name":"bgm_cymbal","path":"sounds/bgm_cymbal/bgm_cymbal.yy",},"order":1,},
     {"id":{"name":"battle_fader","path":"objects/battle_fader/battle_fader.yy",},"order":7,},
-    {"id":{"name":"Battle_GetEnemyAnimationState","path":"scripts/Battle_GetEnemyAnimationState/Battle_GetEnemyAnimationState.yy",},"order":1,},
     {"id":{"name":"battle_bg","path":"objects/battle_bg/battle_bg.yy",},"order":9,},
     {"id":{"name":"battle_button","path":"objects/battle_button/battle_button.yy",},"order":1,},
     {"id":{"name":"battle_button_fight","path":"objects/battle_button_fight/battle_button_fight.yy",},"order":3,},

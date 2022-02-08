@@ -21,7 +21,8 @@ function Macro_Battle() {
 		ITEM,
 		MERCY,
 		FUCK,
-		FUN_TARGET
+		FUN_TARGET,
+		FINISH
 	};
 
 	enum BATTLE_MENU_CHOICE_BUTTON{

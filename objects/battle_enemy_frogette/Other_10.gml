@@ -9,7 +9,6 @@ Battle_SetEnemyName(_enemy_slot,"* Frogette");
 Battle_SetEnemyThreshold(_enemy_slot,2);
 
 //default stats
-_END = 2;
 _mindblow_percent=0;
 Battle_SetMindblowPercent(_enemy_slot,_mindblow_percent);
 

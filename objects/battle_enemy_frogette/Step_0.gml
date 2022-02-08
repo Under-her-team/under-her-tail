@@ -1,6 +1,7 @@
 /// @description Animating Sprites
 // You can write your code in this editor
-if (live_call()) return live_result;
+//if (live_call()) return live_result;
+var _END=2
 
 switch(_state){
 	case BATTLE_ENEMY_STATE.SEX:

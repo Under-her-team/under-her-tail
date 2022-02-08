@@ -289,6 +289,32 @@ if(_state==BATTLE_STATE.MENU){
 			Battle_EndMenu();
 		}
 	}
+	
+	if(_menu==BATTLE_MENU.FINISH){
+		if(Input_IsPressed(INPUT.UP)){
+			var finish_option=Battle_GetMenuChoiceMercy()-1;
+			if(finish_option>=0){
+				audio_play_sound(snd_menu_switch,0,false);
+				Battle_SetMenuChoiceMercy(finish_option);
+			}
+		}else if(Input_IsPressed(INPUT.DOWN)){
+			var finish_option=Battle_GetMenuChoiceMercy()+1;
+			if((!Battle_IsMenuChoiceMercyOverride()&&finish_option<=_menu_mercy_flee_enabled) || (Battle_IsMenuChoiceMercyOverride()&&finish_option<Battle_GetMenuChoiceMercyOverrideNumber())){
+				audio_play_sound(snd_menu_switch,0,false);
+				Battle_SetMenuChoiceMercy(finish_option);
+			}
+		}
+		
+		battle_soul.x=battle_board.x-battle_board.left-5+40;
+		battle_soul.y=battle_board.y-battle_board.up-5+36+32*_menu_choice_mercy;
+		
+		if(Input_IsPressed(INPUT.CANCEL)){
+			Battle_SetMenu(BATTLE_MENU.BUTTON);
+		}else if(Input_IsPressed(INPUT.CONFIRM)){
+			audio_play_sound(snd_menu_confirm,0,false);
+			Battle_EndMenu();
+		}
+	}
 }
 
 //对话
