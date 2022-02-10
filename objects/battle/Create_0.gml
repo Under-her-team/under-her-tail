@@ -14,13 +14,12 @@ _enemy_name[2]="";
 _enemy_spareable[0]=false;
 _enemy_spareable[1]=false;
 _enemy_spareable[2]=false;
-//Enemy Threshold - What I'll call the number of times a monster needs to be FUCKed
-//Will be used in reference for judging final result
+//Enemy Threshold - Lists the number of hearts necessary for a pleased result
 _enemy_threshold[2]=0;
 _enemy_threshold[1]=0;
 _enemy_threshold[0]=0;
 //Enemy Turned On - Lists if the monster is turned on
-//0 is not, <=1 is
+//0 is not, <=1 is. If is turned on, a heart will spawn
 _enemy_turned_on[2]=0;
 _enemy_turned_on[1]=0;
 _enemy_turned_on[0]=0;
@@ -28,8 +27,7 @@ _enemy_turned_on[0]=0;
 _enemy_mindblow_percent[2]=0;
 _enemy_mindblow_percent[1]=0;
 _enemy_mindblow_percent[0]=0;
-//Enemy Satisfaction - Essentially how many times a FUCK occurs while turned on
-//Needs to match threshold for Very Pleased
+//Enemy Satisfaction - Essentially how many times a True Soul is collected 
 _enemy_satsifaction[2]=0;
 _enemy_satsifaction[1]=0;
 _enemy_satsifaction[0]=0;
@@ -100,6 +98,8 @@ _menu_choice_mercy_override_name[2]="";
 _menu_fleeable=false;
 _menu_mercy_flee_enabled=Encounter_IsMenuMercyFleeEnabled(ENCOUNTER);
 _menu_dialog=Encounter_GetMenuDialog(ENCOUNTER);
+
+_menu_choice_finish=0;
 
 _menu_fight_damage=0;
 _menu_fight_anim_time=0;

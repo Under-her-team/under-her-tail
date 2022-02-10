@@ -130,6 +130,13 @@ function Battle_SetMenu() {
 		Battle_SetDialog(text,true);
 	}
 	
+	if(MENU==BATTLE_MENU.FINISH){
+		var text="";
+		text+="* Fuck&* Leave";
+		Battle_SetDialog(text,true);
+		
+	}
+	
 	////////////////////////////////////////
 	if(CALL){
 		Battle_CallEnemyEvent(BATTLE_ENEMY_EVENT.MENU_SWITCH);
