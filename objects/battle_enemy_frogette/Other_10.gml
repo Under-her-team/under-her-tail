@@ -13,13 +13,14 @@ _mindblow_percent=0;
 Battle_SetMindblowPercent(_enemy_slot,_mindblow_percent);
 
 //Set Actions
-Battle_SetEnemyActionNumber(_enemy_slot,4);
+Battle_SetEnemyActionNumber(_enemy_slot,5);
 Battle_SetEnemyActionName(_enemy_slot,0,"* Check Out")
 Battle_SetEnemyActionName(_enemy_slot,1,"* Geek Out");
 Battle_SetEnemyActionName(_enemy_slot,2,"* Listen");
 
 
 Battle_SetEnemyActionName(_enemy_slot,3,"* Remove");
+Battle_SetEnemyActionName(_enemy_slot,4,"* Test Fuck");
 
 //Current fun value for which FUN is to occur. Used as a counter
 _fun_value = 0;
@@ -42,13 +43,6 @@ _uni_transitCount = shader_get_uniform(Pink_Transition_Color,"time");
 //Mindblow stage - What part of the mindblow animation to be in.
 _mindblow_stage = 0;
 
-//Reset Mindblow - If Act Occurs twice at 100% Mindblow, allow it to rest. 
-//False says it's not ready to reset. True means it is. It's set to true when ACT is used at 100%
-//If true and ACT is selected again, it resets Mindblow percent. Will become false regardless. 
-_reset_mindblow=false;
-
-//Decrease Endurance - Flag to decrease endurance after sex
-_decrease_endurance=false;
 
 //Sprites
 _sprite_normal=sprite_index
@@ -70,6 +64,9 @@ _sex_animations[1,0]=spr_frogette_cowgirl_start;
 _sex_animations[0,2]=spr_frogette_cowgirl_fake_end;
 _sex_animations[0,1]=spr_frogette_cowgirl;
 _sex_animations[0,0]=spr_frogette_cowgirl_start;
+
+_sex_animation_count=1;
+_current_sex_animation=0;
 
 //Fun Animations
 _fun_animations[1]=spr_frogette_cowgirl;

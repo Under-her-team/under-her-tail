@@ -12,5 +12,5 @@ if(!instance_exists(_sex_dialog)){
 	_sex_dialog.box_0_y=y-150;
 	_sex_dialog.box_1_x=x+100;
 	_sex_dialog.box_1_y=y-150;
-	_sex_dialog_timer=300; 
+	_sex_dialog_timer=180; 
 }

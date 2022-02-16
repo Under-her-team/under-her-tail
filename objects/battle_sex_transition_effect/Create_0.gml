@@ -1,5 +1,5 @@
 /// @description Create effects
-if (live_call()) return live_result;
+//if (live_call()) return live_result;
 // You can write your code in this editor
 
 //particles[11]=noone;

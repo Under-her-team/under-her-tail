@@ -3,7 +3,7 @@ function Battle_GetEnemyNumber() {
 	var proc=0;
 
 	repeat(3){
-		if(instance_exists(Battle_GetEnemy(proc))  && Battle_GetEnemyActive(proc)){
+		if(instance_exists(Battle_GetEnemy(proc))){
 			num+=1;
 		}
 		proc+=1;

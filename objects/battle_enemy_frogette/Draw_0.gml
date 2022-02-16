@@ -1,6 +1,6 @@
 /// @description Transition Effect
 // You can write your code in this editor
-if (live_call()) return live_result;
+//if (live_call()) return live_result;
 
 
 if(_animation_stage==0) {

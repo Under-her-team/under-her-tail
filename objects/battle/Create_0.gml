@@ -1,6 +1,6 @@
 var ENCOUNTER=Flag_Get(FLAG_TYPE.TEMP,FLAG_TEMP.ENCOUNTER);
 _enemy_object[0]=Encounter_GetEnemy(ENCOUNTER,0);
-_enemy_object[1]=Encounter_GetEnemy_UHT(ENCOUNTER);
+_enemy_object[1]=Encounter_GetEnemy(ENCOUNTER,1);
 _enemy_object[2]=Encounter_GetEnemy(ENCOUNTER,2);
 //敌人实例
 _enemy[0]=noone;
@@ -27,15 +27,10 @@ _enemy_turned_on[0]=0;
 _enemy_mindblow_percent[2]=0;
 _enemy_mindblow_percent[1]=0;
 _enemy_mindblow_percent[0]=0;
-//Enemy Satisfaction - Essentially how many times a True Soul is collected 
+//Enemy Satisfaction - How many times a True Soul is collected 
 _enemy_satsifaction[2]=0;
 _enemy_satsifaction[1]=0;
 _enemy_satsifaction[0]=0;
-//Enemy Mindblow Points - How many times a monster has been FUCKed at full mindblow precent
-//Needs to match threshold for Mindblown
-_enemy_mindblow_points[2]=0;
-_enemy_mindblow_points[1]=0;
-_enemy_mindblow_points[0]=0;
 
 //Active enemy - Says if an enemy is active or not. Should allow me to reactive a monster if necessary,
 //particularly for mindblow

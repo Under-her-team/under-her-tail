@@ -26,17 +26,13 @@ function Battle_SetMenu() {
 		}
 		
 		var text="";
-		var proc=0;
 		//创建敌人列表文字
-		repeat(3){
-			var inst=Battle_GetEnemy(proc);
-			if(instance_exists(inst) && Battle_GetEnemyActive(proc)){
-				if(Battle_GetTurnedOn(proc)>0){
-					text+="{color `pink`}"
-				}
-				text+=Battle_GetEnemyName(proc)+"{color `white`}&";
+		var inst=Battle_GetEnemy(1);
+		if(instance_exists(inst)){
+			if(Battle_GetMindblowPercent(1)==100){
+				text+="{color `pink`}"
 			}
-			proc+=1;
+			text+=Battle_GetEnemyName(1)+"{color `white`}&";
 		}
 		Battle_SetDialog(text,true);
 	}
@@ -132,7 +128,15 @@ function Battle_SetMenu() {
 	
 	if(MENU==BATTLE_MENU.FINISH){
 		var text="";
-		text+="* Fuck&* Leave";
+		var check_for_enemy=(instance_exists(Battle_GetEnemy(1)));
+		if(check_for_enemy){
+			if(Battle_GetMindblowPercent(1)==100){
+				text+="{color `pink`}"
+			}
+			
+			text+="* Fuck{color `white`}&";
+		}
+		text+="* Leave";
 		Battle_SetDialog(text,true);
 		
 	}

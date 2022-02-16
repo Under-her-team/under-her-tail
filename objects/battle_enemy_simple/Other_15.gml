@@ -1,7 +1,7 @@
 ///@desc Menu End
 
 switch(Battle_GetMenuChoiceButton()){
-	case BATTLE_MENU_CHOICE_BUTTON.FIGHT:
+	case BATTLE_MENU_CHOICE_BUTTON.FINISH:
 		//Check: is enemy supposed to be dead?
 		if(_hp<=0){
 			sprite_index=_sprite_hurt;

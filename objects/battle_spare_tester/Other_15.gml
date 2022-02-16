@@ -1,5 +1,5 @@
 /// @description Menu End
-if (live_call()) return live_result;
+//if (live_call()) return live_result;
 
 var menu_choice = Battle_GetMenuChoiceButton();
 

@@ -366,7 +366,7 @@ if(_state==BATTLE_STATE.RESULT){
 	}
 }
 
-var mindblow_check = Battle_Mindblow_Check();
+var mindblow_check = false;// Battle_Mindblow_Check();
 
 //检查战斗结束game
 if(_state!=BATTLE_STATE.RESULT && _state!=BATTLE_STATE.MINDBLOW  && Battle_GetEnemyNumber()==0 && !mindblow_check){
