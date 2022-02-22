@@ -29,7 +29,7 @@ function Macro_Battle() {
 		FUN,
 		ACT,
 		ITEM,
-		FIGHT
+		FINISH
 	};
 
 	enum BATTLE_MENU_CHOICE_MERCY{

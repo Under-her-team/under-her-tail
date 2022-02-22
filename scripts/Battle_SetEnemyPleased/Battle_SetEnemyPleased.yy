@@ -2,11 +2,11 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "Mindblow",
-    "path": "folders/Scripts/Battle/Enemy/Mindblow.yy",
+    "name": "Pleased",
+    "path": "folders/Scripts/Battle/Enemy/Pleased.yy",
   },
   "resourceVersion": "1.0",
-  "name": "Battle_SetMindblowPercent",
+  "name": "Battle_SetEnemyPleased",
   "tags": [],
   "resourceType": "GMScript",
 }

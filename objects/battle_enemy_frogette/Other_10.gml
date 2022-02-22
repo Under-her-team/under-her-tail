@@ -6,27 +6,23 @@ event_inherited();
 
 Battle_SetEnemyName(_enemy_slot,"* Frogette");
 
-Battle_SetEnemyThreshold(_enemy_slot,2);
-
 //default stats
-_mindblow_percent=0;
-Battle_SetMindblowPercent(_enemy_slot,_mindblow_percent);
+_mindblow_percent=0;//Lists the amount of FUN points done to the enemy. Will probably be replaced later. Reverse Healthbar
+_true_soul_count=0;//Lists the number of souls collected
+
+_true_soul_pleased=2;//Lists the number of souls needed to please
 
 //Set Actions
-Battle_SetEnemyActionNumber(_enemy_slot,5);
-Battle_SetEnemyActionName(_enemy_slot,0,"* Check Out")
-Battle_SetEnemyActionName(_enemy_slot,1,"* Geek Out");
-Battle_SetEnemyActionName(_enemy_slot,2,"* Listen");
+Battle_SetEnemyActionNumber(_enemy_slot,4);
+Battle_SetEnemyActionName(_enemy_slot,0,"* Check Out");
+Battle_SetEnemyActionName(_enemy_slot,1,"* Listen");
 
-
-Battle_SetEnemyActionName(_enemy_slot,3,"* Remove");
-Battle_SetEnemyActionName(_enemy_slot,4,"* Test Fuck");
+Battle_SetEnemyActionName(_enemy_slot,2,"* Remove");
+Battle_SetEnemyActionName(_enemy_slot,3,"* Test Fuck");
 
 //Current fun value for which FUN is to occur. Used as a counter
 _fun_value = 0;
 
-//Max fun value. Used to signify how many funs there are max.
-_fun_max = 2;
 
 //FUCK or FUN flag. Essentially used to communicate which is used. 0 is FUCK, 1 is FUN, -1 is undefined
 _fuck_or_fun = -1;
@@ -42,7 +38,6 @@ _uni_transitCount = shader_get_uniform(Pink_Transition_Color,"time");
 
 //Mindblow stage - What part of the mindblow animation to be in.
 _mindblow_stage = 0;
-
 
 //Sprites
 _sprite_normal=sprite_index
@@ -77,16 +72,16 @@ _sex_dialog=noone; //The dialogue itself
 _sex_dialog_timer=150; 
 
 
-//For Frogette specifically
-//Variables that keep track of what turn on sequences are available. 
-//Listen is part of a sequence, so it's a number. If it's interrupted, it's
-//set back to 0, and reset. If it's completed, it's -1, showing it's no longer available
-//The other two need only one thing done to activated their turn ons. If it's
-//true, it can still be done. If not, it's be achieved.
-_turn_on_listen = 0;
-_turn_on_geek_out = true;
-_turn_on_book = true;
+//ACT based attack trigger
+_act_attack=false;
 
+//Check Out Change
+_check_out_change=false;
+
+//ACT triggers
+_listen_soul=false;
+_geek_out=false;
+_book=false;
 
 //A variable used to guage the dialogue reaction of frogette
 //The value signals the exact type. 

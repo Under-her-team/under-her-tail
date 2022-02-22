@@ -14,29 +14,11 @@ _enemy_name[2]="";
 _enemy_spareable[0]=false;
 _enemy_spareable[1]=false;
 _enemy_spareable[2]=false;
-//Enemy Threshold - Lists the number of hearts necessary for a pleased result
-_enemy_threshold[2]=0;
-_enemy_threshold[1]=0;
-_enemy_threshold[0]=0;
-//Enemy Turned On - Lists if the monster is turned on
-//0 is not, <=1 is. If is turned on, a heart will spawn
-_enemy_turned_on[2]=0;
-_enemy_turned_on[1]=0;
-_enemy_turned_on[0]=0;
-//Enemy Mindblow Percent - Used to indicate how close a monster is to Mindblow
-_enemy_mindblow_percent[2]=0;
-_enemy_mindblow_percent[1]=0;
-_enemy_mindblow_percent[0]=0;
-//Enemy Satisfaction - How many times a True Soul is collected 
-_enemy_satsifaction[2]=0;
-_enemy_satsifaction[1]=0;
-_enemy_satsifaction[0]=0;
+//Enemy Mindblow - Used to signify if the enemy is about to be mindblown
+_enemy_mindblow=false;
 
-//Active enemy - Says if an enemy is active or not. Should allow me to reactive a monster if necessary,
-//particularly for mindblow
-_enemy_active[2]=false;
-_enemy_active[1]=false;
-_enemy_active[0]=false;
+//Enemy Pleased - Used to signify if the enemy has reached pleased
+_enemy_pleased=false;
 
 //敌人行动列表
 _enemy_action_number[0]=0;

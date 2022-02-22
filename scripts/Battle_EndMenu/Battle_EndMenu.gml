@@ -11,13 +11,13 @@ function Battle_EndMenu() {
 			Item_CallEvent(Item_Get(Battle_GetMenuChoiceItem()),ITEM_EVENT.USE,Battle_GetMenuChoiceItem());
 		}
 	
-		if(BUTTON==BATTLE_MENU_CHOICE_BUTTON.FIGHT){
-			if(instance_exists(battle_menu_fight)){
-				with(battle_menu_fight){
-					event_user(BATTLE_MENU_FIGHT_EVENT.END);
-				}
-			}
-		}
+//		if(BUTTON==BATTLE_MENU_CHOICE_BUTTON.FINISH){
+//			if(instance_exists(battle_menu_fight)){
+//				with(battle_menu_fight){
+//					event_user(BATTLE_MENU_FIGHT_EVENT.END);
+//				}
+//			}
+//		}
 	
 		//计算逃跑
 //		if(BUTTON==BATTLE_MENU_CHOICE_BUTTON.MERCY && MERCY==BATTLE_MENU_CHOICE_MERCY.FLEE){
