@@ -73,13 +73,14 @@ _sex_dialog_timer=150;
 
 
 //ACT based attack trigger
-_act_attack=false;
+_soul_value=-1;
+soul_success=false;
 
 //Check Out Change
 _check_out_change=false;
 
 //ACT triggers
-_listen_soul=false;
+_listen=false;
 _geek_out=false;
 _book=false;
 

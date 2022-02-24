@@ -1,3 +1,4 @@
 _inst[0]=noone;
 _inst[1]=noone;
-_inst[2]=noone;
+
+true_soul_collected=false;

@@ -112,7 +112,7 @@ sexcess_flag=false;
 _sex_in_progress=false;
 
 //Used to signify if the heart has been grabbed
-_heart_received=false;
+_true_soul_received=false;
 
 //Used to determine what animation is used during sex segments
 _battle_sex_stage=BATTLE_SEX_STATE.NONE;

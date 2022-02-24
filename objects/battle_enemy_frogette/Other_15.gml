@@ -25,6 +25,7 @@ switch(Battle_GetMenuChoiceButton()){
 					break;
 				case 1:
 					text = "* You listen.";
+					if(!_listen)  _soul_value=0;
 					break;
 				case 2:
 					text = "* Bye Frogette.";
@@ -49,9 +50,11 @@ switch(Battle_GetMenuChoiceButton()){
 					break;
 				case 1:
 					text = "* You listen.";
+					if(!_listen)  _soul_value=0;
 					break;
 				case 2:
 					text = "* You geek out.";
+					if(!_geek_out) _soul_value=1;
 					break;
 				case 3:
 					text = "* Bye Frogette.";
@@ -80,6 +83,7 @@ switch(Battle_GetMenuChoiceButton()){
 	case BATTLE_MENU_CHOICE_BUTTON.ITEM:
 		if(Battle_GetMenuItemUsedLast()==item_history_book){
 			text= "* Frogette was excited to see the book!";
+			if(!_book) _soul_value=2;
 		}
 		break;
 	

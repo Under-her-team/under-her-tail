@@ -350,7 +350,6 @@ if(_state==BATTLE_STATE.IN_TURN){
 
 //面板重置
 if(_state==BATTLE_STATE.BOARD_RESETTING){
-	_heart_received=false;
 	if(!Battle_IsBoardTransforming()){
 		Battle_CallEnemyEvent(BATTLE_ENEMY_EVENT.BOARD_RESETTING_END);
 		Battle_GotoNextState();

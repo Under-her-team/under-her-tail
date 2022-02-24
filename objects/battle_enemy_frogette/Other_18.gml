@@ -6,9 +6,15 @@
 
 var dialog_text="";
 
-dialog_text="Test Dialog";
-	
-instance_create_depth(0,0,0,battle_turn_simple);
+if(_soul_value!=-1){
+	dialog_text="Heart Dialog";
+	instance_create_depth(0,0,0,battle_turn_simple_frogette);
+}
+else {
+	dialog_text="Test Dialog";
+	instance_create_depth(0,0,0,battle_turn_simple);
+}
+
 //Say something
 var inst=instance_create_depth(x+100,y-150,0,battle_dialog_enemy);
 inst.text=dialog_text;
