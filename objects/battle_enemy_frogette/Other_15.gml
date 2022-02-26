@@ -35,8 +35,7 @@ switch(Battle_GetMenuChoiceButton()){
 						instance_create_depth(x,y-(sprite_width/2),DEPTH_BATTLE.UI_HIGH,battle_spare_particle);
 					Battle_RemoveEnemy(_enemy_slot);
 					break;
-				case 3:
-					Battle_SetSexState(BATTLE_SEX_STATE.FUCK); 
+				case 3: 
 					Battle_SetNextState(BATTLE_STATE.SEX);
 					_current_sex_animation=0;
 					break;
@@ -65,9 +64,7 @@ switch(Battle_GetMenuChoiceButton()){
 					Battle_RemoveEnemy(_enemy_slot);
 					break;
 				case 4:
-					Battle_SetSexState(BATTLE_SEX_STATE.FUCK); 
 					Battle_SetNextState(BATTLE_STATE.SEX);
-					_current_sex_animation=0;
 					break;
 			}
 		}

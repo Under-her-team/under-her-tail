@@ -38,9 +38,8 @@ function Battle_EndMenu() {
 //		}
 		
 		if(BUTTON==BATTLE_MENU_CHOICE_BUTTON.FUN) {
-			Battle_SetSexFlag(true);
-			Battle_SetSexcessFlag(true);
-			Battle_SetSexState(BATTLE_SEX_STATE.FUN);
+			//Battle_SetSexFlag(true);
+			//Battle_SetSexcessFlag(true);
 			Battle_CallEnemyEvent(BATTLE_ENEMY_EVENT.MENU_END,Battle_ConvertMenuChoiceEnemyToEnemySlot(Battle_GetMenuChoiceEnemy()));	
 		}
 		

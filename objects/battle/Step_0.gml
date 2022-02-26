@@ -122,7 +122,6 @@ if(_state==BATTLE_STATE.MENU){
 		//This sets some of the variables then goes to the next state.
 		//I'm thinking _sex_flag can be used to indicate whether a FUCK is occuring
 		_sex_flag=true;
-		_battle_sex_stage=BATTLE_SEX_STATE.FUCK;
 		Battle_SetNextState(BATTLE_STATE.TURN_PREPARATION);
 		Battle_EndMenu();
 	}else
@@ -408,7 +407,6 @@ if(_state==BATTLE_STATE.SEX){
 	}
 
 	if(_sex_in_progress==false){
-		_battle_sex_stage=BATTLE_SEX_STATE.NONE;
 		if(instance_exists(battle._dialog[0])){
 			instance_destroy(battle._dialog[0]);
 		}
@@ -430,7 +428,6 @@ if(_state==BATTLE_STATE.MINDBLOW){
 	}
 	
 	if(_sex_in_progress==false){
-		_battle_sex_stage=BATTLE_SEX_STATE.NONE;
 		
 		Music_Stop(5);
 		var text="{define `EXP` "+string(Battle_GetRewardExp())+"}{define `GOLD` "+string(Battle_GetRewardGold())+"}";

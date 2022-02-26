@@ -20,12 +20,6 @@ Battle_SetEnemyActionName(_enemy_slot,1,"* Listen");
 Battle_SetEnemyActionName(_enemy_slot,2,"* Remove");
 Battle_SetEnemyActionName(_enemy_slot,3,"* Test Fuck");
 
-//Current fun value for which FUN is to occur. Used as a counter
-_fun_value = 0;
-
-
-//FUCK or FUN flag. Essentially used to communicate which is used. 0 is FUCK, 1 is FUN, -1 is undefined
-_fuck_or_fun = -1;
 
 //Animation stage variable. Used to say where the animation is. 
 //-1 = unused. 0 = transition 1 = start. 2:4 = intermediate stages. 5 = end
@@ -60,12 +54,10 @@ _sex_animations[0,2]=spr_frogette_cowgirl_fake_end;
 _sex_animations[0,1]=spr_frogette_cowgirl;
 _sex_animations[0,0]=spr_frogette_cowgirl_start;
 
+//FUN Animation
+
 _sex_animation_count=1;
 _current_sex_animation=0;
-
-//Fun Animations
-_fun_animations[1]=spr_frogette_cowgirl;
-_fun_animations[0]=spr_frogette_cowgirl;
 
 //Sex Dialog
 _sex_dialog=noone; //The dialogue itself

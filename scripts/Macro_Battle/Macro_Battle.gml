@@ -55,12 +55,6 @@ function Macro_Battle() {
 		MONSTER_REAPPEAR,
 		SEX
 	};
-	
-	enum BATTLE_SEX_STATE{
-		NONE,
-		FUCK,
-		FUN
-	};
 
 	enum BATTLE_SOUL_EVENT{
 		BULLET_COLLISION,
