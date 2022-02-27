@@ -1,6 +1,5 @@
 //if (live_call()) return live_result;
 
-battle_bg.image_index=_bg_index;
 //菜单
 
 
@@ -364,10 +363,8 @@ if(_state==BATTLE_STATE.RESULT){
 	}
 }
 
-var mindblow_check = false;// Battle_Mindblow_Check();
-
 //检查战斗结束game
-if(_state!=BATTLE_STATE.RESULT && _state!=BATTLE_STATE.MINDBLOW  && Battle_GetEnemyNumber()==0 && !mindblow_check){
+if(_state!=BATTLE_STATE.RESULT && Battle_GetEnemyNumber()==0){
 	Battle_SetState(BATTLE_STATE.RESULT);
 	Battle_SetNextState(BATTLE_STATE.RESULT);
 	Music_Stop(5);
@@ -383,9 +380,7 @@ if(_state!=BATTLE_STATE.RESULT && _state!=BATTLE_STATE.MINDBLOW  && Battle_GetEn
 	Battle_SetDialog(text);
 }
 
-if(_state!=BATTLE_STATE.RESULT && _state!=BATTLE_STATE.MINDBLOW && Battle_GetEnemyNumber()==0 && mindblow_check){
-	Battle_SetState(BATTLE_STATE.MINDBLOW);
-}
+
 
 if(_state==BATTLE_STATE.SEX){
 	//This is where the sex animations play.
@@ -410,37 +405,7 @@ if(_state==BATTLE_STATE.SEX){
 		if(instance_exists(battle._dialog[0])){
 			instance_destroy(battle._dialog[0]);
 		}
-		Battle_RestoreSoul();
 		Battle_GotoNextState();
 	}
 }
 
-if(_state==BATTLE_STATE.MINDBLOW){
-	
-	if(!instance_exists(_dialog[0])){
-		if(!Dialog_IsEmpty()){
-			Battle_SetDialog(Dialog_Get()+"{sex_dialog}");
-		}else{
-			if(Battle_IsDialogAutoEnd()){
-				Battle_EndDialog();
-			}
-		}
-	}
-	
-	if(_sex_in_progress==false){
-		
-		Music_Stop(5);
-		var text="{define `EXP` "+string(Battle_GetRewardExp())+"}{define `GOLD` "+string(Battle_GetRewardGold())+"}";
-		text+=Lang_GetString("battle.result.won");
-		Player_SetExp(Player_GetExp()+Battle_GetRewardExp());
-		Player_SetGold(Player_GetGold()+Battle_GetRewardGold());
-		if(Player_UpdateLv()){
-			text+="&"+Lang_GetString("battle.result.lv_up");
-			audio_play_sound(snd_level_up,0,false);
-		}
-		text+="{pause}{end}";
-		Battle_SetDialog(text);
-		
-		Battle_GotoNextState();
-	}
-}

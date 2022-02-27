@@ -102,14 +102,9 @@ _player_temp_def=0;
 _player_temp_spd=0;
 _player_temp_inv=0;
 
-_bg_index=0;
-
 //This says if we're using FUCK or FUN
 _sex_flag=false;
 //This says if we've had a successful FUCK
 sexcess_flag=false;
 //This says if we're holding the animation for FUCK
 _sex_in_progress=false;
-
-//Used to signify if the heart has been grabbed
-_true_soul_received=false;

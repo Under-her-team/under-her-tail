@@ -478,6 +478,7 @@
     {"id":{"name":"Player_GetAtkItem","path":"scripts/Player_GetAtkItem/Player_GetAtkItem.yy",},"order":37,},
     {"id":{"name":"Player_GetDefItem","path":"scripts/Player_GetDefItem/Player_GetDefItem.yy",},"order":39,},
     {"id":{"name":"battle_menu_end_text","path":"objects/battle_menu_end_text/battle_menu_end_text.yy",},"order":7,},
+    {"id":{"name":"Battle_CanEnemyBeFucked","path":"scripts/Battle_CanEnemyBeFucked/Battle_CanEnemyBeFucked.yy",},"order":22,},
     {"id":{"name":"Player_GetSpdItem","path":"scripts/Player_GetSpdItem/Player_GetSpdItem.yy",},"order":41,},
     {"id":{"name":"Battle_IsEmptyBattle","path":"scripts/Battle_IsEmptyBattle/Battle_IsEmptyBattle.yy",},"order":20,},
     {"id":{"name":"Player_GetInvItem","path":"scripts/Player_GetInvItem/Player_GetInvItem.yy",},"order":43,},

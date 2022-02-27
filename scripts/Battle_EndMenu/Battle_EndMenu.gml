@@ -4,6 +4,7 @@ function Battle_EndMenu() {
 	
 		var BUTTON=Battle_GetMenuChoiceButton();
 		var MERCY=Battle_GetMenuChoiceMercy();
+		var FINISH=Battle_GetMenuChoiceFinish();
 	
 		//使用物品
 		if(BUTTON==BATTLE_MENU_CHOICE_BUTTON.ITEM){
@@ -33,18 +34,18 @@ function Battle_EndMenu() {
 		if(BUTTON==BATTLE_MENU_CHOICE_BUTTON.ACT) {
 			Battle_CallEnemyEvent(BATTLE_ENEMY_EVENT.MENU_END,Battle_ConvertMenuChoiceEnemyToEnemySlot(Battle_GetMenuChoiceEnemy()));	
 		}
-//		else {
-//			Battle_CallEnemyEvent(BATTLE_ENEMY_EVENT.MENU_END);	
-//		}
+
 		
 		if(BUTTON==BATTLE_MENU_CHOICE_BUTTON.FUN) {
-			//Battle_SetSexFlag(true);
-			//Battle_SetSexcessFlag(true);
 			Battle_CallEnemyEvent(BATTLE_ENEMY_EVENT.MENU_END,Battle_ConvertMenuChoiceEnemyToEnemySlot(Battle_GetMenuChoiceEnemy()));	
 		}
 		
 		if(BUTTON==BATTLE_MENU_CHOICE_BUTTON.ITEM) {
 			Battle_CallEnemyEvent(BATTLE_ENEMY_EVENT.MENU_END);	
+		}
+		
+		if(BUTTON==BATTLE_MENU_CHOICE_BUTTON.FINISH && FINISH==BATTLE_MENU_CHOICE_FINISH.FUCK && Battle_CanEnemyBeFucked()){
+			Battle_SetNextState(BATTLE_STATE.SEX);
 		}
 	
 		if(Battle_GetEnemyNumber()>0){

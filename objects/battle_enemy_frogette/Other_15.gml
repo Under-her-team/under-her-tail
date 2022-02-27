@@ -37,7 +37,6 @@ switch(Battle_GetMenuChoiceButton()){
 					break;
 				case 3: 
 					Battle_SetNextState(BATTLE_STATE.SEX);
-					_current_sex_animation=0;
 					break;
 			}
 		}

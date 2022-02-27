@@ -36,6 +36,11 @@ function Macro_Battle() {
 		SPARE,
 		FLEE
 	};
+	
+	enum BATTLE_MENU_CHOICE_FINISH{
+		FUCK,
+		LEAVE
+	};
 
 	enum BATTLE_ENEMY_EVENT{
 		INIT,

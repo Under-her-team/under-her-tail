@@ -99,16 +99,7 @@ function Battle_SetState() {
 
 	//面版重置
 	if(STATE==BATTLE_STATE.BOARD_RESETTING){
-		if(sex_flag) {
-			Battle_SetSexFlag(false);
-			if(sexcess_flag) Battle_SetNextState(BATTLE_STATE.SEX);
-			else Battle_SetNextState(BATTLE_STATE.DIALOG);
-		}
-		else if(sexcess_flag) {
-			Battle_SetSexcessFlag(false);
-			Battle_SetNextState(BATTLE_STATE.DIALOG);
-		}
-		else Battle_SetNextState(BATTLE_STATE.MENU);
+		Battle_SetNextState(BATTLE_STATE.MENU);
 	
 		var X_OLD=battle_board.x;
 		var Y_OLD=battle_board.y;
