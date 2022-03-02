@@ -139,6 +139,7 @@
     {"id":{"name":"snd_phone_status","path":"sounds/snd_phone_status/snd_phone_status.yy",},"order":29,},
     {"id":{"name":"snd_phone_box","path":"sounds/snd_phone_box/snd_phone_box.yy",},"order":31,},
     {"id":{"name":"snd_exclamation","path":"sounds/snd_exclamation/snd_exclamation.yy",},"order":33,},
+    {"id":{"name":"Battle_Menu_HideSoul","path":"scripts/Battle_Menu_HideSoul/Battle_Menu_HideSoul.yy",},"order":12,},
     {"id":{"name":"spr_tile_ruins","path":"sprites/spr_tile_ruins/spr_tile_ruins.yy",},"order":3,},
     {"id":{"name":"snd_encounter_soul_move","path":"sounds/snd_encounter_soul_move/snd_encounter_soul_move.yy",},"order":35,},
     {"id":{"name":"player_optionsselected_leave2","path":"sprites/player_optionsselected_leave2/player_optionsselected_leave2.yy",},"order":6,},

@@ -7,6 +7,7 @@ if(_state==BATTLE_STATE.MENU){
 	//按钮
 	if(_menu==BATTLE_MENU.BUTTON){
 		//左/右
+		
 		if(Input_IsPressed(INPUT.LEFT)){
 			var button=_menu_choice_button;
 			button-=1;
@@ -352,6 +353,7 @@ if(_state==BATTLE_STATE.IN_TURN){
 
 //面板重置
 if(_state==BATTLE_STATE.BOARD_RESETTING){
+	Battle_Menu_HideSoul(true);
 	if(!Battle_IsBoardTransforming()){
 		Battle_CallEnemyEvent(BATTLE_ENEMY_EVENT.BOARD_RESETTING_END);
 		Battle_GotoNextState();

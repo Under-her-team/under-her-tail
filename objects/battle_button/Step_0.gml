@@ -5,6 +5,7 @@ if(STATUS==BATTLE_STATE.MENU && MENU!=BATTLE_MENU.FIGHT_AIM && MENU!=BATTLE_MENU
 	if(Battle_GetMenuChoiceButton()==_button_slot){
 		image_index=1;
 		if(MENU==BATTLE_MENU.BUTTON){
+			Battle_Menu_HideSoul(false);
 			battle_soul.x=x+22;
 			battle_soul.y=y+20;
 		}

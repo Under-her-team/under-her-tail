@@ -1,4 +1,5 @@
 var STATE=Battle_GetState();
+
 if(STATE==BATTLE_STATE.TURN_PREPARATION||STATE==BATTLE_STATE.IN_TURN){
 	if(follow_board){
 		x+=battle_board.x-battle_board.xprevious;
