@@ -4,8 +4,6 @@ function Battle_SetState() {
 
 	battle._state=STATE;
 	
-	var sex_flag = Battle_GetSexFlag();
-	var sexcess_flag = Battle_GetSexcessFlag();
 
 	//菜单
 	if(STATE==BATTLE_STATE.MENU){

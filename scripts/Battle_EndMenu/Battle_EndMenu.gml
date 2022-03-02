@@ -12,23 +12,6 @@ function Battle_EndMenu() {
 			Item_CallEvent(Item_Get(Battle_GetMenuChoiceItem()),ITEM_EVENT.USE,Battle_GetMenuChoiceItem());
 		}
 	
-//		if(BUTTON==BATTLE_MENU_CHOICE_BUTTON.FINISH){
-//			if(instance_exists(battle_menu_fight)){
-//				with(battle_menu_fight){
-//					event_user(BATTLE_MENU_FIGHT_EVENT.END);
-//				}
-//			}
-//		}
-	
-		//计算逃跑
-//		if(BUTTON==BATTLE_MENU_CHOICE_BUTTON.MERCY && MERCY==BATTLE_MENU_CHOICE_MERCY.FLEE){
-//			if(Battle_IsMenuMercyFleeEnabled()){
-//				var value=irandom(100)+10*Battle_GetTurnNumber();
-//				Battle_SetFleeable(round(value/100));
-//			}else{
-//				Battle_SetFleeable(false);
-//			}
-//		}
 	
 		//调用事件
 		if(BUTTON==BATTLE_MENU_CHOICE_BUTTON.ACT) {

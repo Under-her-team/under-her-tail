@@ -4,7 +4,7 @@
 
 Dialog_Add("TEST MESSAGE");
 
- _state=BATTLE_ENEMY_STATE.SEX; 
+_state=BATTLE_ENEMY_STATE.SEX; 
 
 
 

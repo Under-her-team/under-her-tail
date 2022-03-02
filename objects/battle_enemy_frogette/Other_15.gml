@@ -70,7 +70,6 @@ switch(Battle_GetMenuChoiceButton()){
 		break;
 	case BATTLE_MENU_CHOICE_BUTTON.FUN:
 		//WIP FUN
-		text = "* You had fun with Frogette.";
 		_mindblow_percent+=50;
 		if(_mindblow_percent==100) {
 			Battle_SetEnemyMindblown(true);

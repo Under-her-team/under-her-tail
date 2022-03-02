@@ -55,6 +55,9 @@ _sex_animations[0,1]=spr_frogette_cowgirl;
 _sex_animations[0,0]=spr_frogette_cowgirl_start;
 
 //FUN Animation
+_fun_animation=spr_frogette_fake_fun;
+
+//Number of animations. 
 
 _sex_animation_count=1;
 _current_sex_animation=0;

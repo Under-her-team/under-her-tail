@@ -46,11 +46,6 @@ if(_state==BATTLE_STATE.MENU){
 					}
 					break;
 				case 3:
-//					if(Item_GetNumber()>0){
-//						Battle_SetMenu(BATTLE_MENU.ITEM);
-//					}else{
-//						audio_stop_sound(snd_menu_confirm);
-//					}
 					Battle_SetMenu(BATTLE_MENU.FINISH);
 					break;
 			}
@@ -228,7 +223,16 @@ if(_state==BATTLE_STATE.MENU){
 			Battle_SetMenu(BATTLE_MENU.BUTTON);
 		}else if(Input_IsPressed(INPUT.CONFIRM)){
 			audio_play_sound(snd_menu_confirm,0,false);
+			audio_play_sound(snd_level_up,0,false);
+			Battle_SetMenu(BATTLE_MENU.FUN_ANIM);
+		}
+	}else
+	
+	if(_menu==BATTLE_MENU.FUN_ANIM){
+		battle_soul.image_alpha=0;
+		if(_sex_in_progress==false){
 			Battle_EndMenu();
+			battle_soul.image_alpha=1;
 		}
 	}else
 	

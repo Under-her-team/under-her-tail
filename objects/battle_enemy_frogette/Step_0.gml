@@ -3,6 +3,13 @@
 //if (live_call()) return live_result;
 
 switch(_state){
+	case BATTLE_ENEMY_STATE.FUN:
+		sprite_index=_fun_animation;
+		if(image_index > (image_number-1)) {
+			_state=BATTLE_ENEMY_STATE.IDLE;
+			Battle_ReleaseSex();
+		}
+		break;
 	case BATTLE_ENEMY_STATE.SEX:
 		switch(_animation_stage){
 			case 0:

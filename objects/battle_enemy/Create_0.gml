@@ -1,5 +1,6 @@
 enum BATTLE_ENEMY_STATE{
 		IDLE,
+		FUN,
 		SEX,
 		ATTACK,
 		CUTSCENE,

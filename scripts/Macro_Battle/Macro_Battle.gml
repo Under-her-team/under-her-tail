@@ -22,6 +22,7 @@ function Macro_Battle() {
 		MERCY,
 		FUCK,
 		FUN_TARGET,
+		FUN_ANIM,
 		FINISH
 	};
 

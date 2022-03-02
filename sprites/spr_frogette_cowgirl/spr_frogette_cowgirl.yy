@@ -89,8 +89,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "frogette_sex",
-    "path": "folders/Sprites/Battle/Monsters/Frogette/frogette_sex.yy",
+    "name": "Sex",
+    "path": "folders/Sprites/Battle/Monsters/Frogette/Sex.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_frogette_cowgirl",

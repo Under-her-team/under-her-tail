@@ -15,5 +15,10 @@ switch(Battle_GetMenu()){
 		inst.enemy_slot=_enemy_slot;
 		inst.mindblow_precent=_mindblow_percent;
 		break;
+	
+	case BATTLE_MENU.FUN_ANIM:
+		Battle_HoldSex();
+		_state=BATTLE_ENEMY_STATE.FUN; 
+		break;
 		
 }
