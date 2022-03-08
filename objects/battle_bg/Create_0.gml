@@ -1,6 +1,7 @@
 depth=DEPTH_BATTLE.BG;
 var ENCOUNTER=Flag_Get(FLAG_TYPE.TEMP,FLAG_TEMP.ENCOUNTER);
-var BG = Encounter_GetBackground(ENCOUNTER);
+BG = Encounter_GetBackground(ENCOUNTER);
+MB_BG = Encounter_GetMindblowBackground(ENCOUNTER);
 
 sprite_index=BG;
 

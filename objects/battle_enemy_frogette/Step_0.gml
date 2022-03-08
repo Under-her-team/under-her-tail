@@ -49,19 +49,19 @@ switch(_state){
 				sprite_index=_sex_animations[_current_sex_animation,1];
 				
 				sprite_set_speed(sprite_index, 6, spritespeed_framespersecond);
-				if(Input_IsPressed(INPUT.RIGHT)) _animation_stage=3;
+				if(Input_IsPressed(INPUT.RIGHT) || Input_IsPressed(INPUT.CONFIRM)) _animation_stage=3;
 				
 				
 				break;
 			case 3:
 				sprite_set_speed(sprite_index, 10, spritespeed_framespersecond);
-				if(Input_IsPressed(INPUT.RIGHT)) _animation_stage=4;
-				else if(Input_IsPressed(INPUT.LEFT)) _animation_stage=2;
+				if(Input_IsPressed(INPUT.RIGHT) || Input_IsPressed(INPUT.CONFIRM)) _animation_stage=4;
+				else if(Input_IsPressed(INPUT.LEFT) || Input_IsPressed(INPUT.CANCEL)) _animation_stage=2;
 				break;
 			case 4:
 				sprite_set_speed(sprite_index, 14, spritespeed_framespersecond);
-				if(Input_IsPressed(INPUT.RIGHT)) _animation_stage=5;
-				else if(Input_IsPressed(INPUT.LEFT)) _animation_stage=3;
+				if(Input_IsPressed(INPUT.RIGHT) || Input_IsPressed(INPUT.CONFIRM)) _animation_stage=5;
+				else if(Input_IsPressed(INPUT.LEFT) || Input_IsPressed(INPUT.CANCEL)) _animation_stage=3;
 				break;
 			case 5: 
 				sprite_index=_sex_animations[_current_sex_animation,2];
@@ -73,6 +73,7 @@ switch(_state){
 					}
 					else if(_mindblow_percent==100) {
 						_state=BATTLE_ENEMY_STATE.MINDBLOW;
+						Battle_MindblowBackground();
 						_animation_stage=0;
 						image_speed=0;
 					}
@@ -89,7 +90,7 @@ switch(_state){
 				break;
 		}
 		
-		if(Input_IsPressed(INPUT.RIGHT) || Input_IsPressed(INPUT.LEFT)) {
+		if(Input_IsPressed(INPUT.RIGHT) || Input_IsPressed(INPUT.CONFIRM) || Input_IsPressed(INPUT.LEFT) || Input_IsPressed(INPUT.CANCEL)) {
 			instance_destroy(_sex_dialog);	
 			_sex_dialog_timer=150; 
 		}
@@ -130,18 +131,18 @@ switch(_state){
 			case 2:
 				sprite_index=_mindblow_animations[_mindblow_stage,0];
 				sprite_set_speed(sprite_index, 6, spritespeed_framespersecond);
-				if(Input_IsPressed(INPUT.RIGHT)) _animation_stage=3;
+				if(Input_IsPressed(INPUT.RIGHT) || Input_IsPressed(INPUT.CONFIRM)) _animation_stage=3;
 				break;
 			case 3:
 				sprite_set_speed(sprite_index, 10, spritespeed_framespersecond);
-				if(Input_IsPressed(INPUT.RIGHT)) _animation_stage=4;
-				else if(Input_IsPressed(INPUT.LEFT)) _animation_stage=2;
+				if(Input_IsPressed(INPUT.RIGHT) || Input_IsPressed(INPUT.CONFIRM)) _animation_stage=4;
+				else if(Input_IsPressed(INPUT.LEFT) || Input_IsPressed(INPUT.CANCEL)) _animation_stage=2;
 				break;
 			case 4:
 				sprite_index=_mindblow_animations[_mindblow_stage,0];
 				sprite_set_speed(sprite_index, 14, spritespeed_framespersecond);
-				if(Input_IsPressed(INPUT.RIGHT)) _animation_stage=5;
-				else if(Input_IsPressed(INPUT.LEFT)) _animation_stage=3;
+				if(Input_IsPressed(INPUT.RIGHT) || Input_IsPressed(INPUT.CONFIRM)) _animation_stage=5;
+				else if(Input_IsPressed(INPUT.LEFT) || Input_IsPressed(INPUT.CANCEL)) _animation_stage=3;
 				break;
 			case 5: 
 				sprite_index=_mindblow_animations[_mindblow_stage,1];

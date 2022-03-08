@@ -1,4 +1,4 @@
-/// @description Change background
+/// @description Change background from normal
 // You can write your code in this editor
 if(_transition_count<10) {
 	image_alpha-=0.1;
@@ -8,5 +8,7 @@ if(_transition_count<10) {
 else {
 	image_alpha=0;
 	_transition_count=0;
+	sprite_index=MB_BG;
+	alarm[1]=1;
 }
 

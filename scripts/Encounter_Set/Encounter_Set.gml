@@ -22,6 +22,7 @@ function Encounter_Set() {
 	var SOUL_X=48;
 	var SOUL_Y=454;
 	var BG=spr_battle_bg;//Addded bit where the background is decided by the encounter
+	var MB_BG=spr_battle_bg_mindblow;
 	if(argument_count>=6){
 		BGM=argument[5];
 	}
@@ -29,19 +30,22 @@ function Encounter_Set() {
 		BG=argument[6];
 	}
 	if(argument_count>=8){
-		MENU_MERCY_FLEE_ENABLED=argument[7];
+		MB_BG=argument[7];
 	}
 	if(argument_count>=9){
-		PAUSE_BGM=argument[8];
+		MENU_MERCY_FLEE_ENABLED=argument[8];
 	}
 	if(argument_count>=10){
-		QUICK=argument[9];
+		PAUSE_BGM=argument[9];
 	}
 	if(argument_count>=11){
-		SOUL_X=argument[10];
+		QUICK=argument[10];
 	}
 	if(argument_count>=12){
-		SOUL_Y=argument[11];
+		SOUL_X=argument[11];
+	}
+	if(argument_count>=13){
+		SOUL_Y=argument[12];
 	}
 
 
@@ -66,6 +70,7 @@ function Encounter_Set() {
 		ds_map_add(map_e,"soul_x",SOUL_X);
 		ds_map_add(map_e,"soul_y",SOUL_Y);
 		ds_map_add(map_e,"background",BG);
+		ds_map_add(map_e,"background_mindblow",MB_BG);
 		return true;
 	}else{
 		return false;

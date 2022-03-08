@@ -686,6 +686,7 @@
     {"id":{"name":"ui_box","path":"objects/ui_box/ui_box.yy",},"order":7,},
     {"id":{"name":"hint_bgm","path":"objects/hint_bgm/hint_bgm.yy",},"order":1,},
     {"id":{"name":"hint_landmark","path":"objects/hint_landmark/hint_landmark.yy",},"order":3,},
+    {"id":{"name":"Encounter_GetMindblowBackground","path":"scripts/Encounter_GetMindblowBackground/Encounter_GetMindblowBackground.yy",},"order":31,},
     {"id":{"name":"hint_border","path":"objects/hint_border/hint_border.yy",},"order":5,},
     {"id":{"name":"bgm_nobgm","path":"sounds/bgm_nobgm/bgm_nobgm.yy",},"order":6,},
     {"id":{"name":"Battle_DecreaseTurnedOn","path":"scripts/Battle_DecreaseTurnedOn/Battle_DecreaseTurnedOn.yy",},"order":3,},
