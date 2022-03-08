@@ -1,6 +1,11 @@
 /// @description Animating Sprites
 // You can write your code in this editor
 //if (live_call()) return live_result;
+//				image_alpha=0.5;
+//					repeat(12)
+//						instance_create_depth(x,y-(sprite_width/2),DEPTH_BATTLE.UI_HIGH,battle_spare_particle);
+//					Battle_RemoveEnemy(_enemy_slot);
+//Battle_SetNextState(BATTLE_STATE.SEX);
 
 switch(_state){
 	case BATTLE_ENEMY_STATE.FUN:
@@ -74,6 +79,11 @@ switch(_state){
 					else{
 						_state=BATTLE_ENEMY_STATE.IDLE;
 						Battle_ReleaseSex();
+						audio_play_sound(snd_vaporize,0,false);
+						image_alpha=0.5;
+						repeat(12)
+							instance_create_depth(x,y-(sprite_width/2),DEPTH_BATTLE.UI_HIGH,battle_spare_particle);
+						Battle_RemoveEnemy(_enemy_slot);
 					}
 				}
 				break;
@@ -144,10 +154,11 @@ switch(_state){
 					//_state=BATTLE_ENEMY_STATE.MINDBLOW_AFTER;
 					_state=BATTLE_ENEMY_STATE.IDLE;
 					Battle_ReleaseSex();
-					//audio_play_sound(snd_vaporize,0,false);
-					//image_alpha=0.5;
-					//repeat(12)
-					//	instance_create_depth(x,y-(sprite_width/2),DEPTH_BATTLE.UI_HIGH,battle_spare_particle);
+					audio_play_sound(snd_vaporize,0,false);
+					image_alpha=0.5;
+					repeat(12)
+						instance_create_depth(x,y-(sprite_width/2),DEPTH_BATTLE.UI_HIGH,battle_spare_particle);
+					Battle_RemoveEnemy(_enemy_slot);
 				}
 				break;
 		}

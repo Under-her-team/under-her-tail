@@ -27,8 +27,10 @@ function Battle_EndMenu() {
 			Battle_CallEnemyEvent(BATTLE_ENEMY_EVENT.MENU_END);	
 		}
 		
-		if(BUTTON==BATTLE_MENU_CHOICE_BUTTON.FINISH && FINISH==BATTLE_MENU_CHOICE_FINISH.FUCK && Battle_CanEnemyBeFucked()){
-			Battle_SetNextState(BATTLE_STATE.SEX);
+		
+		if(BUTTON==BATTLE_MENU_CHOICE_BUTTON.FINISH){
+			if(FINISH==BATTLE_MENU_CHOICE_FINISH.FUCK && Battle_CanEnemyBeFucked()) Battle_SetNextState(BATTLE_STATE.SEX);
+			else Battle_CallEnemyEvent(BATTLE_ENEMY_EVENT.MENU_END,Battle_ConvertMenuChoiceEnemyToEnemySlot(Battle_GetMenuChoiceEnemy()));	
 		}
 	
 		if(Battle_GetEnemyNumber()>0){

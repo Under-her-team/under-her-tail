@@ -2,11 +2,11 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "FUCK_&_FUN",
-    "path": "folders/Scripts/Battle/FUCK_&_FUN.yy",
+    "name": "LV Up",
+    "path": "folders/Scripts/Player/LV Up.yy",
   },
   "resourceVersion": "1.0",
-  "name": "Battle_SetSexcessFlag",
+  "name": "Player_GetLvlAp",
   "tags": [],
   "resourceType": "GMScript",
 }

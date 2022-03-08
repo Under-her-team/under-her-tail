@@ -4,7 +4,7 @@ function Player_GetLvAtk() {
 
 	var result=-1;
 
-	result=10+(LV-1)*2;
+	result=(LV-1)*2;
 
 	return result;
 

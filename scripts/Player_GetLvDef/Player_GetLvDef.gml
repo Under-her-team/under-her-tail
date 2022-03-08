@@ -4,7 +4,7 @@ function Player_GetLvDef() {
 
 	var result=-1;
 
-	result=10+ceil((LV-4)/4);
+	result=ceil((LV-4)/4);
 
 	return result;
 

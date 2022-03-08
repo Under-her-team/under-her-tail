@@ -1,4 +1,4 @@
-///@arg state
+ ///@arg state
 function Battle_SetState() {
 	var STATE=argument[0];
 

@@ -115,8 +115,6 @@ if(_state==BATTLE_STATE.MENU){
 	
 	if(_menu==BATTLE_MENU.FUCK){
 		//This sets some of the variables then goes to the next state.
-		//I'm thinking _sex_flag can be used to indicate whether a FUCK is occuring
-		_sex_flag=true;
 		Battle_SetNextState(BATTLE_STATE.TURN_PREPARATION);
 		Battle_EndMenu();
 	}else
