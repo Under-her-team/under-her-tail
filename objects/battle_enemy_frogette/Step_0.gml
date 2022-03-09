@@ -81,6 +81,7 @@ switch(_state){
 						_state=BATTLE_ENEMY_STATE.IDLE;
 						Battle_ReleaseSex();
 						audio_play_sound(snd_vaporize,0,false);
+						Flag_Set(FLAG_TYPE.STATIC,FLAG_STATIC.FROGETTE_RESULT,0);
 						image_alpha=0.5;
 						repeat(12)
 							instance_create_depth(x,y-(sprite_width/2),DEPTH_BATTLE.UI_HIGH,battle_spare_particle);
@@ -156,6 +157,7 @@ switch(_state){
 					_state=BATTLE_ENEMY_STATE.IDLE;
 					Battle_ReleaseSex();
 					audio_play_sound(snd_vaporize,0,false);
+					Flag_Set(FLAG_TYPE.STATIC,FLAG_STATIC.FROGETTE_RESULT,1);
 					image_alpha=0.5;
 					repeat(12)
 						instance_create_depth(x,y-(sprite_width/2),DEPTH_BATTLE.UI_HIGH,battle_spare_particle);

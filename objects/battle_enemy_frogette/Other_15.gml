@@ -59,6 +59,7 @@ switch(Battle_GetMenuChoiceButton()){
 		if(Battle_GetMenuChoiceFinish()==BATTLE_MENU_CHOICE_FINISH.LEAVE && _true_soul_count>=_true_soul_pleased) {
 			image_alpha=0.5;
 			audio_play_sound(snd_vaporize,0,false);
+			Flag_Set(FLAG_TYPE.STATIC,FLAG_STATIC.FROGETTE_RESULT,0);
 			repeat(12)
 				instance_create_depth(x,y-(sprite_width/2),DEPTH_BATTLE.UI_HIGH,battle_spare_particle);
 			Battle_RemoveEnemy(_enemy_slot);
