@@ -12,11 +12,15 @@ _true_soul_count=0;//Lists the number of souls collected
 
 _true_soul_pleased=2;//Lists the number of souls needed to please
 
+Battle_SetEnemyEND(2);
+
+_WP_Max=54;
+_WP=0;
+
 //Set Actions
 Battle_SetEnemyActionNumber(_enemy_slot,2);
 Battle_SetEnemyActionName(_enemy_slot,0,"* Check Out");
 Battle_SetEnemyActionName(_enemy_slot,1,"* Listen");
-
 
 
 //Animation stage variable. Used to say where the animation is. 

@@ -13,7 +13,7 @@ switch(Battle_GetMenu()){
 		var bar_y=battle_board.y-battle_board.up+22;
 		var inst = instance_create_depth(bar_x,bar_y,0,battle_menu_mindblow_bar);
 		inst.enemy_slot=_enemy_slot;
-		inst.mindblow_precent=_mindblow_percent;
+		inst.mindblow_precent=round((_WP/_WP_Max)*100);
 		break;
 	
 	case BATTLE_MENU.FUN_ANIM:

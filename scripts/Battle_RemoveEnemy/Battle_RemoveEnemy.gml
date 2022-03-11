@@ -19,7 +19,7 @@ function Battle_RemoveEnemy() {
 		battle._enemy_action_name[ENEMY,5]="";
 		battle._enemy_center_pos_x[ENEMY]=0;
 		battle._enemy_center_pos_y[ENEMY]=0;
-		battle._enemy_def[ENEMY]=0;
+		battle._enemy_end[ENEMY]=0;
 		return true;
 	}else{
 		return false;

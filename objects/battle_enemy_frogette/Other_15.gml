@@ -12,7 +12,7 @@ switch(Battle_GetMenuChoiceButton()){
 		if(!_check_out_change){
 			switch(menu_choice_action){
 				case 0:
-					text = "* Frogette - ATK 3 END 2&* Croaks for no reason.";
+					text = "* Frogette - APP 3 END 2&* Croaks for no reason.";
 					Battle_SetEnemyActionNumber(_enemy_slot,3);
 					Battle_SetEnemyActionName(_enemy_slot,0,"* Check Out");
 					Battle_SetEnemyActionName(_enemy_slot,1,"* Listen");
@@ -44,7 +44,9 @@ switch(Battle_GetMenuChoiceButton()){
 		break;
 	case BATTLE_MENU_CHOICE_BUTTON.FUN:
 		//WIP FUN
-		_mindblow_percent+=50;
+		_mindblow_percent+=Battle_GetFunDamage();
+		_WP+=Battle_GetFunDamage();
+		if(_mindblow_percent>100) _mindblow_percent=100;
 		if(_mindblow_percent==100) {
 			Battle_SetEnemyMindblown(true);
 		}
@@ -70,4 +72,3 @@ switch(Battle_GetMenuChoiceButton()){
 if(text!=""){
 	Dialog_Add(text);
 }
-if(_mindblow_percent>100) _mindblow_percent=100;
