@@ -2,7 +2,7 @@ depth=DEPTH_BATTLE.UI;
 visible=false;
 
 damage=0;
-color=c_red;
+color=$F59Eff;
 display_time=room_speed*1.75;
 bar_visible=true;
 bar_width=100;

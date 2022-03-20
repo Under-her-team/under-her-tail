@@ -14,5 +14,3 @@ Battle_HoldSex();
 _transition_count=0.0;
 _animation_stage = 0;
 _current_sex_animation=0;
-
-//Battle_SetMindblowPercent(_enemy_slot,_mindblow_percent);

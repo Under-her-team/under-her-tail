@@ -7,6 +7,10 @@
 
 //var SLOT=Battle_ConvertEnemySlotToMenuChoiceEnemy(enemy_slot);
 //var X=battle_board.x-battle_board.left-5+28+415;
-//var Y=battle_board.y-battle_board.up+22+32*SLOT;
+//var Y=battle_board.y-battle_board.up+22+32*SLOT
+
+var pink_filling = round((WP/WP_Max)*100);
+
+
 draw_sprite_ext(spr_pixel,0,x,y,_width,20,0,$404040,1);
-draw_sprite_ext(spr_pixel,0,x,y,mindblow_precent,20,0,$7700ff,1);
+draw_sprite_ext(spr_pixel,0,x,y,pink_filling,20,0,$7700ff,1);

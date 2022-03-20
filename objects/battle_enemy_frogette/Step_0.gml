@@ -10,6 +10,14 @@
 switch(_state){
 	case BATTLE_ENEMY_STATE.FUN:
 		sprite_index=_fun_animation;
+		if(image_index==_fun_bar_trigger_frame){
+			var inst=instance_create_depth(x,y-200,0,battle_damage);
+			inst.damage=_bar_damage;
+			inst.bar_hp_max=_bar_wp_max;
+			inst.bar_hp_original=_bar_wp_orig;
+			inst.bar_hp_target=_bar_wp_target;
+		}
+		
 		if(image_index > (image_number-1)) {
 			_state=BATTLE_ENEMY_STATE.IDLE;
 			Battle_ReleaseSex();
@@ -43,6 +51,11 @@ switch(_state){
 			case 1:
 				image_speed=1;
 				sprite_index=_sex_animations[_current_sex_animation,0];
+				if((floor(image_index) == _sex_timing[_current_sex_animation,0]) && _play_sex_sound[0]) {
+					var snd= audio_play_sound(snd_cowgirl_start,0,false);
+					audio_sound_gain(snd,2,0);
+					_play_sex_sound[0]=false;
+				}
 				if(image_index > (image_number-1)) _animation_stage = 2;
 				break;
 			case 2:
@@ -51,27 +64,158 @@ switch(_state){
 				sprite_set_speed(sprite_index, 6, spritespeed_framespersecond);
 				if(Input_IsPressed(INPUT.RIGHT) || Input_IsPressed(INPUT.CONFIRM)) _animation_stage=3;
 				
+				if((floor(image_index) == _sex_timing[_current_sex_animation,1]) && _play_sex_sound[1]) {
+					var new_check = -1;
+					randomize();
+					switch(_sex_sound_check){
+						case 0:
+							new_check=choose(1,2,3);
+							break;
+						case 1:
+							new_check=choose(0,2,3);
+							break;
+						case 2:
+							new_check=choose(0,1,3);
+							break;
+						case 3:
+							new_check=choose(0,2,1);
+							break;
+						default:
+							new_check=choose(0,1,2,3);
+							break;
+					}
+					switch(new_check){
+						case 0:
+							audio_play_sound(snd_cowgirl_loopA,0,false);
+							_sex_sound_check=new_check;
+							break
+						case 1:
+							audio_play_sound(snd_cowgirl_loopB,0,false);
+							_sex_sound_check=new_check;
+							break;
+						case 2:
+							audio_play_sound(snd_cowgirl_loopC,0,false);
+							_sex_sound_check=new_check;
+							break;
+						case 3:
+							audio_play_sound(snd_cowgirl_loopD,0,false);
+							_sex_sound_check=new_check;
+							break;
+					}
+					_play_sex_sound[1]=false;
+				}
+				if(image_index > (image_number-1)) _play_sex_sound[1]=true;
 				
 				break;
 			case 3:
 				sprite_set_speed(sprite_index, 10, spritespeed_framespersecond);
 				if(Input_IsPressed(INPUT.RIGHT) || Input_IsPressed(INPUT.CONFIRM)) _animation_stage=4;
 				else if(Input_IsPressed(INPUT.LEFT) || Input_IsPressed(INPUT.CANCEL)) _animation_stage=2;
+				
+				if((floor(image_index) == _sex_timing[_current_sex_animation,1]) && _play_sex_sound[1]) {
+					var new_check = -1;
+					randomize();
+					switch(_sex_sound_check){
+						case 0:
+							new_check=choose(1,2,3);
+							break;
+						case 1:
+							new_check=choose(0,2,3);
+							break;
+						case 2:
+							new_check=choose(0,1,3);
+							break;
+						case 3:
+							new_check=choose(0,2,1);
+							break;
+						default:
+							new_check=choose(0,1,2,3);
+							break;
+					}
+					switch(new_check){
+						case 0:
+							audio_play_sound(snd_cowgirl_loopA,0,false);
+							_sex_sound_check=new_check;
+							break
+						case 1:
+							audio_play_sound(snd_cowgirl_loopB,0,false);
+							_sex_sound_check=new_check;
+							break;
+						case 2:
+							audio_play_sound(snd_cowgirl_loopC,0,false);
+							_sex_sound_check=new_check;
+							break;
+						case 3:
+							audio_play_sound(snd_cowgirl_loopD,0,false);
+							_sex_sound_check=new_check;
+							break;
+					}
+					_play_sex_sound[1]=false;
+				}
+				if(image_index > (image_number-1)) _play_sex_sound[1]=true;
+				
 				break;
 			case 4:
 				sprite_set_speed(sprite_index, 14, spritespeed_framespersecond);
 				if(Input_IsPressed(INPUT.RIGHT) || Input_IsPressed(INPUT.CONFIRM)) _animation_stage=5;
 				else if(Input_IsPressed(INPUT.LEFT) || Input_IsPressed(INPUT.CANCEL)) _animation_stage=3;
+				
+				if((floor(image_index) == _sex_timing[_current_sex_animation,1]) && _play_sex_sound[1]) {
+					var new_check = -1;
+					randomize();
+					switch(_sex_sound_check){
+						case 0:
+							new_check=choose(1,2,3);
+							break;
+						case 1:
+							new_check=choose(0,2,3);
+							break;
+						case 2:
+							new_check=choose(0,1,3);
+							break;
+						case 3:
+							new_check=choose(0,2,1);
+							break;
+						default:
+							new_check=choose(0,1,2,3);
+							break;
+					}
+					switch(new_check){
+						case 0:
+							audio_play_sound(snd_cowgirl_loopA,0,false);
+							_sex_sound_check=new_check;
+							break
+						case 1:
+							audio_play_sound(snd_cowgirl_loopB,0,false);
+							_sex_sound_check=new_check;
+							break;
+						case 2:
+							audio_play_sound(snd_cowgirl_loopC,0,false);
+							_sex_sound_check=new_check;
+							break;
+						case 3:
+							audio_play_sound(snd_cowgirl_loopD,0,false);
+							_sex_sound_check=new_check;
+							break;
+					}
+					_play_sex_sound[1]=false;
+				}
+				if(image_index > (image_number-1)) _play_sex_sound[1]=true;
+				
 				break;
 			case 5: 
 				sprite_index=_sex_animations[_current_sex_animation,2];
+				if((floor(image_index) == _sex_timing[_current_sex_animation,2]) && _play_sex_sound[2]) {
+					audio_play_sound(snd_cowgirl_climax,0,false);
+					_play_sex_sound[2]=false;
+				}
 				if(image_index > (image_number-1)) {
 					if(_current_sex_animation<_sex_animation_count){
 						_animation_stage = 0;
 						_current_sex_animation+=1;
 						image_speed=0;
 					}
-					else if(_mindblow_percent==100) {
+					else if(_WP>=_WP_Max) {
 						_state=BATTLE_ENEMY_STATE.MINDBLOW;
 						Battle_MindblowBackground();
 						_animation_stage=0;
@@ -87,6 +231,9 @@ switch(_state){
 							instance_create_depth(x,y-(sprite_width/2),DEPTH_BATTLE.UI_HIGH,battle_spare_particle);
 						Battle_RemoveEnemy(_enemy_slot);
 					}
+					_play_sex_sound[2]=true;
+					_play_sex_sound[1]=true;
+					_play_sex_sound[0]=true;
 				}
 				break;
 		}

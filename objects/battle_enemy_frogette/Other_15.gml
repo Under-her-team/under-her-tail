@@ -43,11 +43,7 @@ switch(Battle_GetMenuChoiceButton()){
 		}
 		break;
 	case BATTLE_MENU_CHOICE_BUTTON.FUN:
-		//WIP FUN
-		_mindblow_percent+=Battle_GetFunDamage();
-		_WP+=Battle_GetFunDamage();
-		if(_mindblow_percent>100) _mindblow_percent=100;
-		if(_mindblow_percent==100) {
+		if(_WP==_WP_Max) {
 			Battle_SetEnemyMindblown(true);
 		}
 		break;

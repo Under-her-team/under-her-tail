@@ -13,10 +13,20 @@ switch(Battle_GetMenu()){
 		var bar_y=battle_board.y-battle_board.up+22;
 		var inst = instance_create_depth(bar_x,bar_y,0,battle_menu_mindblow_bar);
 		inst.enemy_slot=_enemy_slot;
-		inst.mindblow_precent=round((_WP/_WP_Max)*100);
+		inst.WP=_WP;
+		inst.WP_Max=_WP_Max;
 		break;
 	
 	case BATTLE_MENU.FUN_ANIM:
+		var damage = Battle_GetFunDamage();
+		_bar_damage=damage;
+		_bar_wp_orig=_WP;
+		_WP+=damage;
+		if(_WP>_WP_Max) {
+			_WP=_WP_Max;
+		}
+		_bar_wp_target=_WP;
+	
 		Battle_HoldSex();
 		_state=BATTLE_ENEMY_STATE.FUN; 
 		break;

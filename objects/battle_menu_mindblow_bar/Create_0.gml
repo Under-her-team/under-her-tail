@@ -7,4 +7,6 @@ depth=DEPTH_BATTLE.UI_HIGH;
 enemy_slot=-1;
 
 _width = 100;
-mindblow_precent=0;
+
+WP=0
+WP_Max=100;

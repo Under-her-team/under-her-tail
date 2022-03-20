@@ -39,6 +39,7 @@ function Battle_SetState() {
 	
 		battle_soul.x=battle_board.x+Battle_GetTurnInfo(BATTLE_TURN.SOUL_X,0);
 		battle_soul.y=battle_board.y+Battle_GetTurnInfo(BATTLE_TURN.SOUL_Y,0);
+		instance_create_depth(battle_soul.x,battle_soul.y,DEPTH_BATTLE.SOUL,battle_soul_tp);
 	
 		var X_OLD=battle_board.x;
 		var Y_OLD=battle_board.y;
@@ -140,6 +141,8 @@ function Battle_SetState() {
 			Anim_Create(battle_board,"left",SIZE_TWEEN,SIZE_EASE,LEFT_OLD,LEFT_CHANGE,SIZE_DURATION);
 			Anim_Create(battle_board,"right",SIZE_TWEEN,SIZE_EASE,RIGHT_OLD,RIGHT_CHANGE,SIZE_DURATION);
 		}
+		
+		instance_destroy(battle_soul_tp);
 	
 		Battle_CallEnemyEvent(BATTLE_ENEMY_EVENT.BOARD_RESETTING_START);
 	}
