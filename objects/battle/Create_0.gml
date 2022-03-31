@@ -42,6 +42,25 @@ _enemy_action_name[2,2]="";
 _enemy_action_name[2,3]="";
 _enemy_action_name[2,4]="";
 _enemy_action_name[2,5]="";
+//TP Cost
+_enemy_action_tp_cost[0,0]=0;
+_enemy_action_tp_cost[0,1]=0;
+_enemy_action_tp_cost[0,2]=0;
+_enemy_action_tp_cost[0,3]=0;
+_enemy_action_tp_cost[0,4]=0;
+_enemy_action_tp_cost[0,5]=0;
+_enemy_action_tp_cost[1,0]=0;
+_enemy_action_tp_cost[1,1]=0;
+_enemy_action_tp_cost[1,2]=0;
+_enemy_action_tp_cost[1,3]=0;
+_enemy_action_tp_cost[1,4]=0;
+_enemy_action_tp_cost[1,5]=0;
+_enemy_action_tp_cost[2,0]=0;
+_enemy_action_tp_cost[2,1]=0;
+_enemy_action_tp_cost[2,2]=0;
+_enemy_action_tp_cost[2,3]=0;
+_enemy_action_tp_cost[2,4]=0;
+_enemy_action_tp_cost[2,5]=0;
 
 
 //敌人中心位置
@@ -104,3 +123,8 @@ _player_temp_inv=0;
 
 //This says if we're holding the animation for FUCK
 _sex_in_progress=false;
+
+
+//TP
+tp=0;
+tp_max=250;

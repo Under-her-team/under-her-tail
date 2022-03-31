@@ -64,13 +64,15 @@ function Macro_Battle() {
 
 	enum BATTLE_SOUL_EVENT{
 		BULLET_COLLISION,
-		HURT
+		HURT,
+		TP,
+		TP_DESTROY
 	};
 
 	enum BATTLE_BULLET_EVENT{
 		SOUL_COLLISION,
 		TURN_END,
-		TRUE_SOUL_GET
+		SOUL_GRAZE
 	};
 
 	enum BATTLE_TURN_EVENT{

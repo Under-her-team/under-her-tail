@@ -23,6 +23,10 @@ function Battle_EndTurn() {
 				event_user(BATTLE_BULLET_EVENT.TURN_END);
 			}
 		}
+		
+		with(battle_soul){
+			event_user(BATTLE_SOUL_EVENT.TP_DESTROY);
+		}
 	
 		Battle_GotoNextState();
 		return true;

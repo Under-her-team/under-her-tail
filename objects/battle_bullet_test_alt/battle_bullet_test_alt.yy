@@ -1,15 +1,15 @@
 {
   "spriteId": {
-    "name": "spr_battle_soul_red",
-    "path": "sprites/spr_battle_soul_red/spr_battle_soul_red.yy",
+    "name": "spr_bullet_simple",
+    "path": "sprites/spr_bullet_simple/spr_bullet_simple.yy",
   },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "battle_soul",
-    "path": "objects/battle_soul/battle_soul.yy",
+    "name": "battle_bullet",
+    "path": "objects/battle_bullet/battle_bullet.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
@@ -24,18 +24,18 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":10,"eventType":7,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":12,"eventType":7,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Soul",
-    "path": "folders/Objects/Battle/Soul.yy",
+    "name": "Bullets",
+    "path": "folders/Objects/Battle/Enemy/Simple Enemy/Bullets.yy",
   },
   "resourceVersion": "1.0",
-  "name": "battle_soul_red",
+  "name": "battle_bullet_test_alt",
   "tags": [],
   "resourceType": "GMObject",
 }

@@ -33,6 +33,7 @@ switch(Battle_GetMenuChoiceButton()){
 					break;
 				case 1:
 					text = "* You listen.";
+					if(Battle_UseTP(10)) text+="& 10 TP used";
 					if(!_listen)  _soul_value=0;
 					break;
 				case 2:
