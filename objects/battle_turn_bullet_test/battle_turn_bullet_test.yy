@@ -1,15 +1,12 @@
 {
-  "spriteId": {
-    "name": "spr_bullet_frogette_fly",
-    "path": "sprites/spr_bullet_frogette_fly/spr_bullet_frogette_fly.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "battle_bullet",
-    "path": "objects/battle_bullet/battle_bullet.yy",
+    "name": "battle_turn",
+    "path": "objects/battle_turn/battle_turn.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
@@ -24,18 +21,17 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":10,"eventType":7,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":12,"eventType":7,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Bullets",
-    "path": "folders/Objects/Battle/Enemy/Frogette/Bullets.yy",
+    "name": "Turns",
+    "path": "folders/Objects/Battle/Enemy/Frogette/Turns.yy",
   },
   "resourceVersion": "1.0",
-  "name": "battle_bullet_fly",
+  "name": "battle_turn_bullet_test",
   "tags": [],
   "resourceType": "GMObject",
 }

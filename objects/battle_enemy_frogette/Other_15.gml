@@ -17,10 +17,12 @@ switch(Battle_GetMenuChoiceButton()){
 					Battle_SetEnemyActionName(_enemy_slot,0,"* Check Out");
 					Battle_SetEnemyActionName(_enemy_slot,1,"* Listen");
 					Battle_SetEnemyActionName(_enemy_slot,2,"* Geek Out");
+					Battle_SetEnemyActionTPCost(_enemy_slot,1,10);
 					_check_out_change=true;
 					break;
 				case 1:
 					text = "* You listen.";
+					//if(Battle_UseTP(10)) text+="& 10 TP used";
 					if(!_listen)  _soul_value=0;
 					break;
 			}
@@ -33,7 +35,7 @@ switch(Battle_GetMenuChoiceButton()){
 					break;
 				case 1:
 					text = "* You listen.";
-					if(Battle_UseTP(10)) text+="& 10 TP used";
+					//if(Battle_UseTP(10)) text+="& 10 TP used";
 					if(!_listen)  _soul_value=0;
 					break;
 				case 2:

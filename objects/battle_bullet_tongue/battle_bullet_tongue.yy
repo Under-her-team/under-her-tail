@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_bullet_frogette_fly",
-    "path": "sprites/spr_bullet_frogette_fly/spr_bullet_frogette_fly.yy",
+    "name": "spr_bullet_frogette_tonguestrip",
+    "path": "sprites/spr_bullet_frogette_tonguestrip/spr_bullet_frogette_tonguestrip.yy",
   },
   "solid": false,
   "visible": true,
@@ -25,8 +25,8 @@
   "physicsShapePoints": [],
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":10,"eventType":7,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
@@ -35,7 +35,7 @@
     "path": "folders/Objects/Battle/Enemy/Frogette/Bullets.yy",
   },
   "resourceVersion": "1.0",
-  "name": "battle_bullet_fly",
+  "name": "battle_bullet_tongue",
   "tags": [],
   "resourceType": "GMObject",
 }

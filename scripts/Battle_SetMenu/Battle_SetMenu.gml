@@ -65,14 +65,25 @@ function Battle_SetMenu() {
 		var proc=0;
 		var text="";
 		var text2="";
+		var tp=0;
 		var target=0;
 		//创建行动列表文字
 		repeat(Battle_GetEnemyActionNumber(ENEMY)){
 			if(!target){
-				text+=Battle_GetEnemyActionName(ENEMY,proc)+"&";
+				text+=Battle_GetEnemyActionName(ENEMY,proc);
+				tp=Battle_GetEnemyActionTPCost(ENEMY,proc);
+				if(tp>0){
+					text+=" "+string(tp)+"%";
+				}
+				text+="&";
 				target=!target;
 			}else{
-				text2+=Battle_GetEnemyActionName(ENEMY,proc)+"&";
+				text2+=Battle_GetEnemyActionName(ENEMY,proc);
+				tp=Battle_GetEnemyActionTPCost(ENEMY,proc);
+				if(tp>0){
+					text2+=" "+string(tp)+"%";
+				}
+				text2+="&";
 				target=!target;
 			}
 			proc+=1;

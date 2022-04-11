@@ -1,12 +1,15 @@
 {
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_bullet_frogette_frog_circle",
+    "path": "sprites/spr_bullet_frogette_frog_circle/spr_bullet_frogette_frog_circle.yy",
+  },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "battle_turn",
-    "path": "objects/battle_turn/battle_turn.yy",
+    "name": "battle_bullet",
+    "path": "objects/battle_bullet/battle_bullet.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
@@ -22,17 +25,17 @@
   "physicsShapePoints": [],
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":10,"eventType":7,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":12,"eventType":7,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Turns",
-    "path": "folders/Objects/Battle/Enemy/Frogette/Turns.yy",
+    "name": "Bullets",
+    "path": "folders/Objects/Battle/Enemy/Frogette/Bullets.yy",
   },
   "resourceVersion": "1.0",
-  "name": "battle_bullet_fuck_fly_0",
+  "name": "battle_bullet_frog_spin",
   "tags": [],
   "resourceType": "GMObject",
 }

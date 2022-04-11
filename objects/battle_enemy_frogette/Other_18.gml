@@ -12,7 +12,7 @@ if(_soul_value!=-1){
 }
 else {
 	dialog_text="Test Dialog";
-	instance_create_depth(0,0,0,battle_turn_simple);
+	instance_create_depth(0,0,0,battle_turn_bullet_test);
 }
 
 //Say something

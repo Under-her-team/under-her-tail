@@ -20,6 +20,8 @@ Battle_SetEnemyActionNumber(_enemy_slot,2);
 Battle_SetEnemyActionName(_enemy_slot,0,"* Check Out");
 Battle_SetEnemyActionName(_enemy_slot,1,"* Listen");
 
+Battle_SetEnemyActionTPCost(_enemy_slot,1,10);
+
 
 //Animation stage variable. Used to say where the animation is. 
 //-1 = unused. 0 = transition 1 = start. 2:4 = intermediate stages. 5 = end

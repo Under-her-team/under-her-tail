@@ -190,14 +190,17 @@ if(_state==BATTLE_STATE.MENU){
 		battle_soul.x=battle_board.x-battle_board.left-5+40+256*(_menu_choice_action%2);
 		battle_soul.y=battle_board.y-battle_board.up-5+36+32*floor(_menu_choice_action/2);
 		
+		//Current TP Cost
+		var tp_cost=Battle_GetEnemyActionTPCost(Battle_ConvertMenuChoiceEnemyToEnemySlot(Battle_GetMenuChoiceEnemy()),Battle_GetMenuChoiceAction());
+		
 		//返回/确定
 		if(Input_IsPressed(INPUT.CANCEL)){
 			Battle_SetMenu(BATTLE_MENU.ACT_TARGET);
-		}else if(Input_IsPressed(INPUT.CONFIRM)){
+		}else if(Input_IsPressed(INPUT.CONFIRM) && Battle_UseTP(tp_cost)){
 			audio_play_sound(snd_menu_confirm,0,false);
 			Battle_EndMenu();
-		}
-	}else
+		}else if(Input_IsPressed(INPUT.CONFIRM) && !Battle_UseTP(tp_cost)) audio_play_sound(snd_noise,0,false);
+	}else 
 	
 	if(_menu==BATTLE_MENU.FUN_TARGET){
 		if(Input_IsPressed(INPUT.UP)){
