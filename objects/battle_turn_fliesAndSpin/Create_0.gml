@@ -1,7 +1,8 @@
-/// @description Soul Collision
+/// @description 
 // You can write your code in this editor
 
 // Inherit the parent event
 event_inherited();
 
-Battle_CallSoulEventHurt();
+_timer=35;
+_flies=0;

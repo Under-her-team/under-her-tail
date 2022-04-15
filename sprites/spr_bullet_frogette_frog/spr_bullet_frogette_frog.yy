@@ -59,7 +59,7 @@
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
     "xorigin": 16,
-    "yorigin": 21,
+    "yorigin": 22,
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_bullet_frogette_frog","path":"sprites/spr_bullet_frogette_frog/spr_bullet_frogette_frog.yy",},

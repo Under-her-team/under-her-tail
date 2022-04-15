@@ -4,6 +4,14 @@
 // Inherit the parent event
 event_inherited();
 
-_timer=15;
-_tongue=noone;
-_phase=0; //0 mouth closed. 1 Mouth open, tongue shooting out. 2 spinning
+_tongueLength=0;
+_timer=10;
+_phase=0;
+_tongue=0;
+//Anim_Create(self,_tongueLength,ANIM_TWEEN.LINEAR,ANIM_EASE.IN,0,30,30,15);
+
+_angle=0;
+
+_tip_x=0;
+_tip_y=0;
+

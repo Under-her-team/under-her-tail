@@ -1,7 +1,7 @@
 /// @description Adjust apperance accordingly & move
 // You can write your code in this editor
 
-if(!place_meeting(x,y,battle_bullet)){
+if(!place_meeting(x,y,battle_bullet) && !special_graze){
 	_grazing=false;
 }
 
