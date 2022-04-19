@@ -13,4 +13,5 @@ _tongue_length=0;
 _tip_x=0;
 _tip_y=0;
 _angle=0;
-_negative_x=false;
+
+_tracking=true;

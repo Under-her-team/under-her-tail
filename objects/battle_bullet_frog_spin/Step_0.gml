@@ -13,10 +13,10 @@ switch (_phase){
 		break;
 	case 1:
 		_timer-=1;
-		_tongueLength+=5;
+		_tongueLength+=6;
 		if(_timer<=0){
 			_phase=2;
-			_timer=95;
+			_timer=60;
 		}
 		break;
 	case 2:
