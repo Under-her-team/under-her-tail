@@ -17,7 +17,6 @@ switch(Battle_GetMenuChoiceButton()){
 					Battle_SetEnemyActionName(_enemy_slot,0,"* Check Out");
 					Battle_SetEnemyActionName(_enemy_slot,1,"* Listen");
 					Battle_SetEnemyActionName(_enemy_slot,2,"* Geek Out");
-					Battle_SetEnemyActionTPCost(_enemy_slot,1,10);
 					_check_out_change=true;
 					break;
 				case 1:

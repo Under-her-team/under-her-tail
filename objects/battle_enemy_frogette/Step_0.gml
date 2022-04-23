@@ -10,16 +10,18 @@
 switch(_state){
 	case BATTLE_ENEMY_STATE.FUN:
 		sprite_index=_fun_animation;
-		if(image_index==_fun_bar_trigger_frame){
+		if(image_index==0 && _fun_bar_trigger){
 			var inst=instance_create_depth(x,y-200,0,battle_damage);
 			inst.damage=_bar_damage;
 			inst.bar_hp_max=_bar_wp_max;
 			inst.bar_hp_original=_bar_wp_orig;
 			inst.bar_hp_target=_bar_wp_target;
+			_fun_bar_trigger=false;
 		}
 		
-		if(image_index > (image_number-1)) {
+		if(Input_IsPressed(INPUT.RIGHT) || Input_IsPressed(INPUT.CONFIRM)) {
 			_state=BATTLE_ENEMY_STATE.IDLE;
+			_fun_bar_trigger=true;
 			Battle_ReleaseSex();
 		}
 		break;

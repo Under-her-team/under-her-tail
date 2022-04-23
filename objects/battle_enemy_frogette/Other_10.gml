@@ -20,7 +20,7 @@ Battle_SetEnemyActionNumber(_enemy_slot,2);
 Battle_SetEnemyActionName(_enemy_slot,0,"* Check Out");
 Battle_SetEnemyActionName(_enemy_slot,1,"* Listen");
 
-Battle_SetEnemyActionTPCost(_enemy_slot,1,10);
+//Battle_SetEnemyActionTPCost(_enemy_slot,1,10);
 
 
 //Animation stage variable. Used to say where the animation is. 
@@ -81,8 +81,7 @@ _bar_wp_max=_WP_Max; //Max WP
 _bar_wp_orig=0; //The WP before the damage
 _bar_wp_target=0; //The WP after the damage
 
-_fun_bar_trigger_frame=Battle_DamageBarAppear(_fun_animation); //The frame in which the bar triggers during FUN
-
+_fun_bar_trigger=true;
 
 //Number of animations. 
 

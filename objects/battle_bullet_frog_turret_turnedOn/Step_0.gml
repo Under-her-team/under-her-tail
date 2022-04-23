@@ -3,6 +3,7 @@
 
 if (live_call()) return live_result;
 
+
 if(!_tongue_out){
 	var x_length=battle_soul.x-x;
 	var y_length=battle_soul.y-y;
@@ -45,15 +46,31 @@ else{
 		_timer2-=1;
 		_tongue_length+=10;
 		_fly=0;
-	}else if(_timer1>0){
+		_soul_flag=false;
+	}else if(_timer1>0 && _soul_spawn){
+		_timer1-=1;
+		_tongue_length-=10;
+		_fly=0;
+		_soul_flag=true;
+		if(_timer1<=0) {
+			_flies_eaten+=1;
+			_soul_spawn=false;
+			_soul_flag=false;
+		}
+	}
+	else if(_timer1>0){
 		_timer1-=1;
 		_tongue_length-=10;
 		_fly=1;
+		if(_timer1<=0) _flies_eaten+=1;
+		if(_flies_eaten==3) _soul_spawn=true;
+		_soul_flag=false;
 	}else {
 		_tongue_out=false;
 		_tongue_length=0;
 		_timer1=30;
 		_fly=0;
+		_soul_flag=false;
 	}
 	var reverted_angle = (_angle+90)*-1;
 	_tip_y=_tongue_length*sin(degtorad(reverted_angle));

@@ -27,11 +27,11 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Turn",
-    "path": "folders/Objects/Battle/Turn.yy",
+    "name": "Turns",
+    "path": "folders/Objects/Battle/Enemy/Frogette/Turns.yy",
   },
   "resourceVersion": "1.0",
-  "name": "battle_turn_bullet_test",
+  "name": "battle_turn_turret",
   "tags": [],
   "resourceType": "GMObject",
 }

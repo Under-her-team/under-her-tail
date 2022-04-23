@@ -19,3 +19,7 @@ _tracking=true;
 _fly=0;
 _fly_x=0;
 _fly_y=0;
+
+_flies_eaten=0;
+_soul_spawn=false;
+_soul_flag=false;
