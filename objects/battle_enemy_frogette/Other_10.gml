@@ -108,3 +108,6 @@ _book=false;
 //A variable used to guage the dialogue reaction of frogette
 //The value signals the exact type. 
 _dialogue_reaction=-1;
+
+
+start_dialogue=true;

@@ -2,6 +2,7 @@
   "resources": [
     {"id":{"name":"spr_default","path":"sprites/spr_default/spr_default.yy",},"order":1,},
     {"id":{"name":"Battle_GetEnemyFunPlayerBitNumber","path":"scripts/Battle_GetEnemyFunPlayerBitNumber/Battle_GetEnemyFunPlayerBitNumber.yy",},"order":5,},
+    {"id":{"name":"battle_cutscene_frogette","path":"objects/battle_cutscene_frogette/battle_cutscene_frogette.yy",},"order":0,},
     {"id":{"name":"spr_ruins_gate_water_M","path":"sprites/spr_ruins_gate_water_M/spr_ruins_gate_water_M.yy",},"order":4,},
     {"id":{"name":"char_sign_sequence_changebgm","path":"objects/char_sign_sequence_changebgm/char_sign_sequence_changebgm.yy",},"order":11,},
     {"id":{"name":"Battle_SetEnemyFunSubjectNumber","path":"scripts/Battle_SetEnemyFunSubjectNumber/Battle_SetEnemyFunSubjectNumber.yy",},"order":2,},
@@ -125,6 +126,7 @@
     {"id":{"name":"snd_hurt","path":"sounds/snd_hurt/snd_hurt.yy",},"order":3,},
     {"id":{"name":"Battle_GetEnemyFunPlayerBitName","path":"scripts/Battle_GetEnemyFunPlayerBitName/Battle_GetEnemyFunPlayerBitName.yy",},"order":4,},
     {"id":{"name":"battle_button_fun","path":"objects/battle_button_fun/battle_button_fun.yy",},"order":12,},
+    {"id":{"name":"battle_cutscene","path":"objects/battle_cutscene/battle_cutscene.yy",},"order":0,},
     {"id":{"name":"snd_level_up","path":"sounds/snd_level_up/snd_level_up.yy",},"order":1,},
     {"id":{"name":"snd_slice","path":"sounds/snd_slice/snd_slice.yy",},"order":7,},
     {"id":{"name":"snd_break_0","path":"sounds/snd_break_0/snd_break_0.yy",},"order":9,},
@@ -928,6 +930,8 @@
     {"folderPath":"folders/Scripts/Battle/TP.yy","order":25,"resourceVersion":"1.0","name":"TP","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Objects/Battle/Enemy/Frogette/Turns/Turned_On.yy","order":6,"resourceVersion":"1.0","name":"Turned_On","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Objects/Battle/Enemy/Frogette/Bullets/Soul_Bullets.yy","order":3,"resourceVersion":"1.0","name":"Soul_Bullets","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Objects/Battle/Cutscene.yy","order":39,"resourceVersion":"1.0","name":"Cutscene","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Objects/Battle/Enemy/Frogette/Cutscenes.yy","order":6,"resourceVersion":"1.0","name":"Cutscenes","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":-1,"resourceVersion":"1.3","name":"audiogroup_default","resourceType":"GMAudioGroup",},

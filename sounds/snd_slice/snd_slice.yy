@@ -1,4 +1,5 @@
 {
+  "conversionMode": 0,
   "compression": 0,
   "volume": 1.0,
   "preload": false,
@@ -11,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "snd_slice",
-  "duration": 0.55559,
+  "duration": 0.55059,
   "parent": {
     "name": "SFX",
     "path": "folders/Sounds/SFX.yy",
