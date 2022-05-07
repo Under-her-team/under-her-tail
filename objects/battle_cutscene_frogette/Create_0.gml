@@ -14,7 +14,7 @@ battle_soul.image_alpha=0;
 
 
 dialog1=instance_create_depth(_x+100,_y-150,0,battle_dialog_enemy);
-dialog1.text="start_dialog";
+dialog1.text="So! Why don’t you come&over here, and...";
 dialog1.template=0;
 
 dialog2=noone;

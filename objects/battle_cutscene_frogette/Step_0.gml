@@ -14,7 +14,7 @@ if(_timer==15){
 	audio_play_sound(snd_spike_disable,0,false);
 } else if(_timer==90){
 	dialog2=instance_create_depth(_x+100,_y-150,0,battle_dialog_enemy);
-	dialog2.text="2nd dialog";
+	dialog2.text="...show me what humans&do to monsters like me?{pause}{clear}Yes, I'd like that very&much...";
 	dialog2.template=0;
 	_flag2=true;
 }
